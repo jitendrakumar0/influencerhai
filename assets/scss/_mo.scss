@@ -122,6 +122,21 @@
             right: 0;
         }
     }
+    & .blogdots {
+        bottom: -2px;
+        display: none;
+        & .swiper-pagination-bullet {
+            height: 9px;
+            width: 9px;
+            &.swiper-pagination-bullet-active {
+                background: $theme1 ;
+            }
+        }
+    }
+    @include sm {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
 }
 // blog section end
 
