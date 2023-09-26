@@ -1,0 +1,105 @@
+// testimonial Section Start
+    .testimonialSection{
+        & .subHeading{
+            & .special{
+                position: relative;
+                &::after{
+                    content: '';
+                    height: 2px;
+                    width: 25px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(50%);
+                    right: -35px;
+                    background-color: $theme2;
+                }
+            }
+        }
+        & .heading{
+            & .alltxt{
+
+            }
+            & .yellowLine{
+                left: 20%;
+            }
+            & .testiDropdown{
+                & .dropIcon{
+
+                }
+                & .testiDropdownMenu{
+                    height: 270px !important;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                    & .testiDropdownMenuitem{
+                        font-weight: 700;
+                        font-size: 20px;
+                        border-radius: 10px;
+                        &.active{
+                            background-color: $theme1 !important;
+                        }
+                        &:hover{
+                            color: $white !important;
+                            background-color: #fcc9b9 !important;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        & .swiperSlides{
+            & .mainCards{
+                & .cardImg{
+                    border-radius: 15px;
+                    width: 230px;
+                    height: 350px;
+                }
+                & .description{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $theme2;
+                }
+                & .cardSignature{
+                    & .signatureimg{
+                        height: 60px;
+                        width: 60px;
+                    }
+                    & .name{
+                        font-size: 20px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    & .linkedinimg{
+                        height: 20px;
+                        width: 20px;
+                    }
+                    & .position{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    & .positionTimes{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+// testimonial Section Ends
