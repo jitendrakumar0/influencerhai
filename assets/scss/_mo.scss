@@ -278,7 +278,8 @@
             & .memberposition {
                 font-size: 12px;
                 font-weight: 500;
-                color: #4b4a4a;
+                // color: #4b4a4a;
+                color: $theme1;
                 @include sm {
                     font-size: 13px;
                 }
@@ -373,4 +374,28 @@
 }
 //meet the team section end
 
+
+// our client section start 
+.clientsection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    & .clientcard {
+        padding: 20px;
+        & .clientlogo {
+            width: 150px;
+        }
+    }
+    @include sm {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @include md {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    @include lg {
+
+    }
+}
+// our client section end
 

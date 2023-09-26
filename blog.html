@@ -157,7 +157,7 @@
                 <div class="subHeading col-md-8 mx-auto text-center">Highly trained professionals ready to provide the best experience.</div>
                 <div class="col-12 ">
                     <div class="position-relative">
-                        <div class="swiper mySwiper teamslider pt-3 pb-4">
+                        <div class="swiper mySwiper teamslider py-3">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="profilecard rounded-3 bg-light shadow-sm d-flex flex-column justify-content-center align-items-center position-relative">
@@ -423,15 +423,33 @@
     <!-- meet the team section end -->
 
     <!-- our client section start  -->
-    <div class="container-fluid">
+    <div class="container-fluid clientsection bg-light">
         <div class="container">
             <div class="row">
                 <div class="heading col-12">Our Clients!</div>
                 <div class="col-12">
-                    
+                    <div class="swiper mySwiper clientslider py-3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="clientcard rounded-3 d-flex align-items-center justify-content-center shadow-sm bg-white">
+                                    <div class="clientlogo">
+                                        <img src="assets/img/blog/partner1.png" alt="partner" class="h-100 w-100 ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- our client section end -->
@@ -476,7 +494,7 @@
         });
     </script>
 
-    <!-- team slider  -->
+    <!-- team slider start -->
     <script>
         var swiper = new Swiper(".teamslider", {
             slidesPerView: 1,
@@ -513,6 +531,46 @@
             },
         });
     </script>
+    <!-- team slider end -->
+
+    <!-- client slider start  -->
+    <script>
+        var swiper = new Swiper(".clientslider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // navigation: {
+            //     nextEl: '.nextarrow',
+            //     prevEl: '.prevarrow',
+            // },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true
+            // },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- client slider end -->
 
 </body>
 </html>
