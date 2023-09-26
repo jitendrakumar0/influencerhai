@@ -20,7 +20,23 @@
 
             }
             & .yellowLine{
-                left: 20%;
+                left: 37%;
+                margin-top: -10px;
+                @include sm {
+                    left: 37%;
+                }
+                @include md{
+                    left: 37%;
+                }
+                @include lg{
+                    left: 20%;
+                }
+                @include xl{
+                    left: 23%;
+                }
+                @include xxl{
+                    left: 23%;
+                }
             }
             & .testiDropdown{
                 & .dropIcon{
@@ -83,11 +99,25 @@
             & .mainCards{
                 & .cardImg{
                     border-radius: 15px;
-                    // 
-                    aspect-ratio: 4/6;
+                    aspect-ratio: 2/1;
+                    @include sm {
+                        aspect-ratio: 2/1;
+                    }
+                    @include md{
+                        aspect-ratio: 4/6;
+                    }
+                    @include lg{
+                        aspect-ratio: 4/6;
+                    }
+                    @include xl{
+                        aspect-ratio: 4/6;
+                    }
+                    @include xxl{
+                        aspect-ratio: 4/6;
+                    }
                 }
-                & .description {
-                    font-size: 20px;
+                & .description{
+                    font-size: 16px;
                     font-weight: 500;
                     color: $theme2;
                     opacity: 0.7;
@@ -97,29 +127,90 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     @include sm {
-                        font-size: 16px;
+                        font-size: 18px;
                     }
-                    
+                    @include md{
+                        font-size: 18px;
+                    }
+                    @include lg{
+                        font-size: 18px;
+                    }
+                    @include xl{
+                        font-size: 20px;
+                    }
+                    @include xxl{
+                        font-size: 20px;
+                    }
                 }
                 & .cardSignature{
                     & .signatureimg{
                         height: 60px;
                         width: 60px;
+                        @include sm {
+                        height: 60px;
+                        width: 60px;
+                    }
+                        @include md{
+                            height: 60px;
+                            width: 60px;
+                        }
+                        @include lg{
+                            height: 40px;
+                            width: 40px;
+                        }
+                        @include xl{
+                            height: 60px;
+                            width: 60px;
+                        }
+                        @include xxl{
+                            height: 60px;
+                            width: 60px;
+                        }
                     }
                     & .name{
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 600;
                         text-transform: uppercase;
+                        @include sm {
+                            font-size: 18px;
+                        }
+                        @include md{
+                            font-size: 18px;
+                        }
+                        @include lg{
+                            font-size: 16px;
+                        }
+                        @include xl{
+                            font-size: 20px;
+                        }
+                        @include xxl{
+                            font-size: 20px;
+                        }
                     }
                     & .linkedinimg{
                         height: 20px;
                         width: 20px;
                     }
                     & .position{
-                        font-size: 16px;
+                        font-size: 13px;
                         font-weight: 500;
                         opacity: 0.7;
                         color: $theme2;
+                        @include sm {
+                            font-size: 15px;
+                        }
+                        @include md{
+                            font-size: 15px;
+                        }
+                        @include lg{
+                            font-size: 15px;
+                        }
+                        @include xl{
+                            font-size: 16px;
+                        }
+                        @include xxl{
+                            font-size: 16px;
+                        }
                     }
                     & .positionTimes{
                         font-size: 14px;
@@ -131,3 +222,52 @@
         }
     }
 // testimonial Section Ends
+
+// FAQ Section Start
+    .faqSection{
+        & .heading{
+
+        }
+        & .subHeading{
+
+        }
+        & .faqAccordian{
+            & .faqAccordianitem{
+                & .faqAccordianheader{
+                    & .faqAccordianbutton{
+                        font-size: 20px;
+                        color: $theme2;
+                        background-color: #f8f8f8;
+                        &::after {
+                            content: '';
+                            background: url(../img/plus.svg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            position: absolute;
+                            right: 20px;
+                            transform: translateY(-50%), rotate(-180deg);
+                            height: 13px;
+                            width: 13px;
+                            transition: .3s ease-in-out;
+                        }
+                        &:not(.collapsed) {
+                            &::after {
+                                background: url(../img/minusblack.svg) no-repeat;
+                                height: 5px;
+                                width: 13px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+                & .faqAccordianbpdy{
+                    & .faqAccordianbpdyAnc{
+                        font-size: 18px !important;
+                        font-weight: 600 !important;
+                        color: $theme1;
+                    }
+                }
+            }
+        }
+    }
+// FAQ Section Ends
