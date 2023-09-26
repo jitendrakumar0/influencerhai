@@ -53,7 +53,7 @@
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fff;
+            background: #f8f8f8;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,17 +64,42 @@
             height: 100%;
             object-fit: cover;
         }
+        .dotsarrow{
+            width: 15%;
+            background-color: #f8f8f8;
+        }
+        .swiper-pagination-bullet{
+            height: 10px;
+            width: 10px;
+            transition: all .3s ease-in-out;
+        }
+        .swiper-pagination-bullet-active{
+            background-color: #aaaaaa;
+            width: 20px;
+            border-radius: 30px;
+            transition: all .3s ease-in-out;
+        }
         & .swiperSlides{
             & .mainCards{
                 & .cardImg{
                     border-radius: 15px;
-                    width: 230px;
-                    height: 350px;
+                    // 
+                    aspect-ratio: 4/6;
                 }
-                & .description{
+                & .description {
                     font-size: 20px;
                     font-weight: 500;
                     color: $theme2;
+                    opacity: 0.7;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    @include sm {
+                        font-size: 16px;
+                    }
+                    
                 }
                 & .cardSignature{
                     & .signatureimg{
@@ -93,10 +118,13 @@
                     & .position{
                         font-size: 16px;
                         font-weight: 500;
+                        opacity: 0.7;
+                        color: $theme2;
                     }
                     & .positionTimes{
                         font-size: 14px;
                         font-weight: 500;
+                        opacity: 0.7;
                     }
                 }
             }
