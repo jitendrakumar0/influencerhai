@@ -1,9 +1,9 @@
 // blog section start 
 .blogsection {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     & .blogcard {
-        padding: 10px;
+        padding: 7px;
         transition: all 0.3s ease-in-out;
         & .blogimg {
             aspect-ratio: 5/3;
@@ -12,55 +12,96 @@
             }
         }
         & .blogcontent {
-            padding: 20px 7px;
+            padding: 15px 5px;
             & .date {
                 color: #7b7992;
-                margin-bottom: 12px;
+                margin-bottom: 8px;
                 font-weight: 500;
+                font-size: 12px;
+                @include sm {
+                    font-size: 14px;
+                    margin-bottom: 9px;
+                }
+                @include md {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
             }
             & .blogheading {
-                font-size: 24px;
+                font-size: 16px;
                 font-weight: 700;
                 color: #0d0925;
-                margin-bottom: 17px;
-                line-height: 30px;
+                margin-bottom: 8px;
+                line-height: 24px;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 transition: all 0.3s ease-in-out;
+                @include sm {
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 10px;
+                }
+                @include md {
+                    font-size: 21px;
+                    line-height: 28px;
+                    margin-bottom: 14px;
+                }
+                @include lg {
+                    font-size: 22px;
+                    line-height: 30px;
+                    margin-bottom: 17px;
+                }
             }
             & .blogdetail {
                 color: #4e4a67;
-                line-height: 1.5em;
-                font-size: 16px;
+                line-height: 22px;
+                font-size: 14px;
                 -webkit-line-clamp: 5;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
-            }
-        }
-        &:hover {
-            & .blogheading {
-                color: $theme1;
-            }
-            & .blogimg {
-                & img {
-                    // transform: scale(1.1);
+                @include sm {
+                    line-height:23px;
+                    font-size: 15px;
+                }
+                @include md {
+                    line-height:25px;
+                    font-size: 16px;
                 }
             }
-            transform: translateY(-5px);
-            box-shadow: -2px 11px 16px 7px rgb(0 0 0 / 8%) !important;
+            @include sm {
+                padding: 17px 6px;
+            }
+            @include md {
+                padding: 20px 7px;
+            }
+        }
+        @include sm {
+            padding: 10px;
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: -2px 11px 16px 7px rgb(0 0 0 / 8%) !important;
+                & .blogheading {
+                    color: $theme1;
+                }
+                & .blogimg {
+                    & img {
+                        // transform: scale(1.1);
+                    }
+                }
+            }
         }
     }
     & .blogslidermain {
         
     }
     & .siderarrow {
-        height: 55px;
-        width: 55px;
+        height: 50px;
+        width: 50px;
         z-index: 1;
         top: 50%;
         transition: all 0.3s ease-in-out;
@@ -68,6 +109,7 @@
         background-color: #fff;
         opacity: 0;
         visibility: hidden;
+        display: none !important;
         & .arrowicon {
             height: 17px;
             width: 16px;
@@ -124,19 +166,211 @@
     }
     & .blogdots {
         bottom: -2px;
-        display: none;
+        display: block;
         & .swiper-pagination-bullet {
-            height: 9px;
-            width: 9px;
+            height: 8px;
+            width: 8px;
             &.swiper-pagination-bullet-active {
                 background: $theme1 ;
             }
         }
     }
     @include sm {
-        padding-top: 35px;
-        padding-bottom: 35px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        & .blogdots {
+            & .swiper-pagination-bullet {
+                height:9px;
+                width: 9px;
+                &.swiper-pagination-bullet-active {
+                }
+            }
+        }
+    }
+    @include md {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        & .siderarrow {
+            display: flex !important;
+            & .arrowicon {
+                & img {
+                }
+            }
+            &:hover {
+                & .arrowicon {
+                    & img {
+                    }
+                }
+            }
+        }
+        & .blogdots {
+            display: none;
+            & .swiper-pagination-bullet {
+                &.swiper-pagination-bullet-active {
+                }
+            }
+        }
+    }
+    @include lg {
+        & .siderarrow {
+            height: 55px;
+            width: 55px;
+            & .arrowicon {
+                & img {
+                }
+            }
+            &:hover {
+                & .arrowicon {
+                    & img {
+                    }
+                }
+            }
+        }
+
     }
 }
 // blog section end
+
+
+
+//meet the team section start
+.teamSection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    & .profilecard {
+        min-height: 270px;
+        height: 100%;
+        & .content {
+            transition: 0.5s;
+            & .teamimg {
+                width: 120px;
+                height: 120px;
+                border: 3px solid #000;
+                @include sm {
+                    width: 135px;
+                    height: 135px;
+                }
+                @include md {
+                    width: 150px;
+                    height: 150px;
+                }
+                @include lg {
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+            & .membername {
+                color: #000;
+                letter-spacing: 1px;
+                font-weight:600;
+                font-size: 15px;
+                margin: 15px 0 6px;
+                line-height: 1.1em;
+                @include sm {
+                    font-size: 16px;
+                    margin: 18px 0 8px;
+                }
+                @include md {
+                    font-size: 18px;
+                    margin: 20px 0 10px;
+                }
+            }
+            & .memberposition {
+                font-size: 12px;
+                font-weight: 500;
+                color: #4b4a4a;
+                @include sm {
+                    font-size: 13px;
+                }
+                @include md {
+                    font-size: 14px;
+                }
+            }
+        }
+        & .socialicons {
+            position: static !important;
+            margin-top: 12px;
+            & li {
+                margin: 0 8px;
+                transition: 0.5s;
+                transition-delay: calc(0.1s * var(--i));
+                & .socialicon {
+                    height: 35px;
+                    width: 35px;
+                    padding: 10px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    transition: all 0.3s ease-in-out;
+                    & img {
+                        filter: brightness(0);
+                        transition: all 0.3s ease-in-out;
+                    }
+                    @include sm {
+                        height: 37px;
+                        width: 37px;
+                        padding: 11px;
+                        &:hover {
+                            background-color: $black;
+                            & img {
+                                filter: brightness(100);
+                            }
+                        }
+                        
+                    }
+                    @include md {
+                        height: 40px;
+                        width: 40px;
+                        padding: 12px;
+                    }
+                }
+                @include sm {
+                    transform: translateY(40px);
+                    opacity: 0;
+                }
+            }
+            @include sm {
+                bottom: 20px;
+                position: absolute !important;
+            }
+            @include md {
+                bottom: 30px;
+            }
+        }
+        @include sm {
+            min-height: 300px;
+            &:hover {
+                & .content {
+                    transform: translateY(-20px);
+                }
+                & .socialicons li {
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+        }
+        @include md {
+            min-height: 350px;
+            &:hover {
+                & .content {
+                }
+                & .socialicons li {
+                }
+            }
+        }
+        
+    }
+    @include sm {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @include md {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    @include lg {
+
+    }
+}
+//meet the team section end
+
 
