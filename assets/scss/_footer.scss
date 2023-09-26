@@ -1,0 +1,37 @@
+.footer{
+    background: #170c2a;
+   
+  &  .logonav{
+    width: 55px;
+    height: 55px;
+  }
+  & .logoName{
+    font-size: 18px;
+    color: $white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $theme1;
+    }
+  }
+
+  & .headingFotter{
+    font-size: 18px;
+    font-weight: 700;
+    color: $theme1;
+  }
+  & .footerIcon{
+    width: 16px;
+    height: 16px;
+  }
+  & .addresspera{
+    font-size: 15px;
+    color:$white;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}

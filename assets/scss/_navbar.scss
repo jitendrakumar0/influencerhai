@@ -1,5 +1,6 @@
 .navbar{
     background: #170c2a;
+    height: 80px;
   &  .logonav{
     width: 55px;
     height: 55px;
@@ -14,9 +15,19 @@
     }
   }
   & .menuBtn{
+    width: 30px;
+    height: 30px;
+
+    @include md{
+      width: 35px;
+      height: 35px;
+    }
+  @include lg{
     width: 40px;
     height: 40px;
   }
+  }
+
   & .navbarNav{
     & .navItem{
         & .navLInk{
