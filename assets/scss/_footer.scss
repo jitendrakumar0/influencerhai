@@ -97,3 +97,14 @@
 
 
 }
+
+.copyRight{
+  background: #291944;
+  color: $white;
+  font-size: 12px;
+  @include sm{
+    background: #291944;
+    color: $white;
+    font-size: 14px;
+  }
+}
