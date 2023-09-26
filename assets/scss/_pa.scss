@@ -1,74 +1,374 @@
 .heading{
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 34px;
     color: $black;
     text-align: center;
     & span{
         color: $theme1;
     }
+    @include sm{
+    
+    }
+    @include md{
+    }
+    @include lg{
+        font-size: 36px;
+    }
+    @include xl{
+        
+    }
+    @include xxl{
+        
+    }
 }
 .subHeading{
     margin-top: 1rem;
     font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 600;
     color: $theme2;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    @include sm{
+    }
+    @include md{
+    }
+    @include lg{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    @include xl{
+        
+    }
+    @include xxl{
+        
+    }
 }
 .influencerFluid{
-    & .influencer{
-        width: 100%;
-        height: 100%;
+        & .influencer{
+            width: 100%;
+            height: 100%;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include sm{
+    
+                }
+                @include md{
+                }
+                @include lg{
+                    
+                }
+                @include xl{
+                    
+                }
+                @include xxl{
+                    
+                }
+            }
+        }
+        & .influencerWrapper{
+            border: 1px solid ;
+            border-color: lighten($color: $theme2, $amount: 50);
+            border-radius: 5px;
+            padding: 20px 10px;
+            @include sm{
+                border: 0;
+                padding: 0;
+            }
+            @include md{
+            }
+            @include lg{
+                
+            }
+            @include xl{
+                
+            }
+            @include xxl{
+                
+            }
+            & .icons{
+                width: 40px;
+                height: 40px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            & .influencerHeading{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: $theme2;
+                & span{
+                    color: $theme1;
+                }
+                @include sm{
+        
+                }
+                @include md{
+                }
+                @include lg{
+                font-size: 20px;
+                }
+                @include xl{
+                    
+                }
+                @include xxl{
+                    
+                }
+            }
+            & .influencerSubHeading{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: lighten($color: $theme2, $amount: 10);
+                @include sm{
+        
+                }
+                @include md{
+                }
+                @include lg{
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+                @include xl{
+                    
+                }
+                @include xxl{
+                    
+                }
+            }
+        }
+}
+
+.influencerCategoriesFluid{
+    & .categoryWrapper{   
+        border: 1px solid ;
+        border-color: lighten($color: $theme2, $amount: 50);
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-in-out;
+        padding: 10px;
+        @include sm{
+    
+        }
+        @include md{
+        }
+        @include lg{
+        }
+        @include xl{
+            padding: 20px 10px;
+            
+        }
+        @include xxl{
+            
+        }
+        &:hover{
+            transform: translateY(-10px);
+            & .categoryAnchor{
+                & img{
+                    transform: translateX(5px);
+                }
+            }
+        }
+        & .categoryIcon{
+            width: 40px;
+            height: 40px;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        & .categoryHeading{
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            color: $theme2;
+            margin-bottom: 4px;
+            font-size: 16px;
+            @include sm{
+    
+            }
+            @include md{
+            }
+            @include lg{
+            }
+            @include xl{
+                font-size: 20px;
+                
+            }
+            @include xxl{
+                
+            }
+        }
+        & .categoryAnchor{
+            color: $theme1;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            @include sm{
+    
+            }
+            @include md{
+            }
+            @include lg{
+            }
+            @include xl{
+                font-size: 13px;
+            }
+            @include xxl{
+                
+            }
+            & img{
+                margin-left: 5px;
+                width: 10px;
+                height: 10px;
+                // margin-top: 4px;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.newEraFluid{
+    text-align: center;
+    overflow: hidden;
+    & > .container{
+        & > .row{
+            z-index: 2;
+        }
+    }
+    & .newEraPara{
+        font-size: 18px;
+        color: $theme2;
+        width: 500px;
+        z-index: 2;
+    }
+    & .askBtn{
+        background-color: $theme1;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 1px solid;
+        color: $white;
+        transition: 0.3s linear;
+        margin-right: 8px;
+        z-index: 2;
+        &:hover{
+            // background-color: lighten($color: $theme1, $amount: 10);
+            border: 1px solid $theme1;
+            background-color: transparent;
+            color: $theme1;
+        }
+    }
+    & .learnBtn{
+        border-color: $theme1;
+        padding: 10px 20px;
+        border: 1px solid;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        color: $theme1;
+        transition: 0.3s linear;
+        background-color: transparent;
+        &:hover{
+            background-color:$theme1;
+            color: $white;
+        }
+    }
+    & .images{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 60%;
+        left: 150px;
+        &::after{
+            content: '';
+            background-image: url(../img/actress4.jpeg);
+            position: absolute;
+            top: -100%;
+            left: -113px;
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            border-radius: 50%;
+            background-size: cover;
+        }
+        &::before{
+            content: '';
+            background-image: url(../img/actress5.jpeg);
+            position: absolute;
+            top: -166%;
+            left: 110px;
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            border-radius: 50%;
+        }
         & img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 50%;
         }
     }
-    & .influencerHeading{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        color: $theme2;
-        & span{
-            color: $theme1;
+    
+    & .imagesRyt{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 4%;
+        right: 28px;
+        z-index: 1;
+        &::after{
+            content: '';
+            background-size: cover;
+            background-image: url(../img/actress1.jpeg);
+            position: absolute;
+            top: 210%;
+            left: 7px;
+            width: 35px;
+            height: 35px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            border-radius: 50%;
         }
-        @include sm{
-
+        &::before{
+            content: '';
+            background-size: cover;
+            background-image: url(../img/actress2.jpeg);
+            position: absolute;
+            top: 126%;
+            left: -117px;
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            border-radius: 50%;
         }
-        @include md{
-        }
-        @include lg{
-            
-        }
-        @include xl{
-            
-        }
-        @include xxl{
-            
-        }
-    }
-    & .influencerSubHeading{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color: lighten($color: $theme2, $amount: 10);
-        @include sm{
-
-        }
-        @include md{
-        }
-        @include lg{
-        }
-        @include xl{
-            
-        }
-        @include xxl{
-            
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
     }
 }
