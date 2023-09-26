@@ -4,7 +4,8 @@
     font-size: 36px;
     line-height: 34px;
     color: $black;
-    &span{
+    text-align: center;
+    & span{
         color: $theme1;
     }
 }
