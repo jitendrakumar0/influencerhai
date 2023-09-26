@@ -11,11 +11,233 @@
 </head>
 <body>
     
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg   container-fluid" aria-label="Offcanvas navbar large">
+        <div class="container">
+          <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+          <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menuBtn  "> <img src="assets/img/Menu.png" alt="menu" class="img-fluid w-100 h-100"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasNavbar2Label">
+              <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+            </div>
+              <button type="button" class="menuBtn border-0 d-inline-flex shdow-none bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/img/Close.png" alt="menu" class="img-fluid w-100 h-100"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav navbarNav justify-content-end flex-grow-1 gap-md-3 gap-2">
+                <li class="nav-item navItem">
+                  <a class="nav-link navLInk active" aria-current="page" href="#">About Us</a>
+                </li>
+                <li class="nav-item navItem">
+                  <a class="nav-link navLInk" href="#">Services</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Blog</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Influencer</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Brand</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Search</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
 
+    <!-- hero section start  -->
+    <div class="container-fluid heroSection  ">
+        <div class="videoBg h-100 w-100">
+            <video autoplay="true" class="w-100 h-100 object-fit-cover" src="assets/img/home-banner.webm" muted loop="true"></video>
+        </div>
+        <div class="mainsectopn position-absolute top-0 left-0 w-100 h-100 ">
+          <div class="container h-100 ">
+              <div class="row h-100">
+                  <div class="col-xxl-6 col-lg-8">
+                      <div class="row align-items-center h-100">
+                          <div class="col-12 pt-5">
+                              <div class="HeroHeading fw-bold text-lg-start text-center">Where Influencer Collaborations Happen</div>
+                              <div class="heroPera mt-4 text-lg-start text-center">Qoruz helps brands to find, connect and collaborate with the most relevant influencers.</div>
+  
+                              <div class="searchBox mt-xl-5 mt-lg-4 mt-3 justify-content-lg-start justify-content-center mx-lg-0 mx-auto">
+                                  <div class="">
+                                      <div class="dropdown Dropdown">
+                                          <button class="btn  dropdown-toggle border-0 shadow-none dropbtn d-flex align-items-center " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="IconMedia d-inline-flex me-2"><img src="assets/img/insta.svg" alt="insta" class="img-fluid w-100 h-100"></span> Instagram
+                                          </button>
+                                          <ul class="dropdown-menu DropMenu">
+                                            <li><a class="dropdown-item" href="#"> <span class="IconMedia d-inline-flex me-2"><img src="assets/img/twitter.svg" alt="insta" class="img-fluid w-100 h-100"></span> Twitter</a></li>
+                                            <li><a class="dropdown-item" href="#"> <span class="IconMedia d-inline-flex me-2"><img src="assets/img/insta.svg" alt="insta" class="img-fluid w-100 h-100"></span>Instagram</a></li>
+                                            <li><a class="dropdown-item" href="#"><span class="IconMedia d-inline-flex me-2"><img src="assets/img/insta.svg" alt="insta" class="img-fluid w-100 h-100"></span> Instagram</a></li>
+                                          </ul>
+                                        </div>
+                                  </div>
+                                  <div class="d-flex align-items-center position-relative w-100 h-100">
+                                      <input type="search" id="fruit" class="form-control searchInput w-100 h-100 shadow-none border-0 bg-transparent" placeholder="Search influencers & categories">
+                                      <!-- <button class="btn searchBtn rounded-5 h-100">Search</button> -->
+                                      <div class="searchInner z-2 d-none overflow-hidden shadow-sm position-absolute start-0 bg-white py-2 rounded-3 w-100">
+                                        <div class=" h-100 overflow-y-auto ">
+                                          <ul class="list-unstyled h-100">
+                                            <li class="d-flex align-items-center searchLi">
+                                            <a href="javascript:;" class=" text-decoration-none d-flex align-items-center innerDropdown"><span class="arrowIcon d-inline-flex me-2"><img src="assets/img/Rightarrow2.svg" alt="arrow" class="img-fluid w-100 h-100"></span> Style & Fashoin <span class="inndrSubheading ms-1 d-inline-flex">CATEGORY</span> </a>
+                                            </li>
+                                            <li class="d-flex align-items-center searchLi">
+                                              <a href="javascript:;" class=" text-decoration-none d-flex align-items-center innerDropdown"><span class="arrowIcon d-inline-flex me-2"><img src="assets/img/Rightarrow2.svg" alt="arrow" class="img-fluid w-100 h-100"></span> Style & Fashoin <span class="inndrSubheading ms-1 d-inline-flex">CATEGORY</span> </a>
+                                             </li>
+                                             <li class="d-flex align-items-center searchLi">
+                                              <a href="javascript:;" class=" text-decoration-none d-flex align-items-center innerDropdown"><span class="arrowIcon d-inline-flex me-2"><img src="assets/img/Rightarrow2.svg" alt="arrow" class="img-fluid w-100 h-100"></span> Style & Fashoin <span class="inndrSubheading ms-1 d-inline-flex">CATEGORY</span> </a>
+                                              </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                    
+                      </div>
+                  </div>
+                  <div class="col-12 mt-auto">
+                      <ul class="heroBrand list-unstyled d-flex gap-4 justify-content-around py-sm-4 py-3 px-sm-4 px-3 mb-0">
+                          <li class="brandIcon d-flex align-items-center"><img src="assets/img/sandeal.png" alt="sandeal" class="img-fluid h-100"></li>
+                          <li class="brandIcon d-flex align-items-center"><img src="assets/img/wowlogo.png" alt="sandeal" class="img-fluid h-100"></li>
+                          <li class="brandIcon d-flex align-items-center d-sm-block d-none"><img src="assets/img/bajaj.png" alt="sandeal" class="img-fluid h-100"></li>
+                          <li class="brandIcon d-flex align-items-center d-sm-block d-none"><img src="assets/img/arm.png" alt="sandeal" class="img-fluid h-100"></li>
+                          <li class="brandIcon d-flex align-items-center d-md-block d-none"><img src="assets/img/amazon.png" alt="sandeal" class="img-fluid h-100"></li>
+                          <li class="brandIcon d-flex align-items-center d-md-block d-none"><img src="assets/img/madison.png" alt="sandeal" class="img-fluid h-100"></li>
+                          <li class="brandIcon d-flex align-items-center d-lg-block d-none"><img src="assets/img/itc.png" alt="sandeal" class="img-fluid h-100"></li>
+  
+                      </ul>
+                  </div>
+              </div>
+          </div>
 
+        </div>
+    </div>
+    <!-- hero section end  -->
+    
+    <!-- seceond section  -->
 
+    <div class="container-fluid counterSection">
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-12">
+            <ul class="list-unstyled align-items-center d-flex gap-4 justify-content-around py-sm-4 py-3 px-sm-4 px-3 mb-0 counterCard">
+              <li>
+                <div class="row ">
+                  <div class="col-auto">
+                    <div class="iconuser"><img src="assets/img/creator-influencers.svg" alt="creator-influencers" class="img-fluid w-100  h-100"></div>
+                  </div>
+                  <div class="col">
+                    <div class="counterHeading">375k+</div>
+                    <div class="counterPera">Creators & Influencers</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="row ">
+                  <div class="col-auto">
+                    <div class="iconuser"><img src="assets/img/campaigns-created.svg" alt="creator-influencers" class="img-fluid w-100  h-100"></div>
+                  </div>
+                  <div class="col">
+                    <div class="counterHeading">189k+</div>
+                    <div class="counterPera">Campaigns created</div>
+                  </div>
+                </div>
+              </li>
+              <li class="  d-md-block d-none">
+                <div class="row">
+                  <div class="col-auto">
+                    <div class="iconuser"><img src="assets/img/marketing-budget.svg" alt="creator-influencers" class="img-fluid w-100  h-100"></div>
+                  </div>
+                  <div class="col">
+                    <div class="counterHeading">₹89.7cr</div>
+                    <div class="counterPera">Marketing budget saved</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- seceond section  end-->
+    <div class="footer container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="row">
+              <div class="col-12">
+                <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+              </div>
+              <div class="col-12 mt-4">
+                <div class="headingFotter"> Contact us</div>
 
+                <div class="row">
+                  <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-3">
+                      <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Map.png" alt="map" class="img-fluid w-100 h-100"></div>
+                      </div>
+                      <div class="col ps-0">
+                        <div class="addresspera"> 
+                          Contact Us
+                          Address: A-88, F-01, Sector-4, Noida, UP, INDIA </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-3">
+                      <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Phone.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                      </div>
+                      <div class="col ps-0">
+                        <div class="addresspera"> +91-823-593-2170 </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-3">
+                      <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/mail.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                      </div>
+                      <div class="col ps-0">
+                        <div class="addresspera"> info@influencerhai.com</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+             
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="row">
+              <div class="col-12">
+                <div class="headingFotter"> Our Company</div>
+              </div>
+              <div class="col-12">
+                <ul></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="./assets/libs/swiper/swiper-bundle.min.js"></script> -->
