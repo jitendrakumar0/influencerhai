@@ -17,3 +17,58 @@
     line-height: 36px;
     color: $theme2;
 }
+.influencerFluid{
+    & .influencer{
+        width: 100%;
+        height: 100%;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & .influencerHeading{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: $theme2;
+        & span{
+            color: $theme1;
+        }
+        @include sm{
+
+        }
+        @include md{
+        }
+        @include lg{
+            
+        }
+        @include xl{
+            
+        }
+        @include xxl{
+            
+        }
+    }
+    & .influencerSubHeading{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: lighten($color: $theme2, $amount: 10);
+        @include sm{
+
+        }
+        @include md{
+        }
+        @include lg{
+        }
+        @include xl{
+            
+        }
+        @include xxl{
+            
+        }
+    }
+}
