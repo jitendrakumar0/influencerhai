@@ -95,7 +95,8 @@
         & .swiperSlides{
             & .mainCards{
                 & .cardImg{
-                    border-radius: 15px;
+                    border-radius: 50%;
+                    overflow: hidden;
                     aspect-ratio: 1/1;
                 }
                 & .description{
@@ -121,11 +122,11 @@
                     }
                     @include xl{
                         font-size: 16px;
-                        -webkit-line-clamp: 4;
+                        -webkit-line-clamp: 3;
                     }
                     @include xxl{
                         font-size: 16px;
-                        -webkit-line-clamp: 5;
+                        -webkit-line-clamp: 4;
                     }
                 }
                 & .cardSignature{
@@ -224,6 +225,15 @@
         & .subHeading{
 
         }
+        & .faqimg1{
+            height: 290px;
+            width: 160px;
+            top: 100px;
+        }
+        & .faqimg2{
+            height: 290px;
+            width: 160px;
+        }
         & .faqAccordian{
             & .faqAccordianitem{
                 & .faqAccordianheader{
@@ -233,21 +243,21 @@
                         background-color: transparent;
                         &::after {
                             content: '';
-                            background: url(../img/plus.svg) no-repeat;
+                            background: url(../img/plusOrange.svg) no-repeat;
                             background-size: cover;
                             background-position: center;
                             position: absolute;
                             right: 20px;
                             transform: translateY(-50%), rotate(-180deg);
-                            height: 13px;
-                            width: 13px;
+                            height: 18px;
+                            width: 18px;
                             transition: .3s ease-in-out;
                         }
                         &:not(.collapsed) {
                             &::after {
-                                background: url(../img/minusblack.svg) no-repeat;
-                                height: 5px;
-                                width: 13px;
+                                background: url(../img/minusOrange.svg) no-repeat;
+                                height: 8px;
+                                width: 18px;
                                 transform: rotate(180deg);
                             }
                         }
