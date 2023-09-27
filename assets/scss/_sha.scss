@@ -97,7 +97,9 @@
                 & .cardImg{
                     border-radius: 50%;
                     overflow: hidden;
-                    aspect-ratio: 1/1;
+                    // aspect-ratio: 1/1;
+                    height: 50px;
+                    width: 50px;
                 }
                 & .description{
                     font-size: 16px;
@@ -238,9 +240,24 @@
             & .faqAccordianitem{
                 & .faqAccordianheader{
                     & .faqAccordianbutton{
-                        font-size: 20px;
+                        font-size: 16px;
                         color: $theme2;
                         background-color: transparent;
+                        @include sm {
+                            font-size: 16px;
+                        }
+                        @include md{
+                            font-size: 17px;
+                        }
+                        @include lg{
+                            font-size: 18px;
+                        }
+                        @include xl{
+                            font-size: 20px;
+                        }
+                        @include xxl{
+                            font-size: 20px;
+                        }
                         &::after {
                             content: '';
                             background: url(../img/plusOrange.svg) no-repeat;
@@ -264,10 +281,42 @@
                     }
                 }
                 & .faqAccordianbpdy{
+                        font-size: 14px;
+                        padding-top: 0;
+                        @include sm {
+                            font-size: 14px;
+                        }
+                        @include md{
+                            font-size: 14px;
+                        }
+                        @include lg{
+                            font-size: 15px;
+                        }
+                        @include xl{
+                            font-size: 16px;
+                        }
+                        @include xxl{
+                            font-size: 16px;
+                        }
                     & .faqAccordianbpdyAnc{
-                        font-size: 18px !important;
+                        font-size: 13px !important;
                         font-weight: 600 !important;
                         color: $theme1;
+                        @include sm {
+                            font-size: 14px;
+                        }
+                        @include md{
+                            font-size: 15px;
+                        }
+                        @include lg{
+                            font-size: 16px;
+                        }
+                        @include xl{
+                            font-size: 18px;
+                        }
+                        @include xxl{
+                            font-size: 18px;
+                        }
                     }
                 }
             }
