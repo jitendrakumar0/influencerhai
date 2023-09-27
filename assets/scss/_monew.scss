@@ -131,60 +131,6 @@
     //         }
     //     }
     // }
-    & .formdata {
-        // margin-top: 40px;
-        // & .formcardmain {
-        //     padding: 20px 0;
-        // }
-        & .formcard {
-            & .contactlabel {
-                font-size: 13px;
-                font-weight: 500;
-                color:$black;
-                line-height: normal;
-                margin:0 0 3px 2px;
-                @include sm {
-                    font-size: 14px;
-                }
-            }
-            & .contactInput {
-                // border-bottom: 1.4px solid #33475b !important;
-                // padding-bottom: 0px;
-                font-size: 13px;
-                font-weight: 500;
-                color:$black;
-                height: 35px;
-                border-radius: 5px;
-                @include sm {
-                    font-size: 14px;
-                    height: 40px;
-                }
-            }
-            & input:-webkit-autofill,
-            input:-webkit-autofill:focus {
-                transition: background-color 600000s 0s, color 600000s 0s;
-            }
-            & input[data-autocompleted] {
-                background-color: transparent !important;
-            }
-            &::placeholder {
-                font-size: 13px;
-                font-weight: 500;
-                color:$black;
-                @include sm {
-                    font-size: 14px;
-                }
-            }
-            & .textbox {
-                min-height: 100px;
-            }
-            // & .contactInput {
-            //     &:focus ~ .contactlabel {
-            //         top: 0;
-            //     }
-            // }
-        }
-    }
     & .contactusImg {
         aspect-ratio: 6/3;
         @include md {
@@ -216,6 +162,66 @@
         @include sm {
             font-size: 14px;
         }
+    }
+}
+.formdata {
+    // margin-top: 40px;
+    // & .formcardmain {
+    //     padding: 20px 0;
+    // }
+    & .formcard {
+        & .contactlabel {
+            font-size: 13px;
+            font-weight: 500;
+            color:$black;
+            line-height: normal;
+            margin:0 0 3px 2px;
+            @include sm {
+                font-size: 14px;
+            }
+        }
+        & .contactInput {
+            // border-bottom: 1.4px solid #33475b !important;
+            // padding-bottom: 0px;
+            font-size: 13px;
+            font-weight: 500;
+            color:$black;
+            height: 35px;
+            border-radius: 5px;
+            @include sm {
+                font-size: 14px;
+                height: 40px;
+            }
+        }
+        & input:-webkit-autofill,
+        input:-webkit-autofill:focus {
+            transition: background-color 600000s 0s, color 600000s 0s;
+        }
+        & input[data-autocompleted] {
+            background-color: transparent !important;
+        }
+        &::placeholder {
+            font-size: 13px;
+            font-weight: 500;
+            color:$black;
+            @include sm {
+                font-size: 14px;
+            }
+        }
+        & .textbox {
+            min-height: 70px;
+            @include sm {
+                min-width: 85px;
+            }
+            @include md {
+                min-width: 100px;
+            }
+        }
+        // & .contactInput {
+        //     &:focus ~ .contactlabel {
+        //         top: 0;
+        //     }
+        // }
     }
 }
 // contact section end
