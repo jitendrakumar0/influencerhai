@@ -49,7 +49,7 @@
                 line-height: 22px;
                 margin-bottom: 6px;
                 font-weight: 700;
-                color: #0d0925;
+                color: $theme2;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -70,7 +70,7 @@
                 }
             }
             & .blogdetail {
-                color: #4e4a67;
+                color: $theme2;
                 -webkit-line-clamp: 3;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -249,8 +249,6 @@
 
 //meet the team section start
 .teamSection {
-    padding-top: 35px;
-    padding-bottom: 35px;
     & .profilecard {
         min-height: 270px;
         height: 100%;
@@ -375,12 +373,8 @@
         
     }
     @include sm {
-        padding-top: 40px;
-        padding-bottom: 40px;
     }
     @include md {
-        padding-top: 45px;
-        padding-bottom: 45px;
     }
     @include lg {
 
