@@ -1,0 +1,79 @@
+.teamSection {
+    & .profilecardnew {
+        gap: 14px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+        & .teamimg {
+            height: 90px;
+            min-width:90px;
+            max-width: 90px;
+            @include sm {
+                height: 95px;
+                min-width:95px;
+                max-width: 95px;
+            }
+        }
+        & .content {
+            & .membername {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: normal;
+                @include sm {
+                    font-size: 17px;
+                }
+                @include md {
+                    font-size: 18px;
+                }
+            }
+            & .memberposition {
+                font-size: 15px;
+                font-weight: 400;
+                margin: 4px 0 16px;
+                line-height: normal;
+                color: rgba(115, 115, 115);
+                @include sm {
+                    font-size: 15px;
+                }
+                @include md {
+                    font-size: 16px;
+                }
+            }
+            & .socialicons {
+                gap: 13px;
+                & .socialicon {
+                    height: 16px;
+                    transition: all 0.3s ease-in-out;
+                    & img {
+                        filter: brightness(0);
+                    }
+                    @include sm {
+                        height: 17px;
+                        &:hover {
+                            transform: rotateY(360deg);
+                        }
+                    }
+                }
+            }
+        }
+        @include sm {
+            padding: 12px;
+            &:hover {
+                transform: translateY(-7px);
+            }
+        }
+        @include md {
+            padding: 14px;
+        }
+    }
+    & .teamdots {
+        bottom: -10px;
+        display: block;
+        & .swiper-pagination-bullet {
+            height: 8px;
+            width: 8px;
+            &.swiper-pagination-bullet-active {
+                background: $theme1 ;
+            }
+        }
+    }
+}
