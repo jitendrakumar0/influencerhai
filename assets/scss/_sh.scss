@@ -388,8 +388,8 @@
 
     }
     & .headingClient{
-      font-size: 28px;
-      line-height: 38px;
+      font-size: 22px;
+      line-height: 32px;
       color: $black;
       font-weight: 700;
       @include sm{
@@ -404,12 +404,18 @@
         color: $black;
         font-weight: 700;
       }
+      @include md{
+        font-size: 40px;
+        line-height: 38px;
+        color: $black;
+        font-weight: 700;
+      }
       & .subheadingClient{
         color: $theme1;
       }
     }
     & .pera{
-      font-size: 18px;
+      font-size: 16px;
       color: $black;
       font-weight: 600;
       @include sm{
@@ -425,20 +431,33 @@
     }
     & .askBtn{
       background-color: $theme1;
-      padding: 10px 20px;
+      padding: 8px 16px;
       border-radius: 5px;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 500;
       border: 1px solid;
       color: $white;
       transition: 0.3s linear;
       margin-right: 8px;
       z-index: 2;
-      &:hover{
-          // background-color: lighten($color: $theme1, $amount: 10);
-          border: 1px solid $theme1;
-          background-color: transparent;
-          color: $theme1;
+      @include sm{
+
+        background-color: $theme1;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 1px solid;
+        color: $white;
+        transition: 0.3s linear;
+        margin-right: 8px;
+        z-index: 2;
+        &:hover{
+            // background-color: lighten($color: $theme1, $amount: 10);
+            border: 1px solid $theme1;
+            background-color: transparent;
+            color: $theme1;
+        }
       }
     }
     }
