@@ -83,8 +83,6 @@
 
 // contact section start 
 .contactSection {
-    padding-top: 45px;
-    padding-bottom: 45px;
     & .contactcontent {
         & .contactCard {
             padding: 25px;
@@ -137,14 +135,32 @@
             padding: 20px;
         }
         & .formcard {
-            & .contactlabel {
-                line-height: normal;
-                left: 8px;
-            }
+            height: 35px;
+            // & .contactlabel {
+            //     left: 0;
+            //     font-size: 14px;
+            //     font-weight: 500;
+            //     color: #33475b;
+            //     line-height: normal;
+            //     bottom: 4px;
+            // }
             & .contactInput {
-                border-bottom: 1.4px solid $black !important;
-                padding-bottom: 1px;
+                border-bottom: 1.4px solid #33475b !important;
+                padding-bottom: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #33475b;
             }
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 500;
+                color: #33475b;
+            }
+            // & .contactInput {
+            //     &:focus ~ .contactlabel {
+            //         top: 0;
+            //     }
+            // }
         }
     }
 }
