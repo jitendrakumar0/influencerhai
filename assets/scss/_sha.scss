@@ -97,7 +97,9 @@
                 & .cardImg{
                     border-radius: 50%;
                     overflow: hidden;
-                    aspect-ratio: 1/1;
+                    // aspect-ratio: 1/1;
+                    height: 50px;
+                    width: 50px;
                 }
                 & .description{
                     font-size: 16px;
@@ -241,6 +243,21 @@
                         font-size: 20px;
                         color: $theme2;
                         background-color: transparent;
+                        @include sm {
+                            font-size: 20px;
+                        }
+                        @include md{
+                            font-size: 20px;
+                        }
+                        @include lg{
+                            font-size: 18px;
+                        }
+                        @include xl{
+                            font-size: 20px;
+                        }
+                        @include xxl{
+                            font-size: 20px;
+                        }
                         &::after {
                             content: '';
                             background: url(../img/plusOrange.svg) no-repeat;
