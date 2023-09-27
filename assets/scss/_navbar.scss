@@ -1,0 +1,51 @@
+.navbar{
+    background: #170c2a;
+    height: 80px;
+  &  .logonav{
+    width: 55px;
+    height: 55px;
+  }
+  & .logoName{
+    font-size: 18px;
+    color: $white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $theme1;
+    }
+  }
+  & .menuBtn{
+    width: 30px;
+    height: 30px;
+
+    @include md{
+      width: 35px;
+      height: 35px;
+    }
+  @include lg{
+    width: 40px;
+    height: 40px;
+  }
+  }
+
+  & .navbarNav{
+    & .navItem{
+        & .navLInk{
+            color: $white;
+            font-size: 14px;
+            @include sm{
+                color: $white;
+                font-size: 16px;
+                font-weight: 600;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: $theme1;
+                }
+                &.active{
+                    color: $theme1;
+                }
+            }
+        }
+    }
+  }
+}
