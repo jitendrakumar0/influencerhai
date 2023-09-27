@@ -48,7 +48,7 @@
                 font-size: 16px;
                 line-height: 22px;
                 margin-bottom: 6px;
-                font-weight: 600;
+                font-weight: 700;
                 color: #0d0925;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
@@ -64,9 +64,9 @@
                     margin-bottom: 13px;
                 }
                 @include lg {
-                    font-size: 18px;
+                    font-size: 20px;
                     line-height: 25px;
-                    margin-bottom: 15px;
+                    margin-bottom: 5px;
                 }
             }
             & .blogdetail {
@@ -83,15 +83,15 @@
                     line-height: 21px;
                 }
                 @include md {
-                    line-height:23px;
-                    font-size: 16px;
+                    font-size: 15px;
+                    line-height: 20px;
                 }
             }
             @include sm {
                 padding: 17px 6px;
             }
             @include md {
-                padding: 20px 7px;
+                padding: 10px 7px 0 7px;
             }
         }
         @include sm {
