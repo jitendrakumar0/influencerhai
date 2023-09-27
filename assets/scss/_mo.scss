@@ -50,16 +50,16 @@
                     margin-bottom: 14px;
                 }
                 @include lg {
-                    font-size: 22px;
-                    line-height: 30px;
-                    margin-bottom: 17px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-bottom: 8px;
                 }
             }
             & .blogdetail {
                 color: #4e4a67;
                 line-height: 22px;
                 font-size: 14px;
-                -webkit-line-clamp: 5;
+                -webkit-line-clamp: 3;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
@@ -69,8 +69,8 @@
                     font-size: 15px;
                 }
                 @include md {
-                    line-height:25px;
-                    font-size: 16px;
+                    line-height: 24px;
+                    font-size: 14px;
                 }
             }
             @include sm {
