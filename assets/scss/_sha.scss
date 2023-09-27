@@ -323,3 +323,40 @@
         }
     }
 // FAQ Section Ends
+
+// video Section Start
+    .videoSection{
+        & .textSide{
+            & .textFirst{
+                font-size: 16px;
+                font-weight: 500;
+            }
+            & .head{
+                font-size: 30px;
+                font-weight: 700;
+            }
+            & .subHead{
+                font-size: 20px;
+                font-weight: 700;
+                color: $theme2;
+                opacity: 0.8;
+            }
+            & .opClass{
+                color: $theme2;
+                opacity: 0.8;
+            }
+        }
+        & .videobox{
+            & .mainvideo{
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            & .playsvg{
+                border: 2px solid white;
+                border-radius: 50%;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+// video Section Ends
