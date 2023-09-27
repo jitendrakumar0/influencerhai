@@ -767,6 +767,47 @@
     </div>
     <!-- FAQ Section ends -->
 
+    <!-- Video Section Start -->
+        <div class="container-fluid videoSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="textSide">
+                            <div class="textFirst">
+                                We’ve crafted a database of over 50k Influencers to make it feasible for your brand to be visible across India in the digital space to foster growth and ensure brand success.
+                            </div>
+                            <div class="head pt-5 pb-3">
+                                Leverage the power of Influencer Marketing
+                            </div>
+                            <div class="subHead py-2">
+                                Influencers
+                            </div>
+                            <div class="textFirst opClass pb-3">
+                                Boost your visibility on social media by generating interesting content to receive fantastic deals, discounts, and of course cash!
+                            </div>
+                            <div class="subHead py-2">
+                                Brand
+                            </div>
+                            <div class="textFirst opClass pb-3">
+                                Collaborate with well-known and innovative influencers to increase the value of your brand and gain a strong online presence swiftly.    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="videobox position-relative h-100 w-100">
+                            <video src="./assets/img/home-banner.webm" class="w-100 h-100 overflow-hidden mainvideo d-flex" id="video" poster=""></video>
+                            <a href="javascript:;" class=" stretched-link d-flex align-items-center justify-content-center  z-1" id="playBtn" >
+                            <div class="playsvg position-absolute top-50 start-50">
+                                    <img src="./assets/img/playbtn.svg" alt="" class="w-100 h-100">
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Video Section Ends -->
+
 
 
 
@@ -807,6 +848,27 @@
         },
     },
             });
+    </script>
+    <script>
+        const video = document.getElementById("video");
+        const circlePlayButton = document.getElementById("playBtn");
+
+        function togglePlay() {
+            if (video.paused || video.ended) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        circlePlayButton.addEventListener("click", togglePlay);
+        video.addEventListener("playing", function () {
+            circlePlayButton.style.opacity = 0;
+        });
+        video.addEventListener("pause", function () {
+            circlePlayButton.style.opacity = 1;
+        });
+
     </script>
 </body>
 </html>
