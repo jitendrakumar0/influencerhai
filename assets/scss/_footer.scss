@@ -1,5 +1,5 @@
 .footer{
-    background: #170c2a;
+    background: $black;
    
   &  .logonav{
     width: 55px;
@@ -99,12 +99,8 @@
 }
 
 .copyRight{
-  background: #291944;
+  background:lighten($black, 3);
   color: $white;
   font-size: 12px;
-  @include sm{
-    background: #291944;
-    color: $white;
-    font-size: 14px;
-  }
+
 }
