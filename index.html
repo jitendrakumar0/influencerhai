@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/glightBox/css/glightbox.min.css">
     <link href="./assets/css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -125,6 +126,45 @@
             </div>
         </div>
     <!-- hero section end  -->
+
+    <!-- Video Section Start -->
+    <div class="container-fluid pt-3 pt-md-5">
+        <div class="container videoSection">
+            <div class="row align-items-center position-relative vedioTxt">
+                <div class="col-7">
+                    <div class="textSide">
+                        <div class="head pb-2">
+                            Leverage the power of Influencer Marketing
+                        </div>
+                        <div class="subHead py-2">
+                            Influencers
+                        </div>
+                        <div class="textFirst opClass pb-3">
+                            Boost your visibility on social media by generating interesting content to receive fantastic deals, discounts, and of course cash!
+                        </div>
+                        <div class="subHead py-2">
+                            Brand
+                        </div>
+                        <div class="textFirst opClass">
+                            Collaborate with well-known and innovative influencers to increase the value of your brand and gain a strong online presence swiftly.    
+                        </div>
+                        <button class="mt-4 askBtn">Watch Now !</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <a href="https://influencerhai.com/" class="playsvg glightboxx" data-gallery="gallery1">
+                        <img src="./assets/img/playbtn.svg" alt="" class="w-100 h-100">
+                        <div class="waves-block">
+                            <div class="waves wave-1"></div>
+                            <div class="waves wave-2"></div>
+                            <div class="waves wave-3"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Section Ends -->
 
     <div class="container-fluid influencerFluid">
         <div class="container">
@@ -1528,6 +1568,7 @@
     </div>
     <!-- FAQ Section ends -->
 
+
     <!-- footer section  start  -->
         <div class="footer container-fluid py-5">
             <div class="">
@@ -1669,6 +1710,7 @@
 
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/libs/glightBox/js/glightbox.min.js"></script>
     <script>
         var swiper = new Swiper(".blogslider", {
             slidesPerView: 1,
@@ -1798,6 +1840,12 @@
             }
         }, 4000)
     })
+</script>
+<script>
+    var glightbox = GLightbox({
+        loop: true,
+        selector: ".glightboxx",
+    });
 </script>
 </body>
 </html>
