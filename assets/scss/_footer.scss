@@ -25,13 +25,86 @@
     height: 16px;
   }
   & .addresspera{
-    font-size: 15px;
+    font-size: 13px;
     color:$white;
     font-weight: 500;
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
-    &:hover{
-      opacity: 1;
+
+    @include sm{
+      font-size: 15px;
+      color:$white;
+      font-weight: 500;
+      opacity: 0.7;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        opacity: 1;
+      }
     }
+  }
+
+  & .footerMenu{
+    & .footerLink{
+      font-size: 13px;
+      color:$white;
+      font-weight: 500;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      @include sm{
+        font-size: 15px;
+        color:$white;
+        font-weight: 500;
+        opacity: 0.6;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        &:hover{
+          opacity: 1;
+          // color: $theme1;
+          // padding-left: 18px !important;
+          // &::after{
+          //   opacity: 1;
+          //   visibility: visible;
+          // }
+  
+        }
+      }
+     
+      // &::after{
+      //   position: absolute;
+      //   content: '';
+      //   background-color: $theme1;
+      //   width: 15px;
+      //   height: 2px;
+      //   left: 0;
+      //   top: 50%;
+      //   transform: translateY(-50%);
+      //   opacity: 0;
+      //   visibility: hidden;
+      // }
+      &:hover{
+        opacity: 1;
+        // color: $theme1;
+        // padding-left: 18px !important;
+        // &::after{
+        //   opacity: 1;
+        //   visibility: visible;
+        // }
+
+      }
+    }
+  }
+
+
+}
+
+.copyRight{
+  background: #291944;
+  color: $white;
+  font-size: 12px;
+  @include sm{
+    background: #291944;
+    color: $white;
+    font-size: 14px;
   }
 }
