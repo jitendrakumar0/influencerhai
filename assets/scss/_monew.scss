@@ -19,6 +19,7 @@
                 font-size: 16px;
                 font-weight: 600;
                 line-height: normal;
+                color: $black;
                 @include sm {
                     font-size: 17px;
                 }
@@ -31,7 +32,7 @@
                 font-weight: 400;
                 margin: 4px 0 16px;
                 line-height: normal;
-                color: rgba(115, 115, 115);
+                color: $theme2;
                 @include sm {
                     font-size: 15px;
                 }
@@ -83,84 +84,137 @@
 
 // contact section start 
 .contactSection {
-    & .contactcontent {
-        & .contactCard {
-            padding: 25px;
-            & .contacticon {
-                height: 65px;
-                width: 65px;
-                padding: 18px;
+    // background: url(../img/blog/dotsbg.png);
+    // & .contactcontent {
+    //     & .contactCard {
+    //         padding: 25px;
+    //         & .contacticon {
+    //             height: 65px;
+    //             width: 65px;
+    //             padding: 18px;
                 
-            }
-            & .cardheading {
-                font-size: 22px;
-                font-weight: 600;
-                color: $black;
-                margin: 10px 0 14px;
-                line-height: normal;
-            }
-            & .addressdetail {
-                font-size: 16px;
-                font-weight: 400;
-                color: rgb(115, 115, 115);
-                line-height: normal;
-            }
-            &:hover {
-                & .contacticon {
-                    img {
-                        animation: toBottomFromTop 1s forwards;
-                    }
-                }
-                @keyframes toBottomFromTop {
-                    49% {
-                        -webkit-transform: translateY(-100%);
-                        transform: translateY(-100%);
-                    }
+    //         }
+    //         & .cardheading {
+    //             font-size: 22px;
+    //             font-weight: 600;
+    //             color: $black;
+    //             margin: 10px 0 14px;
+    //             line-height: normal;
+    //         }
+    //         & .addressdetail {
+    //             font-size: 16px;
+    //             font-weight: 400;
+    //             color: lighten($black, 35);
+    //             line-height: normal;
+    //         }
+    //         &:hover {
+    //             & .contacticon {
+    //                 img {
+    //                     animation: toBottomFromTop 1s forwards;
+    //                 }
+    //             }
+    //             @keyframes toBottomFromTop {
+    //                 49% {
+    //                     -webkit-transform: translateY(-100%);
+    //                     transform: translateY(-100%);
+    //                 }
                     
-                    50% {
-                        opacity: 0;
-                        -webkit-transform: translateY(100%);
-                        transform: translateY(100%);
-                    }
-                    51% {
-                        opacity: 1;
-                    }
+    //                 50% {
+    //                     opacity: 0;
+    //                     -webkit-transform: translateY(100%);
+    //                     transform: translateY(100%);
+    //                 }
+    //                 51% {
+    //                     opacity: 1;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    & .formdata {
+        // margin-top: 40px;
+        // & .formcardmain {
+        //     padding: 20px 0;
+        // }
+        & .formcard {
+            & .contactlabel {
+                font-size: 13px;
+                font-weight: 500;
+                color:$black;
+                line-height: normal;
+                margin:0 0 3px 2px;
+                @include sm {
+                    font-size: 14px;
                 }
             }
-        }
-    }
-    & .formdata {
-        margin-top: 40px;
-        & .formcardmain {
-            padding: 20px;
-        }
-        & .formcard {
-            height: 35px;
-            // & .contactlabel {
-            //     left: 0;
-            //     font-size: 14px;
-            //     font-weight: 500;
-            //     color: #33475b;
-            //     line-height: normal;
-            //     bottom: 4px;
-            // }
             & .contactInput {
-                border-bottom: 1.4px solid #33475b !important;
-                padding-bottom: 0px;
-                font-size: 14px;
+                // border-bottom: 1.4px solid #33475b !important;
+                // padding-bottom: 0px;
+                font-size: 13px;
                 font-weight: 500;
-                color: #33475b;
+                color:$black;
+                height: 35px;
+                border-radius: 5px;
+                @include sm {
+                    font-size: 14px;
+                    height: 40px;
+                }
+            }
+            & input:-webkit-autofill,
+            input:-webkit-autofill:focus {
+                transition: background-color 600000s 0s, color 600000s 0s;
+            }
+            & input[data-autocompleted] {
+                background-color: transparent !important;
             }
             &::placeholder {
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 500;
-                color: #33475b;
+                color:$black;
+                @include sm {
+                    font-size: 14px;
+                }
+            }
+            & .textbox {
+                min-height: 100px;
             }
             // & .contactInput {
             //     &:focus ~ .contactlabel {
             //         top: 0;
             //     }
             // }
+        }
+    }
+    & .contactusImg {
+        aspect-ratio: 6/3;
+        @include md {
+            aspect-ratio: 5/3;
+        }
+        @include lg {
+            aspect-ratio: 6/3;
+        }
+    }
+    & .submitbtn {
+        background:$theme1;
+        border-color: $theme1;
+        color: $white;
+        font-size: 13px;
+        line-height: normal;
+        padding:0 24px;
+        font-weight: 700;
+        border-radius: 4px;
+        height: 39px;
+        transition: all 0.3s ease-in-out;
+        &:active {
+            background-color: $theme1;
+            border-color: $theme1;
+            color: $white;
+        }
+        &:hover {
+            background-color: darken($theme1, 10);
+        }
+        @include sm {
+            font-size: 14px;
         }
     }
 }
