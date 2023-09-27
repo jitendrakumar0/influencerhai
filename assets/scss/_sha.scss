@@ -99,22 +99,7 @@
             & .mainCards{
                 & .cardImg{
                     border-radius: 15px;
-                    aspect-ratio: 2/1;
-                    @include sm {
-                        aspect-ratio: 2/1;
-                    }
-                    @include md{
-                        aspect-ratio: 4/6;
-                    }
-                    @include lg{
-                        aspect-ratio: 4/6;
-                    }
-                    @include xl{
-                        aspect-ratio: 4/6;
-                    }
-                    @include xxl{
-                        aspect-ratio: 4/6;
-                    }
+                    aspect-ratio: 1/1;
                 }
                 & .description{
                     font-size: 16px;
@@ -127,45 +112,25 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     @include sm {
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                     @include md{
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                     @include lg{
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                     @include xl{
-                        font-size: 20px;
+                        font-size: 16px;
                     }
                     @include xxl{
-                        font-size: 20px;
+                        font-size: 16px;
                     }
                 }
                 & .cardSignature{
                     & .signatureimg{
                         height: 60px;
                         width: 60px;
-                        @include sm {
-                        height: 60px;
-                        width: 60px;
-                    }
-                        @include md{
-                            height: 60px;
-                            width: 60px;
-                        }
-                        @include lg{
-                            height: 40px;
-                            width: 40px;
-                        }
-                        @include xl{
-                            height: 60px;
-                            width: 60px;
-                        }
-                        @include xxl{
-                            height: 60px;
-                            width: 60px;
-                        }
                     }
                     & .name{
                         font-size: 18px;
