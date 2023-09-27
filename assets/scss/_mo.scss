@@ -14,24 +14,41 @@
         & .blogcontent {
             padding: 15px 5px;
             & .date {
-                color: #7b7992;
-                margin-bottom: 8px;
-                font-weight: 500;
-                font-size: 12px;
+                // color: #7b7992;
+                color: rgb(0 0 0 / 60%);
+                margin-top: 9px;
+                font-weight: 400;
+                font-size: 13px;
+                gap: 7px;
+                & .calendaricon {
+                    height: 14px;
+                    max-width: 14px;
+                    min-width: 14px;
+                    @include sm {
+                        height: 16px;
+                        max-width: 16px;
+                        min-width: 16px;
+                    }
+                    @include md {
+                        height: 17px;
+                        max-width: 17px;
+                        min-width: 17px;
+                    }
+                }
                 @include sm {
                     font-size: 14px;
-                    margin-bottom: 9px;
+                    margin-top: 11px;
                 }
                 @include md {
-                    font-size: 14px;
-                    margin-bottom: 10px;
+                    font-size: 15px;
+                    margin-top: 14px;
                 }
             }
             & .blogheading {
                 font-size: 16px;
-                line-height: 20px;
-                margin-bottom: 4px;
-                font-weight: 700;
+                line-height: 22px;
+                margin-bottom: 6px;
+                font-weight: 600;
                 color: #0d0925;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
@@ -42,14 +59,14 @@
                 @include sm {
                 }
                 @include md {
-                    font-size: 21px;
-                    line-height: 28px;
-                    margin-bottom: 14px;
+                    font-size: 17px;
+                    line-height: 24px;
+                    margin-bottom: 13px;
                 }
                 @include lg {
-                    font-size: 22px;
-                    line-height: 30px;
-                    margin-bottom: 17px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 15px;
                 }
             }
             & .blogdetail {
@@ -59,12 +76,14 @@
                 text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
-                line-height: 18px;
+                line-height: 20px;
                 font-size: 13px;
                 @include sm {
+                    font-size: 14px;
+                    line-height: 21px;
                 }
                 @include md {
-                    line-height:25px;
+                    line-height:23px;
                     font-size: 16px;
                 }
             }
@@ -148,14 +167,14 @@
             }
         }
         & .prevarrow {
-            transform: translate(-32px , -50%);
+            transform: translate(-42px , -50%);
             left: 0;
             & .arrowicon {
                 transform: rotate(180deg);
             }
         }
         & .nextarrow {
-            transform: translate(32px , -50%);
+            transform: translate(42px , -50%);
             right: 0;
         }
     }
