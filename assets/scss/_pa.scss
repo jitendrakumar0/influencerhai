@@ -151,12 +151,13 @@
 .influencerCategoriesFluid{
     & .categoryWrapper{   
         border: 1px solid ;
-        border-color: lighten($color: $theme2, $amount: 50);
+        border-color: lighten($color: $theme2, $amount: 60);
         border-radius: 5px;
         justify-content: center;
         align-items: center;
         transition: 0.3s ease-in-out;
         padding: 10px;
+        background-color: $white;
         @include sm{
     
         }
