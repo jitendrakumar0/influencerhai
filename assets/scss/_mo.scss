@@ -1,7 +1,7 @@
 // blog section start 
 .blogsection {
-    padding-top: 35px;
-    padding-bottom: 35px;
+    // padding-top: 35px;
+    // padding-bottom: 35px;
     & .blogcard {
         padding: 7px;
         transition: all 0.3s ease-in-out;
@@ -29,10 +29,10 @@
             }
             & .blogheading {
                 font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 4px;
                 font-weight: 700;
                 color: #0d0925;
-                margin-bottom: 8px;
-                line-height: 24px;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -40,9 +40,6 @@
                 -webkit-box-orient: vertical;
                 transition: all 0.3s ease-in-out;
                 @include sm {
-                    font-size: 18px;
-                    line-height: 26px;
-                    margin-bottom: 10px;
                 }
                 @include md {
                     font-size: 21px;
@@ -57,16 +54,14 @@
             }
             & .blogdetail {
                 color: #4e4a67;
-                line-height: 22px;
-                font-size: 14px;
-                -webkit-line-clamp: 5;
+                -webkit-line-clamp: 3;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
+                line-height: 18px;
+                font-size: 13px;
                 @include sm {
-                    line-height:23px;
-                    font-size: 15px;
                 }
                 @include md {
                     line-height:25px;
@@ -176,8 +171,8 @@
         }
     }
     @include sm {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        // padding-top: 40px;
+        // padding-bottom: 40px;
         & .blogdots {
             & .swiper-pagination-bullet {
                 height:9px;
@@ -188,8 +183,8 @@
         }
     }
     @include md {
-        padding-top: 45px;
-        padding-bottom: 45px;
+        // padding-top: 45px;
+        // padding-bottom: 45px;
         & .siderarrow {
             display: flex !important;
             & .arrowicon {
