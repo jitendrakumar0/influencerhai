@@ -1,3 +1,4 @@
+// team section start
 .teamSection {
     & .profilecardnew {
         gap: 14px;
@@ -77,3 +78,74 @@
         }
     }
 }
+// team section end 
+
+
+// contact section start 
+.contactSection {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    & .contactcontent {
+        & .contactCard {
+            padding: 25px;
+            & .contacticon {
+                height: 65px;
+                width: 65px;
+                padding: 18px;
+                
+            }
+            & .cardheading {
+                font-size: 22px;
+                font-weight: 600;
+                color: $black;
+                margin: 10px 0 14px;
+                line-height: normal;
+            }
+            & .addressdetail {
+                font-size: 16px;
+                font-weight: 400;
+                color: rgb(115, 115, 115);
+                line-height: normal;
+            }
+            &:hover {
+                & .contacticon {
+                    img {
+                        animation: toBottomFromTop 1s forwards;
+                    }
+                }
+                @keyframes toBottomFromTop {
+                    49% {
+                        -webkit-transform: translateY(-100%);
+                        transform: translateY(-100%);
+                    }
+                    
+                    50% {
+                        opacity: 0;
+                        -webkit-transform: translateY(100%);
+                        transform: translateY(100%);
+                    }
+                    51% {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    & .formdata {
+        margin-top: 40px;
+        & .formcardmain {
+            padding: 20px;
+        }
+        & .formcard {
+            & .contactlabel {
+                line-height: normal;
+                left: 8px;
+            }
+            & .contactInput {
+                border-bottom: 1.4px solid $black !important;
+                padding-bottom: 1px;
+            }
+        }
+    }
+}
+// contact section end
