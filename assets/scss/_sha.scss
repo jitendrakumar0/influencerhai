@@ -19,25 +19,6 @@
             & .alltxt{
 
             }
-            & .yellowLine{
-                left: 37%;
-                margin-top: -10px;
-                @include sm {
-                    left: 37%;
-                }
-                @include md{
-                    left: 37%;
-                }
-                @include lg{
-                    left: 20%;
-                }
-                @include xl{
-                    left: 23%;
-                }
-                @include xxl{
-                    left: 23%;
-                }
-            }
             & .testiDropdown{
                 & .dropIcon{
 
@@ -81,8 +62,24 @@
             object-fit: cover;
         }
         .dotsarrow{
-            width: 15%;
+            width: 40%;
             background-color: #f8f8f8;
+            @include sm {
+                width: 25%;
+            }
+            @include md{
+                width: 20%;
+            }
+            @include lg{
+                width: 15%;
+            }
+            @include xl{
+                width: 15%;
+            }
+            @include xxl{
+                width: 10%;
+            }
+            
         }
         .swiper-pagination-bullet{
             height: 10px;
@@ -90,7 +87,7 @@
             transition: all .3s ease-in-out;
         }
         .swiper-pagination-bullet-active{
-            background-color: #aaaaaa;
+            background-color: $theme1;
             width: 20px;
             border-radius: 30px;
             transition: all .3s ease-in-out;
@@ -107,7 +104,7 @@
                     color: $theme2;
                     opacity: 0.7;
                     display: -webkit-box;
-                    -webkit-line-clamp: 5;
+                    -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -116,31 +113,62 @@
                     }
                     @include md{
                         font-size: 16px;
+                        -webkit-line-clamp: 3;
                     }
                     @include lg{
                         font-size: 16px;
+                        -webkit-line-clamp: 3;
                     }
                     @include xl{
                         font-size: 16px;
+                        -webkit-line-clamp: 4;
                     }
                     @include xxl{
                         font-size: 16px;
+                        -webkit-line-clamp: 5;
                     }
                 }
                 & .cardSignature{
                     & .signatureimg{
-                        height: 60px;
-                        width: 60px;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 15px;
+                        overflow: hidden;
+                        
+                        @include sm {
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                        @include md{
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                        @include lg{
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                        @include xl{
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
+                        @include xxl{
+                            height: 50px;
+                            width: 50px;
+                            border-radius: 50%;
+                            overflow: hidden;
+                        }
                     }
                     & .name{
                         font-size: 18px;
                         font-weight: 600;
                         text-transform: uppercase;
                         @include sm {
-                            font-size: 18px;
+                            font-size: 15px;
                         }
                         @include md{
-                            font-size: 18px;
+                            font-size: 15px;
                         }
                         @include lg{
                             font-size: 16px;
@@ -165,10 +193,10 @@
                             font-size: 15px;
                         }
                         @include md{
-                            font-size: 15px;
+                            font-size: 14px;
                         }
                         @include lg{
-                            font-size: 15px;
+                            font-size: 14px;
                         }
                         @include xl{
                             font-size: 16px;
@@ -202,7 +230,7 @@
                     & .faqAccordianbutton{
                         font-size: 20px;
                         color: $theme2;
-                        background-color: #f8f8f8;
+                        background-color: transparent;
                         &::after {
                             content: '';
                             background: url(../img/plus.svg) no-repeat;
