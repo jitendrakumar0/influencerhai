@@ -1,18 +1,57 @@
 // hero SectionStart 
 
 .heroSection{
-  background-color: rgb(23, 12, 42);
-  height: calc(100vh - 80px);
+  @include sm{
+    
+  }
+  @include md{
+    padding-top: 0;
+  }
+  @include lg{
+  }
+  @include xl{
+      
+  }
+  @include xxl{
+      
+  }
+  &::after{
+    content: '';
+    background-image: url(./../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   color: white;
   position: relative;
   align-items: center;
-  padding: 0;
+  padding-top: 80px;
+  min-height: 100vh;
   @include sm{
-    background-color: rgb(23, 12, 42);
-    height: calc(100vh - 80px);
     color: white;
     position: relative;
     align-items: center;
+  }
+  @include md{
+  height: 100vh;
+  }
+  & .heroImage{
+    z-index: 6;
+    position: relative;
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  & .heroTxtWrapper{
+    z-index: 5;
+    position: relative;
   }
   & .videoBg{
     & .videoInner{
@@ -35,35 +74,32 @@
   }
   & .HeroHeading{
     font-size: 27px;
-    color: $theme1;
+    color: $theme3;
     line-height: 32px;
     @include sm{
-      font-size: 34px;
-      color: $theme1;
-      line-height: 44px;
+    }
+    @include md{
+      font-size: 35px;
+      line-height: 36px;
+    }
+    @include lg{
+      font-size: 42px;
+      line-height: 52px;
     }
     @include xl{
-      font-size: 48px;
-      color: $theme1;
-      line-height: 58px;
     }
- 
   }
   & .heroPera{
     font-size: 16px;
-    color: $white;
-    font-weight: 700;
-    @include xxl{
-      font-size: 24px;
-      color: $white;
-      font-weight: 700;
-    }
+    color: $black;
+    // font-weight: 700;
     @include sm{
-      font-size: 20px;
-      color: $white;
-      font-weight: 700;
+      font-size: 16px;
+      line-height: normal;
     }
-   
+    @include lg{
+      font-size: 20px;;
+    }
   }
 
   & .searchBox{
@@ -85,7 +121,7 @@
       display: flex;
       align-items: center;
       padding: 15px;
-      border: 4px solid rgb(131, 113, 169);
+      border: 4px solid $theme3;
     }
 
     & .Dropdown{
