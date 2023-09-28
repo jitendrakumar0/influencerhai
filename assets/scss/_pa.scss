@@ -601,6 +601,23 @@
     font-size: 12px;
     display: flex;
     margin: auto;
+    &.influencerBtn1{
+        margin: auto;
+    @include sm{
+    
+    }
+    @include md{ 
+    }
+    @include lg{
+        margin-left: 0;
+    }
+    @include xl{
+        
+    }
+    @include xxl{
+        
+    }
+    }
     &:hover{
         background-color: $theme3;
         transform: scale(1.1);
