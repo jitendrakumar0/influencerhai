@@ -24,13 +24,13 @@
     }
 }
 .subHeading{
-    margin-top: 1rem;
+    margin-top: 5px;
     font-style: normal;
     font-weight: 600;
     color: $theme2;
     text-align: center;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     @include sm{
     }
     @include md{
@@ -38,6 +38,7 @@
     @include lg{
         font-size: 24px;
         line-height: 36px;
+        margin-top: 10px;
     }
     @include xl{
         
@@ -149,6 +150,23 @@
 }
 
 .influencerCategoriesFluid{
+    & .categoryRow{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        @include sm{
+            flex-wrap: wrap;
+        }
+        @include md{
+        }
+        @include lg{
+        }
+        @include xl{
+            
+        }
+        @include xxl{
+            
+        }
+    }
     & .categoryWrapper{   
         border: 1px solid ;
         border-color: lighten($color: $theme2, $amount: 60);
@@ -192,10 +210,9 @@
         & .categoryHeading{
             font-style: normal;
             font-weight: 700;
-            line-height: 24px;
+            line-height: 20px;
             color: $theme2;
-            margin-bottom: 4px;
-            font-size: 16px;
+            font-size: 14px;
             @include sm{
     
             }
@@ -204,7 +221,8 @@
             @include lg{
             }
             @include xl{
-                font-size: 17px;
+                font-size: 16px;
+                line-height: 20px;
                 
             }
             @include xxl{
@@ -215,8 +233,8 @@
             color: $theme1;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 13px;
+            line-height: 20px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box !important;
@@ -231,6 +249,7 @@
             }
             @include xl{
                 font-size: 13px;
+                line-height: 24px;
             }
             @include xxl{
                 

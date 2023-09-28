@@ -17,6 +17,9 @@
   & .menuBtn{
     width: 30px;
     height: 30px;
+    & img{
+      object-fit: contain;
+    }
 
     @include md{
       width: 35px;
