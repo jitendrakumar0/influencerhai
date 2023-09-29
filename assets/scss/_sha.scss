@@ -377,25 +377,25 @@
                 background-color: $theme1;
             }
         }
-        & .formStart{
-            & .formFloat{
-                &::placeholder{
-                    color: $white !important;
+    }
+    & .formStart{
+        & .formFloat{
+            &::placeholder{
+                color: $white !important;
+            }
+            & .formFloatinput{
+                &:focus{
+                    border-color: $theme1 !important;
                 }
-                & .formFloatinput{
-                    &:focus{
-                        border-color: $theme1 !important;
-                    }
+            }
+            & .formFloatinputlabel{
+                font-size: 16px !important;
+                &::after{
+                    background: transparent;
                 }
-                & .formFloatinputlabel{
-                    font-size: 16px !important;
-                    &::after{
-                        background: transparent;
-                    }
-                }
-                & .formFloatinputtextarea{
-                    height: 150px;
-                }
+            }
+            & .formFloatinputtextarea{
+                height: 150px;
             }
         }
     }
@@ -411,11 +411,104 @@
             }
             & .description{
                 font-size: 17px;
-                line-height: 25px;
+                line-height: 28px;
                 opacity: 0.8;
             }
             & .faqImg{
-                aspect-ratio: 7/4;
+                aspect-ratio: 5/3.5;
+            }
+        }
+        & .faqQuestionStart{
+            & .faqAccordian{
+                & .faqAccordianitem{
+                    & .faqAccordianheader{
+                        & .faqAccordianbutton{
+                            font-size: 16px;
+                            // color: $theme2;
+                            color: $black;
+                            border-radius: 5px;
+                            padding-inline: 20px !important;
+                            height: 80px;
+                            // background: linear-gradient(90deg, rgba(244,116,33,1) 0%, rgba(74,74,74,1) 100%);
+                            background-color: rgba(211, 211, 211, 0.4);
+                            @include sm {
+                                font-size: 16px;
+                            }
+                            @include md{
+                                font-size: 17px;
+                            }
+                            @include lg{
+                                font-size: 18px;
+                            }
+                            @include xl{
+                                font-size: 20px;
+                            }
+                            @include xxl{
+                                font-size: 20px;
+                            }
+                            &::after {
+                                content: '';
+                                background: url(../img/plus.svg) no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                position: absolute;
+                                right: 20px;
+                                transform: translateY(-50%), rotate(-180deg);
+                                height: 18px;
+                                width: 18px;
+                                transition: .3s ease-in-out;
+                            }
+                            &:not(.collapsed) {
+                                &::after {
+                                    background: url(../img/minusblack.svg) no-repeat;
+                                    height: 8px;
+                                    width: 16px;
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+                    & .faqAccordianbpdy{
+                            font-size: 16px;
+                            // padding-top: 1;
+                            padding-inline: 20px !important;
+                            @include sm {
+                                font-size: 14px;
+                            }
+                            @include md{
+                                font-size: 14px;
+                            }
+                            @include lg{
+                                font-size: 15px;
+                            }
+                            @include xl{
+                                font-size: 16px;
+                            }
+                            @include xxl{
+                                font-size: 16px;
+                            }
+                        & .faqAccordianbpdyAnc{
+                            font-size: 13px !important;
+                            font-weight: 600 !important;
+                            color: $theme1;
+                            @include sm {
+                                font-size: 14px;
+                            }
+                            @include md{
+                                font-size: 15px;
+                            }
+                            @include lg{
+                                font-size: 16px;
+                            }
+                            @include xl{
+                                font-size: 18px;
+                            }
+                            @include xxl{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
