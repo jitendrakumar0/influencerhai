@@ -405,9 +405,17 @@
     .newFaqSection{
         & .textImgSection{
             & .heading{
-                // font-size: 42px;
                 line-height: 50px;
                 letter-spacing: 2px;
+                @include sm{}
+                @include md{}
+                @include lg{
+                    line-height: 42px;
+                }
+                @include xl{
+                line-height: 50px;
+                }
+                @include xxl{}
             }
             & .description{
                 font-size: 17px;
