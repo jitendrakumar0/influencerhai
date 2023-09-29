@@ -230,6 +230,26 @@
 
 // influencer page start 
 .influencerSection {
+    & .influencerHeading {
+        font-size: 22px;
+        font-weight: 600;
+        color: $black;
+        line-height: 30px;
+        @include sm {
+            font-size: 26px;
+            line-height: 37px;
+        }
+        @include md{
+            font-size: 32px;
+            line-height: 42px;
+        }
+        @include lg {
+            font-size: 38px;
+        }
+        @include xl {
+            font-size:40px ;
+        }
+    }
     & .influencerDetail {
         font-size: 14px;
         font-weight: 400;
@@ -248,10 +268,18 @@
         }
     }
     & .influencerTitle {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         color: $black;
-        margin-top: 14px;
+        margin-top: 10px;
+        @include sm {
+            font-size: 17px;
+            margin-top: 12px;
+        }
+        @include md {
+            font-size: 18px;
+            margin-top: 14px;
+        }
         
     }
     & .contactbtnMain {
@@ -271,12 +299,21 @@
         }
     }
     & .influencerimg {
-        // aspect-ratio: 6/3;
-        @include md {
-            aspect-ratio: 6/3;
-        }
+        border-radius: 6px 6px 6px 40px;
+        // height: 430px;
         @include lg {
-            aspect-ratio: unset;
+            height: 430px;
+            aspect-ratio: unset !important;
+            object-fit: cover;
+            border-radius: 10px 10px 10px 100px;
+        }
+        @include md {
+            aspect-ratio: 4/2;
+            object-fit: contain;
+            border-radius: 8px 8px 8px 70px;
+        }
+        @include sm {
+            border-radius: 6px 6px 6px 50px;
         }
     }
 }
