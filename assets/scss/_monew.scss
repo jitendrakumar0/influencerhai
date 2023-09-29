@@ -230,9 +230,9 @@
 
 // influencer page start 
 .influencerSection {
-    margin-top: 60px;
     background: url(../img/blog/dots.png);
     min-height: 100vh;
+    margin-top: 25px;
     @include xl {
         height: 100vh;
     }
@@ -333,6 +333,11 @@
         @include sm {
             border-radius: 6px 6px 6px 50px;
         }
+    }
+}
+@media (max-width:1400px) {
+    .influencerSection {
+        margin-top: 60px;
     }
 }
 // influencer page end
