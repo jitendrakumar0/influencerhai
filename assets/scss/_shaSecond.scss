@@ -48,3 +48,57 @@
     }
 }
 // create section Ends
+
+// Choose Section Start
+    .chooseSection{
+        & .text{
+            & .head{
+                font-size: 20px;
+                line-height: 30px;
+                @include sm{
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                @include md{
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                @include lg{
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                @include xl{
+                    font-size: 38px;
+                    line-height: 52px;
+                }
+                @include xxl{
+                    font-size: 41px;
+                    line-height: 55px;
+                }
+            }
+            & .subHead{
+                font-size: 14px;
+                    @include sm{
+                    font-size: 17px;
+                    }
+                    @include md{
+                    font-size: 18px;
+                    }
+                    @include lg{
+                    font-size: 18px;
+                    }
+                    @include xl{
+                    font-size: 20px;
+                    }
+                    @include xxl{
+                    font-size: 22px;
+                    }
+            }
+        }
+        & .chooseImg1{
+            overflow: hidden;
+            // border-bottom-right-radius: 80px;
+            aspect-ratio: 1/1;
+        }
+    }
+// Choose Section Ends
