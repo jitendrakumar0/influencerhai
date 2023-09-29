@@ -263,9 +263,9 @@
                             background: url(../img/plusOrange.svg) no-repeat;
                             background-size: cover;
                             background-position: center;
-                            position: absolute;
-                            right: 20px;
-                            transform: translateY(-50%), rotate(-180deg);
+                            // position: absolute;
+                            // right: 20px;
+                            // transform: translateY(-50%), rotate(-180deg);
                             height: 18px;
                             width: 18px;
                             transition: .3s ease-in-out;
@@ -407,10 +407,12 @@
             & .heading{
                 line-height: 50px;
                 letter-spacing: 2px;
+                line-height: 30px;
                 @include sm{}
-                @include md{}
+                @include md{
+                    line-height: 35px;
+                }
                 @include lg{
-                    line-height: 42px;
                 }
                 @include xl{
                 line-height: 50px;
@@ -418,12 +420,35 @@
                 @include xxl{}
             }
             & .description{
-                font-size: 17px;
-                line-height: 28px;
+                font-size: 16px;
+                line-height: 22px;
                 opacity: 0.8;
+                @include sm{
+                    font-size: 17px;
+                }
+                @include md{
+                    line-height: 24px;
+                }
+                @include lg{
+                    line-height: 28px;
+                }
+                @include xl{}
+                @include xxl{}
             }
             & .faqImg{
-                aspect-ratio: 5/3.5;
+                @include sm{
+                    aspect-ratio: 9/5;
+                }
+                @include md{
+                    aspect-ratio: 9/5;
+                }
+                @include lg{
+                aspect-ratio: 9/6;
+                }
+                @include xl{
+                    aspect-ratio: 9/7;
+                }
+                @include xxl{}
             }
         }
         & .faqQuestionStart{
@@ -431,25 +456,26 @@
                 & .faqAccordianitem{
                     & .faqAccordianheader{
                         & .faqAccordianbutton{
-                            font-size: 16px;
-                            // color: $theme2;
+                            font-size: 14px;
                             color: $black;
                             border-radius: 5px;
                             padding-inline: 20px !important;
-                            height: 80px;
-                            // background: linear-gradient(90deg, rgba(244,116,33,1) 0%, rgba(74,74,74,1) 100%);
                             background-color: rgba(211, 211, 211, 0.4);
                             @include sm {
                                 font-size: 16px;
+                                height: 50px;
                             }
                             @include md{
                                 font-size: 17px;
+                                height: 60px;
                             }
                             @include lg{
                                 font-size: 18px;
+                                height: 60px;
                             }
                             @include xl{
                                 font-size: 20px;
+                                height: 80px;
                             }
                             @include xxl{
                                 font-size: 20px;
@@ -459,9 +485,9 @@
                                 background: url(../img/plus.svg) no-repeat;
                                 background-size: cover;
                                 background-position: center;
-                                position: absolute;
-                                right: 20px;
-                                transform: translateY(-50%), rotate(-180deg);
+                                // position: absolute;
+                                // right: 20px;
+                                // transform: translateY(-50%), rotate(-180deg);
                                 height: 18px;
                                 width: 18px;
                                 transition: .3s ease-in-out;
