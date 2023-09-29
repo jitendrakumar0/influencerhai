@@ -360,3 +360,41 @@
         }
     }
 // video Section Ends
+
+// git Section Start
+    .gitSection{
+        background-image: url(../img/ShaImg/formBack.jpg);
+        // height: 100vh;
+        & .heading{
+            letter-spacing: 1px;
+            &::after{
+                content: '';
+                position: absolute;
+                right: 50%;
+                bottom: -30px;
+                height: 2px;
+                width: 50px;
+                transform: translateX(50%);
+                background-color: $theme1;
+            }
+        }
+        & .formStart{
+            & .formFloat{
+                &::placeholder{
+                    color: $white !important;
+                }
+                & .formFloatinput{
+
+                }
+                & .formFloatinputlabel{
+                    &::after{
+                        background: transparent;
+                    }
+                }
+                & .formFloatinputtextarea{
+                    height: 150px;
+                }
+            }
+        }
+    }
+// git Section Ends
