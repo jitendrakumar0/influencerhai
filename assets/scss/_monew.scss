@@ -496,12 +496,16 @@
         border: 1px solid lighten($black, 80);
         background-color: transparent;
         color: $black;
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 17px;
+        font-weight: 600;
         &:hover {
             background-color: $theme1;
             color: $white;
             border-color: $theme1;
+        }
+        & .arrow {
+            height: 15px;
+            width: 10px;
         }
     }
 }
