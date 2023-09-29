@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="assets/libs/jquery/jquery.js"></script>
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="./assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -11,10 +12,60 @@
 </head>
 <body>
 
-    <!-- influencer section start  -->
-    <div class="container-fluid py-5 influencerSection">
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg fixed-top container-fluid" aria-label="Offcanvas navbar large">
         <div class="container">
-            <div class="row gap-lg-0 gap-sm-3 gap-2 align-items-center">
+        <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menuBtn  "> <img src="assets/img/Menu.png" alt="menu" class="img-fluid w-100 h-100"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasNavbar2Label">
+            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+            </div>
+            <button type="button" class="menuBtn border-0 d-inline-flex shdow-none bg-dark" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/img/Close.png" alt="menu" class="img-fluid w-100 h-100"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav navbarNav justify-content-end flex-grow-1 gap-md-3 gap-2">
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk active" aria-current="page" href="#">Home</a>
+                    </li>
+                <li class="nav-item navItem">
+                <a class="nav-link navLInk" href="#">About Us</a>
+                </li>
+                <li class="nav-item navItem">
+                <a class="nav-link navLInk" href="#">Services</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Blog</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Influencer</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Brand</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Contact Us</a>
+                </li>
+                <!-- <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Search</a>
+                </li> -->
+            </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- influencer section start  -->
+    <div class="container-fluid py-md-5 py-4 position-relative mb-3 influencerSection">
+        <div class="container">
+            <div class="row gap-lg-0 gap-4 align-items-center">
                 <div class="col-xl-6 col-lg-5 order-lg-2 order-1">
                     <div class="influencerimg overflow-hidden">
                         <img src="assets/img/blog/influencer.jpg" alt="influencer" class="h-100 w-100 img-fluid">
@@ -22,20 +73,20 @@
                 </div>
                 <div class="col-xl-6 col-lg-7 order-lg-1 order-2">
                     <div class="row ">
-                        <div class="influencerHeading text-start col-12">
+                        <div class="influencerHeading text-lg-start text-center col-12">
                             An Influencer Marketing Platform Where You Get Paid.
                         </div>
-                        <div class="influencerDetail col-12">
+                        <!-- <div class="influencerDetail col-12">
                             InfluencerHai is the leading influencer marketing company in India and a platform for brands to find and work with various influencers.
-                        </div>
-                        <div class="col-12 influencerDetail mt-sm-3 mt-2">
+                        </div> -->
+                        <div class="col-12 influencerDetail text-lg-start text-center mt-4">
                             We support influencers with campaigns and sponsorships from our top companies, agencies, and startups. InfluencerHai frees you up to concentrate on creating amazing content that engages and grows your audience. Come, register for free, and earn money from your interest.
                         </div>
-                        <div class="col-12 influencerTitle">
+                        <!-- <div class="col-12 influencerTitle">
                             Are you a brand? Looking for influencers to work with them.
-                        </div>
-                        <div class="col-12">
-                            <div class="contactbtnMain">
+                        </div> -->
+                        <div class="col-12 text-lg-start text-center mt-4">
+                            <div class="contactbtnMain mt-0">
                                 <a href="javascript:;" class="contactbtn rounded-pill d-inline-flex align-items-center justify-content-center text-decoration-none">Contact Now!</a>
                             </div>
                         </div>
@@ -45,6 +96,30 @@
         </div>
     </div>
     <!-- influencer section end  -->
+
+    <!-- influencer cta section start -->
+    <div class="container-fluid ctasection py-md-5 py-4 position-relative ">
+        <div class="container">
+            <div class="row position-relative z-1 py-md-0 py-2">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-12 ctaheading text-center">
+                            Are you a brand? Looking for influencers to work with them.
+                        </div>
+                        <div class="ctadata col-12 my-4 text-center ">
+                            nfluencerHai is the leading influencer marketing company in India and a platform for brands to find and work with various influencers.
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="ctabtnmain mt-0">
+                                <a href="javascript:;" class="ctabtn rounded-pill d-inline-flex align-items-center justify-content-center text-decoration-none">Contact Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- influencer cta section end -->
 
 
     <!-- contact us section start  -->
@@ -144,6 +219,176 @@
         </div>
     </div>
     <!-- contact us section end -->
+
+    <!-- footer section  start  -->
+    <div class="footer container-fluid py-4 py-md-5">
+        <div class="container">
+        <div class="row">
+            <!-- <div class="col-12 mb-3">
+            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+            </div> -->
+            <div class="col-lg-4 col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row gap-3">
+                            <div class="col-12 ">
+                            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+                            </div>
+                            <!-- <div class="col-12">
+                                <div class="addresspera"> Qoruz is an influencer marketing and intelligence platform, that enables superior influencer discovery, quick and easy influencer outreach.</div>
+                            </div> -->
+                                <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-12">
+                                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center ">
+                                        <div class="col-auto">
+                                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Map.png" alt="map" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                        <div class="addresspera">  A-88, F-01, Sector-4, Noida, UP, INDIA </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-12">
+                                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-2">
+                                        <div class="col-auto">
+                                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Phone.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                        <div class="addresspera"> +91-823-593-2170 </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-12">
+                                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-2">
+                                        <div class="col-auto">
+                                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/mail.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                        <div class="addresspera"> info@influencerhai.com</div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                
+                                </div>
+                                
+                                <div class="col-12">
+                                    <ul class="list-unstyled footerMenu d-flex gap-2 ">
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/Facebook.svg" alt="facebook" class="img-fluid w-100 h-100"></a></li>
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/instagram.svg" alt="instagram" class="img-fluid w-100 h-100"></a></li>
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/twitter.svg" alt="twitter" class="img-fluid w-100 h-100"></a></li>
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/Linkdin.svg" alt="Linkdin" class="img-fluid w-100 h-100"></a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            <div class="row">
+            
+                <div class="col-12">
+                <div class="row gap-3">
+                    <div class="col-12">
+                    <div class="headingFotter"> URL's</div>
+                    </div>
+                    <div class="col-12">
+                    <ul class="list-unstyled footerMenu d-flex gap-2 flex-column">
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Influencer Marketing Pros and Cons</a></li>
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Top Indian Food Influencers and Bloggers </a></li>
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Top 10 LinkedIn Influencers In India To Follow In 2023</a></li>
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">The Best Gaming Influencer Marketing Agency in India</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            <div class="row gap-3">
+                <div class="col-12">
+                <div class="headingFotter"> Features</div>
+                </div>
+                <div class="col-12">
+                <ul class="list-unstyled footerMenu d-flex gap-2 flex-column">
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Our Nano, Micro, Macro, And Mega Influencer Marketing Services</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">I Am Brand? Start Your Campaign</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Are You An Influencer? Promote The Brand To Start Earning Now!</a></li>
+                    <!-- <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Careers</a></li> -->
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <div class="row gap-3">
+                <div class="col-12">
+                    <div class="headingFotter"> Our Company</div>
+                </div>
+                <div class="col-12">
+                    <ul class="list-unstyled footerMenu d-flex gap-2 flex-column">
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Resourse</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">About us</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Contact Us</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Careers</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <!-- <div class="col-xxl-2 col-md-6 order-lg-4 order-md-2 order-4">
+            <div class="row gap-3">
+                <div class="col-12">
+                <div class="headingFotter"> Contact us</div>
+                </div>
+                <div class="col-12 ">
+                <div class="row">
+                    <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center ">
+                        <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Map.png" alt="map" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col ps-0">
+                        <div class="addresspera">  A-88, F-01, Sector-4, Noida, UP, INDIA </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-3">
+                        <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Phone.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col ps-0">
+                        <div class="addresspera"> +91-823-593-2170 </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-3">
+                        <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/mail.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col ps-0">
+                        <div class="addresspera"> info@influencerhai.com</div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid copyRight">
+        <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <div class="copyRightHeading text-center py-3">COPYRIGHT © 2022 | ALL RIGHTS RESERVED BY TECHISTIC ONLINE PLATFORM PVT LTD</div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -267,6 +512,30 @@
         });
     </script>
     <!-- client slider end -->
+
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 120) {
+                $("nav.navbar").removeClass("nav-active");
+            } else {
+                $("nav.navbar").addClass("nav-active");
+            }
+        });
+    </script>
+
+    <script>
+        let willChangeImgs = document.querySelectorAll('.willChangeImg')
+        willChangeImgs.forEach(img=> {
+            setInterval(()=>{
+                if(img.classList.contains('active')) {
+                    img.classList.remove('active')
+                }else {
+                    img.classList.add('active')
+                }
+            }, 4000)
+        })
+    </script>
 
 </body>
 </html>
