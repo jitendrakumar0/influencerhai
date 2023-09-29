@@ -576,7 +576,7 @@
         height: 100%;
         object-fit: contain;
         aspect-ratio: 1/.7;
-        @include xl{
+        @include lg{
           width: 100%;
           height: 100%;
           object-fit: contain;
@@ -805,3 +805,63 @@
   }
 
 // services section end 
+
+// videoSection 
+
+.videoSectionmember{
+  & .VideoCard{
+    border-radius: 20px;
+  // height: 350px;
+    & .videoImg2{
+     & img{
+      border-radius: 20px;
+      object-fit: cover;
+     }
+    }
+    & .badgeInsta{
+      padding:8px 16px;
+      height: 30px;
+      background-color: $theme3;
+      font-size: 12px;
+      color: $white;
+      font-weight: 400;
+      width:fit-content;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      & .iconInsta{
+        width: 16px;
+        height: 16px;
+      }
+    }
+    & .profileCardinner{
+      // width:fit-content;
+      position: absolute;
+      bottom:8px;
+      // transform: translateX(-50%);
+      width: 93%;
+      left : 8px;
+      right:8px;
+      margin:5px;
+      height: 70px;
+      padding: 12px;
+      background-color:rgba(255, 255, 255, 0.712);
+      & .userIMgsmall{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+
+      }
+      & .nameUser{
+        font-size: 14px;
+        color:$black;
+        font-weight: 600;
+      }
+      & .profileuser{
+        font-size: 12px;
+        color:$black;
+        font-weight:400;
+      }
+    }
+  }
+}
