@@ -231,53 +231,56 @@
 // influencer page start 
 .influencerSection {
     & .influencerHeading {
-        font-size: 22px;
-        font-weight: 600;
-        color: $black;
-        line-height: 30px;
-        @include sm {
-            font-size: 26px;
-            line-height: 37px;
-        }
+        font-size: 27px;
+        font-weight: 700;
+        color: $theme3;
+        line-height: 32px;
+        // @include sm {
+        //     font-size: 26px;
+        //     line-height: 37px;
+        // }
         @include md{
-            font-size: 32px;
+            font-size: 35px;
             line-height: 42px;
         }
+        // @include lg {
+        //     font-size: 38px;
+        // }
         @include lg {
-            font-size: 38px;
-        }
-        @include xl {
-            font-size:40px ;
+            font-size:42px ;
+            line-height: 52px;
         }
     }
     & .influencerDetail {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         color: $theme2;
-        line-height: 21px;
+        line-height: normal;
         margin-top: 10px;
-        @include sm {
-            font-size: 15px;
-            margin-top:15px;
-            line-height: 24px;
-        }
-        @include md {
-            font-size: 16px;
-            line-height: 24px;
-            margin-top: 20px;
+        // @include sm {
+        //     font-size: 16px;
+        //     margin-top:15px;
+        // }
+        // @include md {
+        //     font-size: 16px;
+        //     margin-top: 20px;
+        // }
+        @include lg {
+            font-size: 20px;
+            margin-top: 14px;
         }
     }
     & .influencerTitle {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         color: $black;
         margin-top: 10px;
-        @include sm {
-            font-size: 17px;
-            margin-top: 12px;
+        @include md {
+            font-size: 20px;
+            margin-top: 14px;
         }
         @include md {
-            font-size: 18px;
+            font-size: 22px;
             margin-top: 14px;
         }
         
