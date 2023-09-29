@@ -413,6 +413,11 @@
     background-size: cover;
     background-position: center center;
     padding-top: 45px;
+    &.contactheading {
+        background: url(../img/blog/contactuspagebg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -597,3 +602,15 @@
     } 
 }
 // blog page end
+
+// contact us page start 
+.iframemain {
+    height: 300px;
+    @include sm {
+        height: 350px;
+    }
+    @include md {
+        height: 400px;
+    }
+}
+// contact us page end
