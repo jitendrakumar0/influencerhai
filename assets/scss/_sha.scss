@@ -364,7 +364,6 @@
 // git Section Start
     .gitSection{
         background-image: url(../img/ShaImg/formBack.jpg);
-        // height: 100vh;
         & .heading{
             letter-spacing: 1px;
             &::after{
@@ -384,9 +383,12 @@
                     color: $white !important;
                 }
                 & .formFloatinput{
-
+                    &:focus{
+                        border-color: $theme1 !important;
+                    }
                 }
                 & .formFloatinputlabel{
+                    font-size: 16px !important;
                     &::after{
                         background: transparent;
                     }
@@ -398,3 +400,23 @@
         }
     }
 // git Section Ends
+
+// New Faq Section Start
+    .newFaqSection{
+        & .textImgSection{
+            & .heading{
+                font-size: 42px;
+                line-height: 50px;
+                letter-spacing: 2px;
+            }
+            & .description{
+                font-size: 17px;
+                line-height: 25px;
+                opacity: 0.8;
+            }
+            & .faqImg{
+                aspect-ratio: 7/4;
+            }
+        }
+    }
+// New Faq Section Ends
