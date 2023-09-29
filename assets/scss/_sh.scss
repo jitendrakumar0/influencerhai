@@ -429,37 +429,7 @@
         font-weight: 600;
       }
     }
-    & .askBtn{
-      background-color: $theme1;
-      padding: 8px 16px;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight: 500;
-      border: 1px solid;
-      color: $white;
-      transition: 0.3s linear;
-      margin-right: 8px;
-      z-index: 2;
-      @include sm{
 
-        background-color: $theme1;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 15px;
-        font-weight: 500;
-        border: 1px solid;
-        color: $white;
-        transition: 0.3s linear;
-        margin-right: 8px;
-        z-index: 2;
-        &:hover{
-            // background-color: lighten($color: $theme1, $amount: 10);
-            border: 1px solid $theme1;
-            background-color: transparent;
-            color: $theme1;
-        }
-      }
-    }
     }
     & .cardImg{
       box-shadow: rgba(0, 0, 0, 0.05) -5px 4px 36px;
@@ -486,7 +456,66 @@
     }
 }
 
-
-
-
 // ourClient section end 
+
+// brand hero section start 
+
+.brandHeroSection{
+  & .HeroHeading{
+    font-size: 60px;
+    line-height: 70px;
+    color: $theme1;
+
+  }
+  & .circleSection{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    & .firstInnerBox{
+    width: 480px;
+    height: 480px;
+    background-color: rgb(134 70 241 / 30%);
+    border-radius: 50%;
+    position: absolute;
+    animation: rotation 20s infinite linear, glow 2s infinite linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .dot{
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      position: absolute;
+      & .dot-yellow{
+        top: -5px;
+        left: 50%;
+        background-color:$theme1;
+      }
+    }
+    }
+     @keyframes rotation {
+      
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+
+  }  
+  @keyframes glow {
+    0%, 100% {
+      -webkit-box-shadow: 0 0 70px 30px #380e80;
+      box-shadow: 0 0 70px 30px #380e80;
+  }
+  
+  50% {
+      -webkit-box-shadow: 0 0 10px 5px #380e80;
+      box-shadow: 0 0 10px 5px #380e80;
+  }
+  }
+  }
+}
+// brand hero section end 
