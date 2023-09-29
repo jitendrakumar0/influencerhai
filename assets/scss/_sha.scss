@@ -620,6 +620,7 @@
                 line-height: 35px;
             }
             @include lg{
+                line-height: 45px;
             }
             @include xl{
             line-height: 50px;
@@ -692,26 +693,46 @@
                             background: url(../img/plus.svg) no-repeat;
                             background-size: cover;
                             background-position: center;
-                            // position: absolute;
-                            // right: 20px;
-                            // transform: translateY(-50%), rotate(-180deg);
-                            height: 18px;
-                            width: 18px;
+                            height: 12px;
+                            width: 12px;
                             transition: .3s ease-in-out;
+                            @include sm{
+                                height: 15px;
+                                width: 15px;
+                            }
+                            @include md{
+                                height: 18px;
+                                width: 18px;
+                            }
+                            @include lg{
+                            }
+                            @include xl{}
+                            @include xxl{}
                         }
                         &:not(.collapsed) {
                             &::after {
                                 background: url(../img/minusblack.svg) no-repeat;
-                                height: 8px;
-                                width: 16px;
+                                height: 6px;
+                                width: 12px;
                                 transform: rotate(180deg);
+                                @include sm{
+                                    height: 8px;
+                                    width: 14px;
+                                }
+                                @include md{
+                                    height: 8px;
+                                    width: 16px;
+                                }
+                                @include lg{
+                                }
+                                @include xl{}
+                                @include xxl{}
                             }
                         }
                     }
                 }
                 & .faqAccordianbpdy{
                         font-size: 16px;
-                        // padding-top: 1;
                         padding-inline: 20px !important;
                         @include sm {
                             font-size: 14px;
