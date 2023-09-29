@@ -1,0 +1,82 @@
+.askBtn{
+  background-color: $theme1;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid;
+  color: $white;
+  transition: 0.3s linear;
+  margin-right: 8px;
+  z-index: 2;
+  @include sm{
+
+    background-color: $theme1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid;
+    color: $white;
+    transition: 0.3s linear;
+    margin-right: 8px;
+    z-index: 2;
+    &:hover{
+        // background-color: lighten($color: $theme1, $amount: 10);
+        border: 1px solid $theme1;
+        background-color: transparent;
+        color: $theme1;
+    }
+  }
+}
+
+.themeBtn{
+  background-color: $theme1;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  display:flex;
+  align-items: center;
+  border: 1px solid;
+  color: $black;
+  transition: 0.3s linear;
+  z-index: 2;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: $white;
+  position: relative;
+  overflow: hidden;
+  &::after{
+    position: absolute;
+    content:'';
+    background-color: $theme1;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  & .iconBtn{
+    width:25px;
+    height: 18px;
+    & img{
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &:hover{
+    // background-color: $theme1;
+    color: $white;
+    &::after{
+      width: 100%;
+    }
+    & .iconBtn{
+      & img{
+        filter: invert(1);
+        transform: rotate(-35deg);
+      }
+    }
+
+  }
+}

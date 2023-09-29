@@ -484,37 +484,7 @@
         font-weight: 600;
       }
     }
-    & .askBtn{
-      background-color: $theme1;
-      padding: 8px 16px;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight: 500;
-      border: 1px solid;
-      color: $white;
-      transition: 0.3s linear;
-      margin-right: 8px;
-      z-index: 2;
-      @include sm{
 
-        background-color: $theme1;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 15px;
-        font-weight: 500;
-        border: 1px solid;
-        color: $white;
-        transition: 0.3s linear;
-        margin-right: 8px;
-        z-index: 2;
-        &:hover{
-            // background-color: lighten($color: $theme1, $amount: 10);
-            border: 1px solid $theme1;
-            background-color: transparent;
-            color: $theme1;
-        }
-      }
-    }
     }
     & .cardImg{
       box-shadow: rgba(0, 0, 0, 0.05) -5px 4px 36px;
@@ -549,7 +519,143 @@
     }
 }
 
-
-
-
 // ourClient section end 
+
+// brand hero section start 
+
+.brandHeroSection{
+    background-image: url(../img/brand/hero-9-img.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    min-height: 100vh;
+    & .HeroHeading{
+      font-size: 27px;
+      color: $theme3;
+      line-height: 32px;
+      @include sm{
+      }
+      @include md{
+        font-size: 35px;
+        line-height: 36px;
+      }
+      @include lg{
+        font-size: 42px;
+        line-height: 52px;
+      }
+      @include xl{
+      }
+    }
+    & .heroPera{
+      font-size: 16px;
+      color: $theme2;
+      // font-weight: 700;
+      @include sm{
+        font-size: 16px;
+        line-height: normal;
+      }
+      @include lg{
+        font-size: 20px;;
+      }
+    }
+    & .heroImage{
+      z-index: 6;
+      position: relative;
+   
+      & img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+}
+// brand hero section end 
+
+// contect form 
+.aboutUs{
+  & .cardAbout{
+      border-radius: 5px;
+      padding: 40px;
+      & .cardHeading{
+          font-size: 30px;
+          line-height: 38px;
+          color: $white;
+          font-weight: 600;
+      }
+      & .sub-heading{
+          color:#FC721E;
+      }
+      & .cardPera{
+          color: $white;
+          font-size: 16px;
+          opacity: 0.7;
+          
+      }
+      & .imgsig{
+          width: 220px;
+          height: 80px;
+      }
+      & .author-info{
+          font-size: 22px;
+          font-weight: 600;
+          color: $white;
+          & span{
+              font-size: 16px;
+              color: $white;
+              font-weight: 400;
+              }
+      }
+      & .author-designation{
+          font-size: 16px;
+          color: #FC721E;
+          font-weight: 500;
+      }
+  }
+  .devolopements-benefits-box {
+      background-color:$black !important;
+      background-size: cover;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+      background-color: rgba(0, 0, 0, 0.897) !important;
+
+      }
+      & .headingCardInner{
+          color: #FC721E;
+          font-size: 20px;
+      }
+      & .peraCard{
+          font-size: 16px;
+          color: $white;
+          opacity: 0.7;
+          margin-top: 10px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+      & .positionCard{
+          color: $white;
+          font-size: 12px;
+      }
+      & .devolopements-benefits-box-count {
+          position: absolute;
+          left: -25px;
+          height: 50px;
+          background-color: #FC721E;
+          width: 50px;
+          // border-radius: 50px;
+          border-radius: 10px;
+          // padding: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          color: #fff;
+          font-size: 24px;
+          transition: 0.5s;
+        }
+    }
+    
+}
+// contact form end 
