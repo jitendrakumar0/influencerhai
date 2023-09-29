@@ -301,15 +301,18 @@
     & .influencerimg {
         border-radius: 6px 6px 6px 40px;
         // height: 430px;
+        & img {
+            object-fit: cover;
+        }
         @include lg {
             height: 430px;
             aspect-ratio: unset !important;
-            object-fit: cover;
+            // object-fit: cover;
             border-radius: 10px 10px 10px 100px;
         }
         @include md {
             aspect-ratio: 4/2;
-            object-fit: contain;
+            
             border-radius: 8px 8px 8px 70px;
         }
         @include sm {
