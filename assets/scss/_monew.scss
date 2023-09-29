@@ -225,3 +225,59 @@
     }
 }
 // contact section end
+
+
+
+// influencer page start 
+.influencerSection {
+    & .influencerDetail {
+        font-size: 14px;
+        font-weight: 400;
+        color: $theme2;
+        line-height: 21px;
+        margin-top: 10px;
+        @include sm {
+            font-size: 15px;
+            margin-top:15px;
+            line-height: 24px;
+        }
+        @include md {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 20px;
+        }
+    }
+    & .influencerTitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: $black;
+        margin-top: 14px;
+        
+    }
+    & .contactbtnMain {
+        margin-top: 14px;
+        & .contactbtn {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white;
+            background-color: $theme1;
+            padding: 0 20px;
+            height: 39px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: darken($theme1, 7);
+            }
+        }
+    }
+    & .influencerimg {
+        // aspect-ratio: 6/3;
+        @include md {
+            aspect-ratio: 6/3;
+        }
+        @include lg {
+            aspect-ratio: unset;
+        }
+    }
+}
+// influencer page end
