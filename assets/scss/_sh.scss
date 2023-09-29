@@ -83,10 +83,12 @@
       line-height: 36px;
     }
     @include lg{
-      font-size: 42px;
-      line-height: 52px;
+      font-size: 39px;
+      line-height: 49px;
     }
     @include xl{
+      font-size: 42px;
+      line-height: 52px;
     }
   }
   & .heroPera{
@@ -575,56 +577,55 @@
 .aboutUs{
   & .cardAbout{
       border-radius: 5px;
-      padding: 40px;
+      padding: 20px;
+      background-color:lighten($theme2,10) !important;
+      @include md{
+        padding: 30px;
+
+      }
+      @include md{
+        padding: 40px;
+
+      }
       & .cardHeading{
-          font-size: 30px;
-          line-height: 38px;
-          color: $white;
-          font-weight: 600;
-      }
-      & .sub-heading{
-          color:#FC721E;
-      }
-      & .cardPera{
-          color: $white;
-          font-size: 16px;
-          opacity: 0.7;
-          
-      }
-      & .imgsig{
-          width: 220px;
-          height: 80px;
-      }
-      & .author-info{
           font-size: 22px;
-          font-weight: 600;
+          line-height: 30px;
           color: $white;
-          & span{
-              font-size: 16px;
-              color: $white;
-              font-weight: 400;
-              }
+          font-weight: 600;
+          @include md{
+            font-size: 25px;
+            line-height: 32px;
+          }
+          @include md{
+            font-size: 30px;
+            line-height: 38px;
+          }
       }
-      & .author-designation{
-          font-size: 16px;
-          color: #FC721E;
-          font-weight: 500;
-      }
+   
+   
+ 
   }
   .devolopements-benefits-box {
-      background-color:$black !important;
+      // background-color:$black !important;
+      background-color:lighten($theme2,10) !important;
+
       background-size: cover;
       transition: all 0.3s ease-in-out;
       &:hover{
-      background-color: rgba(0, 0, 0, 0.897) !important;
+        & .devolopements-benefits-box-count{
+          border-radius: 10px;
+        }
 
       }
       & .headingCardInner{
-          color: #FC721E;
-          font-size: 20px;
+          color: $white;
+          font-size: 18px;
+          @include sm{
+            font-size: 20px;
+          }
       }
       & .peraCard{
-          font-size: 16px;
+          font-size: 14px;
           color: $white;
           opacity: 0.7;
           margin-top: 10px;
@@ -633,6 +634,10 @@
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
+          @include sm{
+          font-size: 16px;
+
+          }
       }
       & .positionCard{
           color: $white;
@@ -640,22 +645,98 @@
       }
       & .devolopements-benefits-box-count {
           position: absolute;
-          left: -25px;
+          left: -18px;
           height: 50px;
-          background-color: #FC721E;
+          background-color: $theme1;
           width: 50px;
-          // border-radius: 50px;
-          border-radius: 10px;
-          // padding: 5px;
+          border-radius: 50px;
           display: flex;
           align-items: center;
           justify-content: center;
           font-weight: 900;
           color: #fff;
-          font-size: 24px;
+          font-size: 20px;
           transition: 0.5s;
+          transition: all 0.3s ease-in-out;
+          @include sm{
+          left: -25px;
+          font-size: 24px;
+
+          }
         }
     }
     
 }
 // contact form end 
+
+// form section 
+.formStart{
+  & .formFloat{
+    border-color:Red !important ;
+      &::placeholder{
+          color: $theme3 !important;
+      }
+      & .formFloatinput{
+        color: $white !important;
+          &:focus{
+              border-color: $white !important;
+          }
+      }
+      & .formFloatinputlabel{
+        color: $white !important;
+          font-size: 14px !important;
+          @include sm{
+          font-size: 16px !important;
+
+          }
+          &::after{
+              background: transparent !important;
+          }
+      }
+      & .formFloatinputtextarea{
+          height: 120px;
+          @include sm{
+          height: 150px;
+
+          }
+      }
+  }
+}
+// form section end 
+
+// services section start 
+
+  .servicesSection{
+    background-image: url(../img/brand/Main-bg_serv01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+    & .servicesCard{
+      padding: 30px;
+      background:lighten($theme3, 65) !important;
+      border-radius: 10px;
+      & .cardImg{
+        width: 60px;
+        height: 60px;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 10px;
+        transform: rotate(-5deg);
+        background-color: $white;
+        
+      }
+      & .cardHeading{
+        font-size: 24px;
+        color: $black;
+        font-weight: 700;
+      }
+      & .cardPera{
+        font-size: 16px;
+        color: $black;
+        font-weight: 400;
+      }
+    }
+  }
+
+// services section end 
