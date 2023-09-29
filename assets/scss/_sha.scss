@@ -378,7 +378,7 @@
             }
         }
     }
-    & .formStart{
+    .formStart{
         & .formFloat{
             &::placeholder{
                 color: $white !important;
@@ -405,7 +405,7 @@
     .newFaqSection{
         & .textImgSection{
             & .heading{
-                font-size: 42px;
+                // font-size: 42px;
                 line-height: 50px;
                 letter-spacing: 2px;
             }
