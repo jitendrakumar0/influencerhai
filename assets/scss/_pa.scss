@@ -100,6 +100,7 @@
             }
             & .influencerHeading{
                 font-style: normal;
+                
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 24px;
@@ -150,12 +151,13 @@
 .influencerCategoriesFluid{
     & .categoryWrapper{   
         border: 1px solid ;
-        border-color: lighten($color: $theme2, $amount: 50);
+        border-color: lighten($color: $theme2, $amount: 60);
         border-radius: 5px;
         justify-content: center;
         align-items: center;
         transition: 0.3s ease-in-out;
         padding: 10px;
+        background-color: $white;
         @include sm{
     
         }
@@ -202,7 +204,7 @@
             @include lg{
             }
             @include xl{
-                font-size: 20px;
+                font-size: 17px;
                 
             }
             @include xxl{
@@ -412,5 +414,39 @@
             object-fit: cover;
             border-radius: 50%;
         }
+    }
+}
+.askBtn{
+    background-color: $theme1;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid;
+    color: $white;
+    transition: 0.3s linear;
+    margin-right: 8px;
+    z-index: 2; 
+    font-size: 12px;
+    padding: 10px;
+    z-index: 5;
+    position: relative;
+    @include sm{
+    }
+    @include md{
+    }
+    @include lg{
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    @include xl{
+        
+    }
+    @include xxl{
+        
+    }
+    &:hover{
+        // background-color: lighten($color: $theme1, $amount: 10);
+        border: 1px solid $theme1;
+        background-color: transparent;
+        color: $theme1;
     }
 }

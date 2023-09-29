@@ -4,7 +4,10 @@
     // padding-bottom: 35px;
     & .blogcard {
         padding: 7px;
-        transition: all 0.3s ease-in-out;
+        border: 1px solid;
+        border-color: lighten($color: $theme2, $amount: 60);
+        border-radius: 5px;
+        // transition: all 0.3s ease-in-out;
         & .blogimg {
             aspect-ratio: 5/3;
             & img {
@@ -48,8 +51,8 @@
                 font-size: 16px;
                 line-height: 22px;
                 margin-bottom: 6px;
-                font-weight: 600;
-                color: #0d0925;
+                font-weight: 700;
+                color: $theme2;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -64,13 +67,13 @@
                     margin-bottom: 13px;
                 }
                 @include lg {
-                    font-size: 18px;
+                    font-size: 20px;
                     line-height: 25px;
-                    margin-bottom: 15px;
+                    margin-bottom: 5px;
                 }
             }
             & .blogdetail {
-                color: #4e4a67;
+                color: $theme2;
                 -webkit-line-clamp: 3;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -83,28 +86,28 @@
                     line-height: 21px;
                 }
                 @include md {
-                    line-height:23px;
-                    font-size: 16px;
+                    font-size: 15px;
+                    line-height: 20px;
                 }
             }
             @include sm {
                 padding: 17px 6px;
             }
             @include md {
-                padding: 20px 7px;
+                padding: 10px 7px 0 7px;
             }
         }
         @include sm {
             padding: 10px;
             &:hover {
-                transform: translateY(-5px);
-                box-shadow: -2px 11px 16px 7px rgb(0 0 0 / 8%) !important;
+                // transform: translateY(-5px);
+                // box-shadow: -2px 11px 16px 7px rgb(0 0 0 / 8%) !important;
                 & .blogheading {
                     color: $theme1;
                 }
                 & .blogimg {
                     & img {
-                        // transform: scale(1.1);
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -249,8 +252,6 @@
 
 //meet the team section start
 .teamSection {
-    padding-top: 35px;
-    padding-bottom: 35px;
     & .profilecard {
         min-height: 270px;
         height: 100%;
@@ -375,12 +376,8 @@
         
     }
     @include sm {
-        padding-top: 40px;
-        padding-bottom: 40px;
     }
     @include md {
-        padding-top: 45px;
-        padding-bottom: 45px;
     }
     @include lg {
 
