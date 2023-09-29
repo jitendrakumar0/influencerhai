@@ -231,7 +231,14 @@
 // influencer page start 
 .influencerSection {
     margin-top: 60px;
-    // background: url(../img/blog/backgrounshape.png);
+    background: url(../img/blog/dots.png);
+    min-height: 100vh;
+    @include xl {
+        height: 100vh;
+    }
+    // background: url(../img/blog/bgshape.png) no-repeat;
+    // background-size: cover;
+    // background-position: center center;
     & .influencerHeading {
         font-size: 27px;
         font-weight: 700;
@@ -573,6 +580,16 @@
                 }
             }
         }
+        &.active {
+            background-color: $theme1;
+            color: $white;
+            border-color: $theme1;
+            & .arrow {
+                & img {
+                    filter:invert(1);
+                }
+            }
+        }
     }
     & .page-item {
         &.disabled {
@@ -611,6 +628,11 @@
     }
     @include md {
         height: 400px;
+    }
+}
+.contactpage {
+    & .devolopements-benefits-box-count  {
+        padding: 13px;
     }
 }
 // contact us page end
