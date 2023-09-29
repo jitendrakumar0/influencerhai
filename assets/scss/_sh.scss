@@ -429,37 +429,7 @@
         font-weight: 600;
       }
     }
-    & .askBtn{
-      background-color: $theme1;
-      padding: 8px 16px;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight: 500;
-      border: 1px solid;
-      color: $white;
-      transition: 0.3s linear;
-      margin-right: 8px;
-      z-index: 2;
-      @include sm{
 
-        background-color: $theme1;
-        padding: 10px 20px;
-        border-radius: 5px;
-        font-size: 15px;
-        font-weight: 500;
-        border: 1px solid;
-        color: $white;
-        transition: 0.3s linear;
-        margin-right: 8px;
-        z-index: 2;
-        &:hover{
-            // background-color: lighten($color: $theme1, $amount: 10);
-            border: 1px solid $theme1;
-            background-color: transparent;
-            color: $theme1;
-        }
-      }
-    }
     }
     & .cardImg{
       box-shadow: rgba(0, 0, 0, 0.05) -5px 4px 36px;
@@ -494,7 +464,62 @@
     }
 }
 
-
-
-
 // ourClient section end 
+
+// brand hero section start 
+
+.brandHeroSection{
+    background-image: url(../img/brand/hero-9-img.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  & .HeroHeading{
+    font-size: 20px;
+    line-height: 30px;
+    color: $black;
+    @include xl{
+      font-size: 50px;
+      line-height: 60px;
+
+    }
+    @include sm{
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    & .brandsubheading{
+      color: $theme1;
+    }
+  }
+  & .heroPera{
+    font-size: 14px;
+    color: $black;
+    @include sm{
+      font-size: 16px;
+  
+      }
+    @include md{
+    font-size: 20px;
+
+    }
+  }
+  & .brandImg{
+    & img{
+      aspect-ratio: 1/0.5;
+      object-fit: contain;
+        aspect-ratio: unset;
+        @include sm{
+          aspect-ratio: 1/0.7;
+          object-fit: contain;
+        }
+      
+      @include md{
+        aspect-ratio: 1/0.7;
+        object-fit: contain;
+      }
+      @include lg {
+        aspect-ratio: unset;
+      }
+    }
+  }
+}
+// brand hero section end 
