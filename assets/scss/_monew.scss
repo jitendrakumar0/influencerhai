@@ -526,6 +526,7 @@
         color: $black;
         font-size: 13px;
         font-weight: 600;
+        transition: all 0.3s ease-in-out;
         @include sm {
             height: 40px;
             width: 40px;
@@ -544,6 +545,7 @@
         & .arrow {
             height: 12px;
             width: 8px;
+            transition: all 0.3s ease-in-out;
             & img {
                 transition: all 0.3s ease-in-out;
             }
@@ -567,6 +569,11 @@
             }
         }
     }
+    & .page-item {
+        &.disabled {
+            background-color: lighten($black, 85);
+        }
+    }
 }
 // pagination end
 
@@ -576,10 +583,10 @@
     & .blogcard {
         & .blogcontent {
             & .blogdetail {
-                overflow: unset;
-                text-overflow: unset;
-                display: unset;
                 -webkit-box-orient: unset;
+                @include md {
+                    line-height: 23px;
+                }
             }
         }
         & .date {
