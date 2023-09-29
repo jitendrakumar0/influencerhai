@@ -391,7 +391,7 @@
             & .formFloatinputlabel{
                 font-size: 16px !important;
                 &::after{
-                    background: transparent;
+                    background: transparent !important;
                 }
             }
             & .formFloatinputtextarea{
