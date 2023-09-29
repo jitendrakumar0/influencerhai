@@ -4,7 +4,10 @@
     // padding-bottom: 35px;
     & .blogcard {
         padding: 7px;
-        transition: all 0.3s ease-in-out;
+        border: 1px solid;
+        border-color: lighten($color: $theme2, $amount: 60);
+        border-radius: 5px;
+        // transition: all 0.3s ease-in-out;
         & .blogimg {
             aspect-ratio: 5/3;
             & img {
@@ -14,25 +17,42 @@
         & .blogcontent {
             padding: 15px 5px;
             & .date {
-                color: #7b7992;
-                margin-bottom: 8px;
-                font-weight: 500;
-                font-size: 12px;
+                // color: #7b7992;
+                color: rgb(0 0 0 / 60%);
+                margin-top: 9px;
+                font-weight: 400;
+                font-size: 13px;
+                gap: 7px;
+                & .calendaricon {
+                    height: 14px;
+                    max-width: 14px;
+                    min-width: 14px;
+                    @include sm {
+                        height: 16px;
+                        max-width: 16px;
+                        min-width: 16px;
+                    }
+                    @include md {
+                        height: 17px;
+                        max-width: 17px;
+                        min-width: 17px;
+                    }
+                }
                 @include sm {
                     font-size: 14px;
-                    margin-bottom: 9px;
+                    margin-top: 11px;
                 }
                 @include md {
-                    font-size: 14px;
-                    margin-bottom: 10px;
+                    font-size: 15px;
+                    margin-top: 14px;
                 }
             }
             & .blogheading {
                 font-size: 16px;
-                line-height: 20px;
-                margin-bottom: 4px;
+                line-height: 22px;
+                margin-bottom: 6px;
                 font-weight: 700;
-                color: #0d0925;
+                color: $theme2;
                 -webkit-line-clamp: 2;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -42,50 +62,52 @@
                 @include sm {
                 }
                 @include md {
-                    font-size: 21px;
-                    line-height: 28px;
-                    margin-bottom: 14px;
+                    font-size: 17px;
+                    line-height: 24px;
+                    margin-bottom: 13px;
                 }
                 @include lg {
-                    font-size: 22px;
-                    line-height: 30px;
-                    margin-bottom: 17px;
+                    font-size: 20px;
+                    line-height: 25px;
+                    margin-bottom: 5px;
                 }
             }
             & .blogdetail {
-                color: #4e4a67;
+                color: $theme2;
                 -webkit-line-clamp: 3;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
-                line-height: 18px;
+                line-height: 20px;
                 font-size: 13px;
                 @include sm {
+                    font-size: 14px;
+                    line-height: 21px;
                 }
                 @include md {
-                    line-height:25px;
-                    font-size: 16px;
+                    font-size: 15px;
+                    line-height: 20px;
                 }
             }
             @include sm {
                 padding: 17px 6px;
             }
             @include md {
-                padding: 20px 7px;
+                padding: 10px 7px 0 7px;
             }
         }
         @include sm {
             padding: 10px;
             &:hover {
-                transform: translateY(-5px);
-                box-shadow: -2px 11px 16px 7px rgb(0 0 0 / 8%) !important;
+                // transform: translateY(-5px);
+                // box-shadow: -2px 11px 16px 7px rgb(0 0 0 / 8%) !important;
                 & .blogheading {
                     color: $theme1;
                 }
                 & .blogimg {
                     & img {
-                        // transform: scale(1.1);
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -148,14 +170,14 @@
             }
         }
         & .prevarrow {
-            transform: translate(-32px , -50%);
+            transform: translate(-42px , -50%);
             left: 0;
             & .arrowicon {
                 transform: rotate(180deg);
             }
         }
         & .nextarrow {
-            transform: translate(32px , -50%);
+            transform: translate(42px , -50%);
             right: 0;
         }
     }
@@ -230,8 +252,6 @@
 
 //meet the team section start
 .teamSection {
-    padding-top: 35px;
-    padding-bottom: 35px;
     & .profilecard {
         min-height: 270px;
         height: 100%;
@@ -356,12 +376,8 @@
         
     }
     @include sm {
-        padding-top: 40px;
-        padding-bottom: 40px;
     }
     @include md {
-        padding-top: 45px;
-        padding-bottom: 45px;
     }
     @include lg {
 

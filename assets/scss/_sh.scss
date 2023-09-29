@@ -377,3 +377,124 @@
     }
   }
 }
+
+// our client section start 
+
+.ourClient{
+  & .clientContent{
+    @include lg{
+      // position: sticky;
+      // top: 90px;
+
+    }
+    & .headingClient{
+      font-size: 22px;
+      line-height: 32px;
+      color: $black;
+      font-weight: 700;
+      @include sm{
+        font-size: 36px;
+        line-height: 46px;
+        color: $black;
+        font-weight: 700;
+      }
+      @include md{
+        font-size: 44px;
+        line-height: 52px;
+        color: $black;
+        font-weight: 700;
+      }
+      @include md{
+        font-size: 40px;
+        line-height: 38px;
+        color: $black;
+        font-weight: 700;
+      }
+      & .subheadingClient{
+        color: $theme1;
+      }
+    }
+    & .pera{
+      font-size: 16px;
+      color: $black;
+      font-weight: 600;
+      @include sm{
+        font-size: 20px;
+        color: $black;
+        font-weight: 600;
+      }
+      @include md{
+        font-size: 25px;
+        color: $black;
+        font-weight: 600;
+      }
+    }
+    & .askBtn{
+      background-color: $theme1;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid;
+      color: $white;
+      transition: 0.3s linear;
+      margin-right: 8px;
+      z-index: 2;
+      @include sm{
+
+        background-color: $theme1;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 1px solid;
+        color: $white;
+        transition: 0.3s linear;
+        margin-right: 8px;
+        z-index: 2;
+        &:hover{
+            // background-color: lighten($color: $theme1, $amount: 10);
+            border: 1px solid $theme1;
+            background-color: transparent;
+            color: $theme1;
+        }
+      }
+    }
+    }
+    & .cardImg{
+      box-shadow: rgba(0, 0, 0, 0.05) -5px 4px 36px;
+      border-radius: 4px;
+      // width: 200px;
+      height: 100px;
+      padding: 10px;
+      background: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   
+      align-items: center;
+      border: none;
+      &.active{
+        & .clientImg{
+          display: none;
+        }
+        & .clientImg2{
+          display: block !important;
+        }
+      }
+      & .clientImg{
+      height: 100px;
+      padding: 10px;
+       
+      }
+      & .clientImg2{
+        height: 100px;
+    
+      }
+    }
+}
+
+
+
+
+// ourClient section end 
