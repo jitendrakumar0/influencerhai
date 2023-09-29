@@ -404,3 +404,105 @@
     }
 }
 // cta section end
+
+
+// blog page start 
+.headingSection {
+    height: 55vh;
+    background: url(../img/blog/ctabackground.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($black, 0.6);
+    }
+    & .pageheading {
+        font-size: 60px;
+        font-weight: 700;
+        color: $white;
+    }
+    & .headingBreadcrumb {
+        & .headingTitle {
+            font-size: 16px;
+            font-weight: 500;
+            color: $white;
+            & a {
+                font-size: 16px;
+                font-weight: 500;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: $theme1;
+                }
+            }
+            &.active {
+                color: lighten($black, 75);
+                &::before {
+                    color: lighten($black, 75);
+                }
+            }
+        }
+    }
+}
+// blog page end
+
+
+
+// blog navbar start 
+.blognav {
+    & .logonav {
+        & .logoName {
+            color: $white;
+        }
+    }
+    & .navbarNav {
+        & .navItem {
+            & .navLInk {
+                color: $white;
+            }
+        }
+    }
+    &.nav-active {
+        & .logonav {
+            & .logoName {
+                color: $black;
+            }
+        }
+        & .navbarNav {
+            & .navItem {
+                & .navLInk {
+                    color: $black;
+                    &.active {
+                        color: $theme1;
+                    }
+                }
+            }
+        }
+    }
+}
+// blog navbar end
+
+
+// pagination start 
+.pagepagination {
+    & .pageLink {
+        height: 50px;
+        width: 50px;
+        border: 1px solid lighten($black, 80);
+        background-color: transparent;
+        color: $black;
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+            background-color: $theme1;
+            color: $white;
+            border-color: $theme1;
+        }
+    }
+}
+// pagination end
