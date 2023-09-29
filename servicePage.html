@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/glightBox/css/glightbox.min.css">
+    <link href="./assets/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar start  -->
+        <nav class="navbar navbar-expand-lg   container-fluid" aria-label="Offcanvas navbar large">
+            <div class="container">
+            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon menuBtn  "> <img src="assets/img/Menu.png" alt="menu" class="img-fluid w-100 h-100"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title" id="offcanvasNavbar2Label">
+                <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+                </div>
+                <button type="button" class="menuBtn border-0 d-inline-flex shdow-none bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/img/Close.png" alt="menu" class="img-fluid w-100 h-100"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav navbarNav justify-content-end flex-grow-1 gap-md-3 gap-2">
+                    <li class="nav-item navItem">
+                        <a class="nav-link navLInk" aria-current="page" href="#">Home</a>
+                        </li>
+                    <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item navItem">
+                    <a class="nav-link navLInk active" href="servicePage.html">Services</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link navLInk" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link navLInk" href="#">Influencer</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link navLInk" href="#">Brand</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link navLInk" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item navItem">
+                        <a class="nav-link navLInk" href="#">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item navItem">
+                        <a class="nav-link navLInk" href="#">Search</a>
+                    </li> -->
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    <!-- navbar end  -->
+
+    <!-- hero section start  -->
+        <div class="container-fluid serviceHeroFluid position-relative px-0">
+            <div class="row serviceTxt">
+                <div class="col-sm-9 col-12">
+                    <div class="serviceHeading">We Create Powerful Influencer Marketing Campaigns</div>
+                </div>
+                <div class="col-12"><button class="learnBtn">Learn More</button></div>
+            </div>
+        </div>
+    <!-- hero section end  -->
+
+
+
+
+
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/libs/glightBox/js/glightbox.min.js"></script>
+    <script>
+        var swiper = new Swiper(".blogslider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.nextarrow',
+                prevEl: '.prevarrow',
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                },
+                576: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                992: {
+                    slidesPerView: 3.5,
+                    spaceBetween: 15,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+                1300: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+    <!-- team slider start -->
+    <script>
+        var swiper = new Swiper(".teamslider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // navigation: {
+            //     nextEl: '.nextarrow',
+            //     prevEl: '.prevarrow',
+            // },
+            pagination: {
+                el: ".teamdots",
+                clickable: true
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                991: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1201: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+
+    <!-- team slider end -->
+    <script>
+        var swiper = new Swiper(".testiSwiper", {
+            // centeredSlides: true,
+        //     autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        pagination: {
+            el: ".dotsarrow",
+            clickable: true,
+        },
+        breakpoints: {
+    576: {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+    },
+    768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+    },
+    992: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+    },
+    1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+    },
+    1400: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+    },
+},
+        });
+</script>
+<script>
+    let willChangeImgs = document.querySelectorAll('.willChangeImg')
+    willChangeImgs.forEach(img=> {
+        setInterval(()=>{
+            if(img.classList.contains('active')) {
+                img.classList.remove('active')
+            }else {
+                img.classList.add('active')
+            }
+        }, 4000)
+    })
+</script>
+<script>
+    var glightbox = GLightbox({
+        loop: true,
+        selector: ".glightboxx",
+    });
+</script>
+</body>
+</html>
+

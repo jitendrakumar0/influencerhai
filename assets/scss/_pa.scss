@@ -24,13 +24,13 @@
     }
 }
 .subHeading{
-    margin-top: 1rem;
+    margin-top: 5px;
     font-style: normal;
     font-weight: 600;
     color: $theme2;
     text-align: center;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     @include sm{
     }
     @include md{
@@ -38,6 +38,7 @@
     @include lg{
         font-size: 24px;
         line-height: 36px;
+        margin-top: 10px;
     }
     @include xl{
         
@@ -149,6 +150,23 @@
 }
 
 .influencerCategoriesFluid{
+    & .categoryRow{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        @include sm{
+            flex-wrap: wrap;
+        }
+        @include md{
+        }
+        @include lg{
+        }
+        @include xl{
+            
+        }
+        @include xxl{
+            
+        }
+    }
     & .categoryWrapper{   
         border: 1px solid ;
         border-color: lighten($color: $theme2, $amount: 60);
@@ -192,10 +210,9 @@
         & .categoryHeading{
             font-style: normal;
             font-weight: 700;
-            line-height: 24px;
+            line-height: 20px;
             color: $theme2;
-            margin-bottom: 4px;
-            font-size: 16px;
+            font-size: 14px;
             @include sm{
     
             }
@@ -204,7 +221,8 @@
             @include lg{
             }
             @include xl{
-                font-size: 17px;
+                font-size: 16px;
+                line-height: 20px;
                 
             }
             @include xxl{
@@ -215,8 +233,8 @@
             color: $theme1;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 14px;
-            line-height: 24px;
+            font-size: 13px;
+            line-height: 20px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box !important;
@@ -231,6 +249,7 @@
             }
             @include xl{
                 font-size: 13px;
+                line-height: 24px;
             }
             @include xxl{
                 
@@ -448,5 +467,175 @@
         border: 1px solid $theme1;
         background-color: transparent;
         color: $theme1;
+    }
+}
+
+.serviceHeroFluid{
+    // height: calc(100vh - 80px);
+    overflow: hidden;
+    height: 300px;
+    @include sm{
+    }
+    @include md{
+        height: 400px;
+    }
+    @include lg{
+    }
+    @include xl{
+        
+    }
+    @include xxl{
+        
+    }
+    &::after{
+        content: '';
+        background-image: url(./../img/serviceImg.webp);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    &::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    & .serviceTxt{
+        z-index: 4;
+        position: relative;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        margin: 0;
+        text-align: center;
+        @include sm{
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            text-align: start;
+        }
+        @include md{ 
+        }
+        @include lg{
+        }
+        @include xl{
+            
+        }
+        @include xxl{
+            
+        }
+        & .serviceHeading{
+            font-weight: 700;
+            color: $white;
+            line-height: 110%;
+            font-size: 30px;
+            @include sm{
+                font-size: 38px;
+            }
+            @include md{
+                font-size: 50px;
+            }
+            @include lg{
+                font-size: 65px;
+            }
+            @include xl{
+                
+            }
+            @include xxl{
+                
+            }
+        }
+        & .learnBtn{
+            border: 0;
+            background-color: $white;
+            color: $theme1;
+            font-weight: 600;
+            border-radius: 5px;
+            margin-top: 30px;
+            transition: 0.3s linear; 
+            padding: 5px 15px;
+            font-size: 12px;
+            @include sm{
+                padding: 10px 20px;
+            }
+            @include md{
+                font-size: 14px;
+            }
+            @include lg{
+            }
+            @include xl{
+                
+            }
+            @include xxl{
+                
+            }
+            &:hover{
+                background-color: $theme1;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.influencerBtn{
+    color: $white;
+    background-color: $theme1;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease-in-out; 
+    padding: 12px 24px;
+    font-size: 12px;
+    display: flex;
+    margin: auto;
+    &.influencerBtn1{
+        margin: auto;
+    @include sm{
+    
+    }
+    @include md{ 
+    }
+    @include lg{
+        margin-left: 0;
+    }
+    @include xl{
+        
+    }
+    @include xxl{
+        
+    }
+    }
+    &:hover{
+        background-color: $theme3;
+        transform: scale(1.1);
+    }
+    @include sm{
+    
+    }
+    @include md{ 
+        padding: 15px 30px;
+        font-size: 16px;
+        margin-left: 0;
+    }
+    @include lg{
+    }
+    @include xl{
+        
+    }
+    @include xxl{
+        
     }
 }
