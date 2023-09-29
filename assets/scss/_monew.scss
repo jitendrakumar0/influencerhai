@@ -1,0 +1,221 @@
+// team section start
+.teamSection {
+    & .profilecardnew {
+        gap: 14px;
+        padding: 10px;
+        transition: all 0.3s ease-in-out;
+        & .teamimg {
+            height: 90px;
+            min-width:90px;
+            max-width: 90px;
+            @include sm {
+                height: 95px;
+                min-width:95px;
+                max-width: 95px;
+            }
+        }
+        & .content {
+            & .membername {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: normal;
+                color: $black;
+                @include sm {
+                    font-size: 17px;
+                }
+                @include md {
+                    font-size: 18px;
+                }
+            }
+            & .memberposition {
+                font-size: 15px;
+                font-weight: 400;
+                margin: 4px 0 16px;
+                line-height: normal;
+                color: $theme2;
+                @include sm {
+                    font-size: 15px;
+                }
+                @include md {
+                    font-size: 16px;
+                }
+            }
+            & .socialicons {
+                gap: 13px;
+                & .socialicon {
+                    height: 16px;
+                    transition: all 0.3s ease-in-out;
+                    & img {
+                        filter: brightness(0);
+                    }
+                    @include sm {
+                        height: 17px;
+                        &:hover {
+                            transform: rotateY(360deg);
+                        }
+                    }
+                }
+            }
+        }
+        @include sm {
+            padding: 12px;
+            &:hover {
+                transform: translateY(-7px);
+            }
+        }
+        @include md {
+            padding: 14px;
+        }
+    }
+    & .teamdots {
+        bottom: -10px;
+        display: block;
+        & .swiper-pagination-bullet {
+            height: 8px;
+            width: 8px;
+            &.swiper-pagination-bullet-active {
+                background: $theme1 ;
+            }
+        }
+    }
+}
+// team section end 
+
+
+// contact section start 
+.contactSection {
+    // background: url(../img/blog/dotsbg.png);
+    // & .contactcontent {
+    //     & .contactCard {
+    //         padding: 25px;
+    //         & .contacticon {
+    //             height: 65px;
+    //             width: 65px;
+    //             padding: 18px;
+                
+    //         }
+    //         & .cardheading {
+    //             font-size: 22px;
+    //             font-weight: 600;
+    //             color: $black;
+    //             margin: 10px 0 14px;
+    //             line-height: normal;
+    //         }
+    //         & .addressdetail {
+    //             font-size: 16px;
+    //             font-weight: 400;
+    //             color: lighten($black, 35);
+    //             line-height: normal;
+    //         }
+    //         &:hover {
+    //             & .contacticon {
+    //                 img {
+    //                     animation: toBottomFromTop 1s forwards;
+    //                 }
+    //             }
+    //             @keyframes toBottomFromTop {
+    //                 49% {
+    //                     -webkit-transform: translateY(-100%);
+    //                     transform: translateY(-100%);
+    //                 }
+                    
+    //                 50% {
+    //                     opacity: 0;
+    //                     -webkit-transform: translateY(100%);
+    //                     transform: translateY(100%);
+    //                 }
+    //                 51% {
+    //                     opacity: 1;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    & .formdata {
+        // margin-top: 40px;
+        // & .formcardmain {
+        //     padding: 20px 0;
+        // }
+        & .formcard {
+            & .contactlabel {
+                font-size: 13px;
+                font-weight: 500;
+                color:$black;
+                line-height: normal;
+                margin:0 0 3px 2px;
+                @include sm {
+                    font-size: 14px;
+                }
+            }
+            & .contactInput {
+                // border-bottom: 1.4px solid #33475b !important;
+                // padding-bottom: 0px;
+                font-size: 13px;
+                font-weight: 500;
+                color:$black;
+                height: 35px;
+                border-radius: 5px;
+                @include sm {
+                    font-size: 14px;
+                    height: 40px;
+                }
+            }
+            & input:-webkit-autofill,
+            input:-webkit-autofill:focus {
+                transition: background-color 600000s 0s, color 600000s 0s;
+            }
+            & input[data-autocompleted] {
+                background-color: transparent !important;
+            }
+            &::placeholder {
+                font-size: 13px;
+                font-weight: 500;
+                color:$black;
+                @include sm {
+                    font-size: 14px;
+                }
+            }
+            & .textbox {
+                min-height: 100px;
+            }
+            // & .contactInput {
+            //     &:focus ~ .contactlabel {
+            //         top: 0;
+            //     }
+            // }
+        }
+    }
+    & .contactusImg {
+        aspect-ratio: 6/3;
+        @include md {
+            aspect-ratio: 5/3;
+        }
+        @include lg {
+            aspect-ratio: 6/3;
+        }
+    }
+    & .submitbtn {
+        background:$theme1;
+        border-color: $theme1;
+        color: $white;
+        font-size: 13px;
+        line-height: normal;
+        padding:0 24px;
+        font-weight: 700;
+        border-radius: 4px;
+        height: 39px;
+        transition: all 0.3s ease-in-out;
+        &:active {
+            background-color: $theme1;
+            border-color: $theme1;
+            color: $white;
+        }
+        &:hover {
+            background-color: darken($theme1, 10);
+        }
+        @include sm {
+            font-size: 14px;
+        }
+    }
+}
+// contact section end

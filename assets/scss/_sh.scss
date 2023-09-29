@@ -444,6 +444,14 @@
    
       align-items: center;
       border: none;
+      &.active{
+        & .clientImg{
+          display: none;
+        }
+        & .clientImg2{
+          display: block !important;
+        }
+      }
       & .clientImg{
       height: 100px;
       padding: 10px;
