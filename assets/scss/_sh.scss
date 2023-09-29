@@ -83,10 +83,12 @@
       line-height: 36px;
     }
     @include lg{
-      font-size: 42px;
-      line-height: 52px;
+      font-size: 39px;
+      line-height: 49px;
     }
     @include xl{
+      font-size: 42px;
+      line-height: 52px;
     }
   }
   & .heroPera{
@@ -527,54 +529,214 @@
     background-image: url(../img/brand/hero-9-img.png) !important;
     background-repeat: no-repeat;
     background-size: cover;
-  & .HeroHeading{
-    font-size: 20px;
-    line-height: 30px;
-    color: $black;
-    @include xl{
-      font-size: 50px;
-      line-height: 60px;
-
-    }
-    @include sm{
-      font-size: 30px;
-      line-height: 40px;
-    }
-
-    & .brandsubheading{
-      color: $theme1;
-    }
-  }
-  & .heroPera{
-    font-size: 14px;
-    color: $black;
-    @include sm{
-      font-size: 16px;
-  
+    padding-top: 80px;
+    min-height: 100vh;
+    & .HeroHeading{
+      font-size: 27px;
+      color: $theme3;
+      line-height: 32px;
+      @include sm{
       }
-    @include md{
-    font-size: 20px;
-
-    }
-  }
-  & .brandImg{
-    & img{
-      aspect-ratio: 1/0.5;
-      object-fit: contain;
-        aspect-ratio: unset;
-        @include sm{
-          aspect-ratio: 1/0.7;
-          object-fit: contain;
-        }
-      
       @include md{
-        aspect-ratio: 1/0.7;
+        font-size: 35px;
+        line-height: 36px;
+      }
+      @include lg{
+        font-size: 42px;
+        line-height: 52px;
+      }
+      @include xl{
+      }
+    }
+    & .heroPera{
+      font-size: 16px;
+      color: $theme2;
+      // font-weight: 700;
+      @include sm{
+        font-size: 16px;
+        line-height: normal;
+      }
+      @include lg{
+        font-size: 20px;;
+      }
+    }
+    & .heroImage{
+      z-index: 6;
+      position: relative;
+   
+      & img{
+        width: 100%;
+        height: 100%;
         object-fit: contain;
       }
-      @include lg {
-        aspect-ratio: unset;
+    }
+}
+// brand hero section end 
+
+// contect form 
+.aboutUs{
+  & .cardAbout{
+      border-radius: 5px;
+      padding: 20px;
+      background-color:lighten($theme2,10) !important;
+      @include md{
+        padding: 30px;
+
+      }
+      @include md{
+        padding: 40px;
+
+      }
+      & .cardHeading{
+          font-size: 22px;
+          line-height: 30px;
+          color: $white;
+          font-weight: 600;
+          @include md{
+            font-size: 25px;
+            line-height: 32px;
+          }
+          @include md{
+            font-size: 30px;
+            line-height: 38px;
+          }
+      }
+   
+   
+ 
+  }
+  .devolopements-benefits-box {
+      // background-color:$black !important;
+      background-color:lighten($theme2,10) !important;
+
+      background-size: cover;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        & .devolopements-benefits-box-count{
+          border-radius: 10px;
+        }
+
+      }
+      & .headingCardInner{
+          color: $white;
+          font-size: 18px;
+          @include sm{
+            font-size: 20px;
+          }
+      }
+      & .peraCard{
+          font-size: 14px;
+          color: $white;
+          opacity: 0.7;
+          margin-top: 10px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          @include sm{
+          font-size: 16px;
+
+          }
+      }
+      & .positionCard{
+          color: $white;
+          font-size: 12px;
+      }
+      & .devolopements-benefits-box-count {
+          position: absolute;
+          left: -18px;
+          height: 50px;
+          background-color: $theme1;
+          width: 50px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          color: #fff;
+          font-size: 20px;
+          transition: 0.5s;
+          transition: all 0.3s ease-in-out;
+          @include sm{
+          left: -25px;
+          font-size: 24px;
+
+          }
+        }
+    }
+    
+}
+// contact form end 
+
+// form section 
+.formStart{
+  & .formFloat{
+    border-color:Red !important ;
+      &::placeholder{
+          color: $theme3 !important;
+      }
+      & .formFloatinput{
+        color: $white !important;
+          &:focus{
+              border-color: $white !important;
+          }
+      }
+      & .formFloatinputlabel{
+        color: $white !important;
+          font-size: 14px !important;
+          @include sm{
+          font-size: 16px !important;
+
+          }
+          &::after{
+              background: transparent !important;
+          }
+      }
+      & .formFloatinputtextarea{
+          height: 120px;
+          @include sm{
+          height: 150px;
+
+          }
+      }
+  }
+}
+// form section end 
+
+// services section start 
+
+  .servicesSection{
+    background-image: url(../img/brand/Main-bg_serv01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+    & .servicesCard{
+      padding: 30px;
+      background:lighten($theme3, 65) !important;
+      border-radius: 10px;
+      & .cardImg{
+        width: 60px;
+        height: 60px;
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        padding: 10px;
+        transform: rotate(-5deg);
+        background-color: $white;
+        
+      }
+      & .cardHeading{
+        font-size: 24px;
+        color: $black;
+        font-weight: 700;
+      }
+      & .cardPera{
+        font-size: 16px;
+        color: $black;
+        font-weight: 400;
       }
     }
   }
-}
-// brand hero section end 
+
+// services section end 
