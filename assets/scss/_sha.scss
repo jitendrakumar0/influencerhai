@@ -106,11 +106,11 @@
                     // font-weight: 500;
                     color: $theme2;
                     opacity: 0.7;
-                    // display: -webkit-box;
-                    // -webkit-line-clamp: 3;
-                    // -webkit-box-orient: vertical;
-                    // overflow: hidden;
-                    // text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     @include sm {
                         font-size: 16px;
                     }
@@ -263,9 +263,9 @@
                             background: url(../img/plusOrange.svg) no-repeat;
                             background-size: cover;
                             background-position: center;
-                            position: absolute;
-                            right: 20px;
-                            transform: translateY(-50%), rotate(-180deg);
+                            // position: absolute;
+                            // right: 20px;
+                            // transform: translateY(-50%), rotate(-180deg);
                             height: 18px;
                             width: 18px;
                             transition: .3s ease-in-out;
@@ -568,3 +568,189 @@
         animation-delay: 2s;
     }
 // video Section Ends
+
+// git Section Start
+.gitSection{
+    background-image: url(../img/ShaImg/formBack.jpg);
+    & .heading{
+        letter-spacing: 1px;
+        &::after{
+            content: '';
+            position: absolute;
+            right: 50%;
+            bottom: -30px;
+            height: 2px;
+            width: 50px;
+            transform: translateX(50%);
+            background-color: $theme1;
+        }
+    }
+}
+.formStart{
+    & .formFloat{
+        &::placeholder{
+            color: $white !important;
+        }
+        & .formFloatinput{
+            &:focus{
+                border-color: $theme1 !important;
+            }
+        }
+        & .formFloatinputlabel{
+            font-size: 16px !important;
+            &::after{
+                background: transparent !important;
+            }
+        }
+        & .formFloatinputtextarea{
+            height: 150px;
+        }
+    }
+}
+// git Section Ends
+// New Faq Section Start
+.newFaqSection{
+    & .textImgSection{
+        & .heading{
+            line-height: 50px;
+            letter-spacing: 2px;
+            line-height: 30px;
+            @include sm{}
+            @include md{
+                line-height: 35px;
+            }
+            @include lg{
+            }
+            @include xl{
+            line-height: 50px;
+            }
+            @include xxl{}
+        }
+        & .description{
+            font-size: 16px;
+            line-height: 22px;
+            opacity: 0.8;
+            @include sm{
+                font-size: 17px;
+            }
+            @include md{
+                line-height: 24px;
+            }
+            @include lg{
+                line-height: 28px;
+            }
+            @include xl{}
+            @include xxl{}
+        }
+        & .faqImg{
+            @include sm{
+                aspect-ratio: 9/5;
+            }
+            @include md{
+                aspect-ratio: 9/5;
+            }
+            @include lg{
+            aspect-ratio: 9/6;
+            }
+            @include xl{
+                aspect-ratio: 9/7;
+            }
+            @include xxl{}
+        }
+    }
+    & .faqQuestionStart{
+        & .faqAccordian{
+            & .faqAccordianitem{
+                & .faqAccordianheader{
+                    & .faqAccordianbutton{
+                        font-size: 14px;
+                        color: $black;
+                        border-radius: 5px;
+                        padding-inline: 20px !important;
+                        background-color: rgba(211, 211, 211, 0.4);
+                        @include sm {
+                            font-size: 16px;
+                            height: 50px;
+                        }
+                        @include md{
+                            font-size: 17px;
+                            height: 60px;
+                        }
+                        @include lg{
+                            font-size: 18px;
+                            height: 60px;
+                        }
+                        @include xl{
+                            font-size: 20px;
+                            height: 80px;
+                        }
+                        @include xxl{
+                            font-size: 20px;
+                        }
+                        &::after {
+                            content: '';
+                            background: url(../img/plus.svg) no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            // position: absolute;
+                            // right: 20px;
+                            // transform: translateY(-50%), rotate(-180deg);
+                            height: 18px;
+                            width: 18px;
+                            transition: .3s ease-in-out;
+                        }
+                        &:not(.collapsed) {
+                            &::after {
+                                background: url(../img/minusblack.svg) no-repeat;
+                                height: 8px;
+                                width: 16px;
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                }
+                & .faqAccordianbpdy{
+                        font-size: 16px;
+                        // padding-top: 1;
+                        padding-inline: 20px !important;
+                        @include sm {
+                            font-size: 14px;
+                        }
+                        @include md{
+                            font-size: 14px;
+                        }
+                        @include lg{
+                            font-size: 15px;
+                        }
+                        @include xl{
+                            font-size: 16px;
+                        }
+                        @include xxl{
+                            font-size: 16px;
+                        }
+                    & .faqAccordianbpdyAnc{
+                        font-size: 13px !important;
+                        font-weight: 600 !important;
+                        color: $theme1;
+                        @include sm {
+                            font-size: 14px;
+                        }
+                        @include md{
+                            font-size: 15px;
+                        }
+                        @include lg{
+                            font-size: 16px;
+                        }
+                        @include xl{
+                            font-size: 18px;
+                        }
+                        @include xxl{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// New Faq Section Ends
