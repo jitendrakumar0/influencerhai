@@ -1,0 +1,104 @@
+// create section Start
+.createSection{
+    background-image: url(../img/ShaImg/formBack.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    & .textSide{
+        font-size: 20px;
+        line-height: 30px;
+        @include sm{
+            font-size: 28px;
+            line-height: 38px;
+        }
+        @include md{
+            font-size: 32px;
+            line-height: 42px;
+        }
+        @include lg{
+            font-size: 35px;
+            line-height: 45px;
+        }
+        @include xl{
+            font-size: 42px;
+            line-height: 55px;
+        }
+        @include xxl{
+            font-size: 42px;
+            line-height: 55px;
+        }
+    }
+    & .subText{
+        font-size: 14px;
+        @include sm{
+        font-size: 17px;
+        }
+        @include md{
+        font-size: 20px;
+        }
+        @include lg{
+        font-size: 20px;
+        }
+        @include xl{
+        font-size: 22px;
+        }
+        @include xxl{
+        font-size: 22px;
+        }
+    }
+}
+// create section Ends
+
+// Choose Section Start
+    .chooseSection{
+        & .text{
+            & .head{
+                font-size: 20px;
+                line-height: 30px;
+                @include sm{
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                @include md{
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                @include lg{
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                @include xl{
+                    font-size: 38px;
+                    line-height: 52px;
+                }
+                @include xxl{
+                    font-size: 41px;
+                    line-height: 55px;
+                }
+            }
+            & .subHead{
+                font-size: 14px;
+                    @include sm{
+                    font-size: 17px;
+                    }
+                    @include md{
+                    font-size: 18px;
+                    }
+                    @include lg{
+                    font-size: 18px;
+                    }
+                    @include xl{
+                    font-size: 20px;
+                    }
+                    @include xxl{
+                    font-size: 22px;
+                    }
+            }
+        }
+        & .chooseImg1{
+            overflow: hidden;
+            // border-bottom-right-radius: 80px;
+            aspect-ratio: 1/1;
+        }
+    }
+// Choose Section Ends
