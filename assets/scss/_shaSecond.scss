@@ -235,8 +235,23 @@
         & .sidebar{
             & .mainCard{
                 & .cardHeading{
-                    font-size: 25px;
+                    font-size: 18px;
                     font-weight: 700;
+                    @include sm{
+                        font-size: 18px;
+                        }
+                        @include md{
+                        font-size: 20px;
+                        }
+                        @include lg{
+                        font-size: 22px;
+                        }
+                        @include xl{
+                        font-size: 25px;
+                        }
+                        @include xxl{
+                        font-size: 25px;
+                        }
                 }
                 & .CardBox{
                     transition: all .3s ease-in-out;
@@ -309,7 +324,23 @@
                 }
                 & .archiesText{
                     & .archiesTextanc{
+                        font-size: 14px;
                         transition: all .3s ease-in-out;
+                        @include sm{
+                            font-size: 14px;
+                            }
+                            @include md{
+                            font-size: 14px;
+                            }
+                            @include lg{
+                            font-size: 15px;
+                            }
+                            @include xl{
+                            font-size: 15px;
+                            }
+                            @include xxl{
+                            font-size: 16px;
+                            }
                         &:hover{
                             color: $theme1 !important;
                             background-color: lightgrey !important;
