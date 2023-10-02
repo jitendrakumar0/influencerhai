@@ -544,35 +544,37 @@
         font-size: 13px;
         font-weight: 600;
         transition: all 0.3s ease-in-out;
+        padding: 11px;
         @include sm {
-            height: 40px;
-            width: 40px;
-            font-size: 15px;
+            height: 35px;
+            width: 35px;
+            font-size: 14px;
+            padding: 0;
         }
         @include md {
-            height: 45px;
-            width: 45px;
-            font-size: 16px;
+            height: 37px;
+            width: 37px;
+            font-size: 15px;
         }
         @include lg {
-            height: 50px;
-            width: 50px;
-            font-size: 17px;
+            height:40px;
+            width: 40px;
+            font-size: 16px;
         }
         & .arrow {
-            height: 12px;
-            width: 8px;
+            height: 11px;
+            width: 6px;
             transition: all 0.3s ease-in-out;
             & img {
                 transition: all 0.3s ease-in-out;
             }
             @include sm {
-                height: 13px;
-                width: 9px;
+                height: 12px;
+                width: 7px;
             }
             @include md {
-                height: 15px;
-                width: 10px;
+                height: 13px;
+                width: 8px;
             }
         }
         &:hover {
