@@ -16,7 +16,7 @@
     <!-- navbar start  -->
         <nav class="navbar navbar-expand-lg fixed-top textColour  container-fluid" aria-label="Offcanvas navbar large">
             <div class="container">
-            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName text-white d-inline-flex ms-3">Influencer Hai</span></a>
+            <a class="navbar-brand logonav d-flex align-items-center" href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName text-white d-inline-flex ms-3">Influencer Hai</span></a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon menuBtn  "> <img src="assets/img/Menu.png" alt="menu" class="img-fluid w-100 h-100"></span>
             </button>
@@ -162,6 +162,9 @@
                         <span class="fw-bold">Influencer Hai</span> – A data-driven team of designer & creators transforming relationships between brands, influencers, and their audiences.
                     </div>
                 </div>
+                <div class="col-12">
+                    <button class="influencerBtn m-auto mt-4">Contact Now!</button>
+                </div>
             </div>
         </div>
     </div>
@@ -178,7 +181,7 @@
                                 <div class="heading text-center text-md-start py-2 py-lg-4">
                                     Frequently <span class="text-theme1">Asked</span> Questions
                                 </div>
-                                <div class="description text-center text-md-start pb-4 pb-xl-5 ">
+                                <div class="description text-center text-md-start pb-4 pb-xl-4 ">
                                     Mauris aptent quis morbi aenean ante maecenas semper duis ultricies. Interdum penatibus leo natoque gravida risus dignissim ipsum arcu porttitor.
                                 </div>
                             </div>
@@ -567,35 +570,35 @@
     },
 },
         });
-</script>
-<script>
-    let willChangeImgs = document.querySelectorAll('.willChangeImg')
-    willChangeImgs.forEach(img=> {
-        setInterval(()=>{
-            if(img.classList.contains('active')) {
-                img.classList.remove('active')
-            }else {
-                img.classList.add('active')
+    </script>
+    <script>
+        let willChangeImgs = document.querySelectorAll('.willChangeImg')
+        willChangeImgs.forEach(img=> {
+            setInterval(()=>{
+                if(img.classList.contains('active')) {
+                    img.classList.remove('active')
+                }else {
+                    img.classList.add('active')
+                }
+            }, 4000)
+        })
+    </script>
+    <script>
+        var glightbox = GLightbox({
+            loop: true,
+            selector: ".glightboxx",
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 120) {
+                $("nav.navbar").removeClass("nav-active");
+            } else {
+                $("nav.navbar").addClass("nav-active");
             }
-        }, 4000)
-    })
-</script>
-<script>
-    var glightbox = GLightbox({
-        loop: true,
-        selector: ".glightboxx",
-    });
-</script>
-<script>
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll <= 120) {
-            $("nav.navbar").removeClass("nav-active");
-        } else {
-            $("nav.navbar").addClass("nav-active");
-        }
-    });
-</script>
+        });
+    </script>
 </body>
 </html>
 
