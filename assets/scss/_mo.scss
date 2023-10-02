@@ -27,6 +27,9 @@
                     height: 14px;
                     max-width: 14px;
                     min-width: 14px;
+                    & img {
+                        object-fit: unset;
+                    }
                     @include sm {
                         height: 16px;
                         max-width: 16px;
