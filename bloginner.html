@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="./assets/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- navbar start  -->
+    <nav class="navbar navbar-expand-lg fixed-top container-fluid blognav" aria-label="Offcanvas navbar large">
+        <div class="container">
+        <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menuBtn  "> <img src="assets/img/Menu.png" alt="menu" class="img-fluid w-100 h-100"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <div class="offcanvas-title" id="offcanvasNavbar2Label">
+            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+            </div>
+            <button type="button" class="menuBtn border-0 d-inline-flex shdow-none bg-dark" data-bs-dismiss="offcanvas" aria-label="Close"> <img src="assets/img/Close.png" alt="menu" class="img-fluid w-100 h-100"></button>
+            </div>
+            <div class="offcanvas-body">
+            <ul class="navbar-nav navbarNav justify-content-end flex-grow-1 gap-md-3 gap-2">
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" aria-current="page" href="#">Home</a>
+                    </li>
+                <li class="nav-item navItem">
+                <a class="nav-link navLInk" href="#">About Us</a>
+                </li>
+                <li class="nav-item navItem">
+                <a class="nav-link navLInk" href="#">Services</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk active" href="#">Blog</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Influencer</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Brand</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Contact Us</a>
+                </li>
+                <!-- <li class="nav-item navItem">
+                    <a class="nav-link navLInk" href="#">Search</a>
+                </li> -->
+            </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- page heading section start -->
+    <div class="container-fluid headingSection position-relative">
+        <div class="h-100 d-flex align-items-center position-relative z-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 pageheading text-center">Blog</div>
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb" class="headingBreadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item headingTitle"><a href="index.html" class="text-decoration-none">Home</a></li>
+                                <li class="breadcrumb-item headingTitle active" aria-current="page">Blog</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page heading section end -->
+
+    <!-- blog section start  -->
+    <!-- <div class="container-fluid blogsection blogpage py-4 py-md-5 overflow-x-hidden">
+        <div class="container">
+            <div class="blogslidermain g-3 row position-relative">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="row blogcontent p-0 h-100 mx-0">
+                            <div class="col-12 px-0">
+                                <div class="blogimg overflow-hidden rounded-2">
+                                    <img src="assets/img/blog/blog1.webp" alt="blog" class="h-100 w-100">
+                                </div>
+                                <div class="blogcontent">
+                                    <div>
+                                        <a href="javascript:;" class="blogheading text-decoration-none "> UTT 2023 – Ultimate Table Tennis Tournament 2023 Influencer Marketing Campaign</a>
+                                    </div>
+                                    <div class="blogdetail">
+                                        In the ever-evolving sports landscape, the Ultimate Table Tennis Tournament (UTT) has established itself as a premier event showcasing top-tier table tennis talent worldwide.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date d-flex align-items-end px-0">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <img src="assets/img/blog/calendar.svg" alt="calendar" class="h-100 w-100 img-fluid">
+                                </span>
+                                July 15th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="row blogcontent p-0 h-100 mx-0">
+                            <div class="col-12 px-0">
+                                <div class="blogimg overflow-hidden rounded-2">
+                                    <img src="assets/img/blog/blog2.webp" alt="blog" class="h-100 w-100">
+                                </div>
+                                <div class="blogcontent">
+                                    <div>
+                                        <a href="javascript:;" class="blogheading text-decoration-none ">Mazaya Foods’ Influencer Collaboration – A Flavorful Journey With InfluencerHai</a>
+                                    </div>
+                                    <div class="blogdetail">
+                                        Mazaya Foods, a renowned brand in the culinary world, recently embarked on an exciting influencer collaboration campaign using the cash payment system. Mazaya Foods.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date d-flex align-items-end px-0">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <img src="assets/img/blog/calendar.svg" alt="calendar" class="h-100 w-100 img-fluid">
+                                </span>
+                                July 15th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="row blogcontent p-0 h-100 mx-0">
+                            <div class="col-12 px-0">
+                                <div class="blogimg overflow-hidden rounded-2">
+                                    <img src="assets/img/blog/blog3.webp" alt="blog" class="h-100 w-100">
+                                </div>
+                                <div class="blogcontent">
+                                    <div>
+                                        <a href="javascript:;" class="blogheading text-decoration-none ">Astro Yogendra’s Influencer Collaboration With InfluencerHai</a>
+                                    </div>
+                                    <div class="blogdetail">
+                                        Astro Yogendra has emerged as a reputable brand known for its insightful guidance and expertise in astrology. Recently, Astro Yogendra embarked on an influencer...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date d-flex align-items-end px-0">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <img src="assets/img/blog/calendar.svg" alt="calendar" class="h-100 w-100 img-fluid">
+                                </span>
+                                July 15th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100 ">
+                        <div class="row blogcontent p-0 h-100 mx-0">
+                            <div class="col-12 px-0">
+                                <div class="blogimg overflow-hidden rounded-2">
+                                    <img src="assets/img/blog/blog4.webp" alt="blog" class="h-100 w-100">
+                                </div>
+                                <div class="blogcontent">
+                                    <div>
+                                        <a href="javascript:;" class="blogheading text-decoration-none ">Lapcare’s Successful Influencer Collaboration With InfluencerHai.com</a>
+                                    </div>
+                                    <div class="blogdetail">
+                                        Lapcare's successful influencer collaboration with InfluencerHai.com leveraging barter for amplified brand reach. In the dynamic marketing world, influencers have emerged as powerful brand advocates,.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date d-flex align-items-end px-0">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <img src="assets/img/blog/calendar.svg" alt="calendar" class="h-100 w-100 img-fluid">
+                                </span>
+                                July 15th, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="row blogcontent p-0 h-100 mx-0">
+                            <div class="col-12 px-0">
+                                <div class="blogimg overflow-hidden rounded-2">
+                                    <img src="assets/img/blog/blog5.jpg" alt="blog" class="h-100 w-100">
+                                </div>
+                                <div class="blogcontent">
+                                    <div>
+                                        <a href="javascript:;" class="blogheading text-decoration-none ">How AI is Transforming the Future of Digital Marketing Jobs</a>
+                                    </div>
+                                    <div class="blogdetail">
+                                        So, How AI is Transforming the Future of Digital Marketing Jobs? The impact of artificial intelligence (AI) on the job market has been a...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date d-flex align-items-end px-0">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <img src="assets/img/blog/calendar.svg" alt="calendar" class="h-100 w-100 img-fluid">
+                                </span>
+                                May 2nd, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blogcard bg-white rounded2 shadowsm h-100">
+                        <div class="row h-100 p-0 blogcontent mx-0">
+                            <div class="col-12 px-0 px-0">
+                                <div class="blogimg overflow-hidden rounded-2">
+                                    <img src="assets/img/blog/blog6.jpg" alt="blog" class="h-100 w-100">
+                                </div>
+                                <div class="blogcontent">
+                                    <div>
+                                        <a href="javascript:;" class="blogheading text-decoration-none ">10 Common Digital Marketing Mistakes to Avoid for Business Growth</a>
+                                    </div>
+                                    <div class="blogdetail">
+                                        Avoid common Digital Marketing Mistakes & achieve business growth. Read our article to learn the top 10 mistakes & how to avoid them. Contact...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="date d-flex align-items-end px-0 px-0">
+                                <span class="d-flex align-items-center justify-content-center calendaricon">
+                                    <img src="assets/img/blog/calendar.svg" alt="calendar" class="h-100 w-100 img-fluid">
+                                </span>
+                                May 1st, 2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12">
+                    <nav aria-label="Page navigation example" class="pagepagination">
+                        <ul class="pagination justify-content-md-end justify-content-center gap-2 mb-0">
+                            <li class="page-item disabled overflow-hidden rounded-1">
+                                <a class="page-link pageLink rounded-1 d-flex align-items-center justify-content-center">
+                                    <span class="d-flex align-items-center justify-content-center arrow">
+                                        <img src="assets/img/blog/leftpagination.svg" alt="right" class="h-100 w-100 img-fluid">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active pageLink rounded-1 d-flex align-items-center justify-content-center" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link pageLink rounded-1 d-flex align-items-center justify-content-center" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link pageLink rounded-1 d-flex align-items-center justify-content-center" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link pageLink rounded-1 d-flex align-items-center justify-content-center" href="#">
+                                    <span class="d-flex align-items-center justify-content-center arrow">
+                                        <img src="assets/img/blog/rightpagination.svg" alt="right" class="h-100 w-100 img-fluid">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- blog inner section start  -->
+    <div class="container-fluid blogInnerpage py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="blogcardmain rounded-3 bg-light">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="blogimg overflow-hidden rounded-3">
+                                    <img src="assets/img/blog/blog1.webp" alt="blog" class="h-100 w-100 img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 ">
+                                UTT 2023 – Ultimate Table Tennis Tournament 2023 Influencer Marketing Campaign
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog inner section end -->
+    
+    <!-- blog section end -->
+
+    <!-- footer section  start  -->
+    <div class="footer container-fluid py-4 py-md-5">
+        <div class="container">
+        <div class="row">
+            <!-- <div class="col-12 mb-3">
+            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+            </div> -->
+            <div class="col-lg-4 col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row gap-3">
+                            <div class="col-12 ">
+                            <a class="navbar-brand logonav d-flex align-items-center" href="#"><img src="assets/img/logo.png" alt="logo" class="img-fluid w-100 h-100"> <span class="logoName d-inline-flex ms-3">Influencer Hai</span></a>
+                            </div>
+                            <!-- <div class="col-12">
+                                <div class="addresspera"> Qoruz is an influencer marketing and intelligence platform, that enables superior influencer discovery, quick and easy influencer outreach.</div>
+                            </div> -->
+                                <div class="col-12 ">
+                                <div class="row">
+                                    <div class="col-12">
+                                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center ">
+                                        <div class="col-auto">
+                                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Map.png" alt="map" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                        <div class="addresspera">  A-88, F-01, Sector-4, Noida, UP, INDIA </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-12">
+                                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-2">
+                                        <div class="col-auto">
+                                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Phone.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                        <div class="addresspera"> +91-823-593-2170 </div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                    <div class="col-12">
+                                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-2">
+                                        <div class="col-auto">
+                                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/mail.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                                        </div>
+                                        <div class="col ps-0">
+                                        <div class="addresspera"> info@influencerhai.com</div>
+                                        </div>
+                                    </a>
+                                    </div>
+                                </div>
+                
+                                </div>
+                                
+                                <div class="col-12">
+                                    <ul class="list-unstyled footerMenu d-flex gap-2 ">
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/Facebook.svg" alt="facebook" class="img-fluid w-100 h-100"></a></li>
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/instagram.svg" alt="instagram" class="img-fluid w-100 h-100"></a></li>
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/twitter.svg" alt="twitter" class="img-fluid w-100 h-100"></a></li>
+                                    <li><a href="javascript:;" class=" socilaIcon d-flex align-items-center text-decoration-none"><img src="assets/img/footer/Linkdin.svg" alt="Linkdin" class="img-fluid w-100 h-100"></a></li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            <div class="row">
+            
+                <div class="col-12">
+                <div class="row gap-3">
+                    <div class="col-12">
+                    <div class="headingFotter"> URL's</div>
+                    </div>
+                    <div class="col-12">
+                    <ul class="list-unstyled footerMenu d-flex gap-2 flex-column">
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Influencer Marketing Pros and Cons</a></li>
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Top Indian Food Influencers and Bloggers </a></li>
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Top 10 LinkedIn Influencers In India To Follow In 2023</a></li>
+                        <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">The Best Gaming Influencer Marketing Agency in India</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+            <div class="row gap-3">
+                <div class="col-12">
+                <div class="headingFotter"> Features</div>
+                </div>
+                <div class="col-12">
+                <ul class="list-unstyled footerMenu d-flex gap-2 flex-column">
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Our Nano, Micro, Macro, And Mega Influencer Marketing Services</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">I Am Brand? Start Your Campaign</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Are You An Influencer? Promote The Brand To Start Earning Now!</a></li>
+                    <!-- <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Careers</a></li> -->
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <div class="row gap-3">
+                <div class="col-12">
+                    <div class="headingFotter"> Our Company</div>
+                </div>
+                <div class="col-12">
+                    <ul class="list-unstyled footerMenu d-flex gap-2 flex-column">
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Resourse</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">About us</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Contact Us</a></li>
+                    <li><a href="javascript:;" class=" footerLink d-flex align-items-center text-decoration-none">Careers</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <!-- <div class="col-xxl-2 col-md-6 order-lg-4 order-md-2 order-4">
+            <div class="row gap-3">
+                <div class="col-12">
+                <div class="headingFotter"> Contact us</div>
+                </div>
+                <div class="col-12 ">
+                <div class="row">
+                    <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center ">
+                        <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Map.png" alt="map" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col ps-0">
+                        <div class="addresspera">  A-88, F-01, Sector-4, Noida, UP, INDIA </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-3">
+                        <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/Phone.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col ps-0">
+                        <div class="addresspera"> +91-823-593-2170 </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col-12">
+                    <a href="javascript:;" class="row text-decoration-none d-flex align-items-center mt-3">
+                        <div class="col-auto">
+                        <div class="footerIcon d-inline-flex"><img src="assets/img/footer/mail.png" alt="Phone" class="img-fluid w-100 h-100"></div>
+                        </div>
+                        <div class="col ps-0">
+                        <div class="addresspera"> info@influencerhai.com</div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div> -->
+        </div>
+        </div>
+    </div>
+    <div class="container-fluid copyRight">
+        <div class="container">
+        <div class="row">
+            <div class="col-12">
+            <div class="copyRightHeading text-center py-3">COPYRIGHT © 2022 | ALL RIGHTS RESERVED BY TECHISTIC ONLINE PLATFORM PVT LTD</div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".blogslider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.nextarrow',
+                prevEl: '.prevarrow',
+            },
+            pagination: {
+                el: ".blogdots",
+                clickable: true
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+
+    <!-- team slider start -->
+    <script>
+        var swiper = new Swiper(".teamslider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // navigation: {
+            //     nextEl: '.nextarrow',
+            //     prevEl: '.prevarrow',
+            // },
+            pagination: {
+                el: ".teamdots",
+                clickable: true
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                991: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                1201: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
+    <!-- team slider end -->
+
+    <!-- client slider start  -->
+    <script>
+        var swiper = new Swiper(".clientslider", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            // navigation: {
+            //     nextEl: '.nextarrow',
+            //     prevEl: '.prevarrow',
+            // },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true
+            // },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+    <!-- client slider end -->
+
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 120) {
+                $("nav.navbar").removeClass("nav-active");
+            } else {
+                $("nav.navbar").addClass("nav-active");
+            }
+        });
+    </script>
+
+    <script>
+        let willChangeImgs = document.querySelectorAll('.willChangeImg')
+        willChangeImgs.forEach(img=> {
+            setInterval(()=>{
+                if(img.classList.contains('active')) {
+                    img.classList.remove('active')
+                }else {
+                    img.classList.add('active')
+                }
+            }, 4000)
+        })
+    </script>
+
+</body>
+</html>
+

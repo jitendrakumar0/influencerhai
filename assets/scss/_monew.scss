@@ -643,3 +643,15 @@
     }
 }
 // contact us page end
+
+
+// blog innere page start 
+.blogInnerpage {
+    & .blogcardmain {
+        padding: 25px;
+        & .blogimg {
+            aspect-ratio: 6/3;
+        }
+    }
+}
+// blog innere page end
