@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/glightBox/css/glightbox.min.css">
+
+    <link href="./assets/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+    
+  <div class="container-fluid aboutSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/libs/glightBox/js/glightbox.min.js"></script>
+
+
+    <script>
+      $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll <= 120) {
+              $("nav.navbar").removeClass("nav-active");
+          } else {
+              $("nav.navbar").addClass("nav-active");
+          }
+      });
+  </script>
+
+
+<!-- video swiper  -->
+<script>
+  var swiper = new Swiper(".videoSwiper", {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 5.3,
+        spaceBetween: 20,
+      },
+    },
+  });
+</script>
+
+<!-- video glightBox  -->
+
+<script>
+  var glightbox = GLightbox({
+      loop: true,
+      selector: ".glightboxx",
+  });
+</script>
+
+</body>
+</html>
+
