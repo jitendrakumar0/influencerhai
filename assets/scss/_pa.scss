@@ -605,6 +605,9 @@
     font-size: 12px;
     display: flex;
     margin: auto;
+    &.zIndex{
+        z-index: 5;
+    }
     &.influencerBtn1{
         margin: auto;
     @include sm{

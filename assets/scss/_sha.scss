@@ -365,7 +365,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            z-index: 4;
+            z-index: 3;
         }
         &::before{
             content: '';
@@ -379,7 +379,7 @@
         }
         & .vedioTxt{
             & .textSide{
-                z-index: 3;
+                z-index: 5;
                 position: relative;
                 // padding: 20px;
                 @include sm{
@@ -640,7 +640,8 @@
                 line-height: 24px;
             }
             @include lg{
-                line-height: 28px;
+                line-height: 24px;
+                font-size: 15px;
             }
             @include xl{}
             @include xxl{}
@@ -667,7 +668,7 @@
                 & .faqAccordianheader{
                     & .faqAccordianbutton{
                         font-size: 14px;
-                        color: $black;
+                        color: $theme2;
                         border-radius: 5px;
                         padding-inline: 14px !important;
                         background-color: rgba(211,211,211,.4);
@@ -686,7 +687,7 @@
                         }
                         @include xl{
                             font-size: 20px;
-                            height: 80px;
+                            height: 70px;
                         }
                         @include xxl{
                             font-size: 20px;
@@ -737,6 +738,7 @@
                 & .faqAccordianbpdy{
                         font-size: 14px;
                         padding-inline: 20px !important;
+                        color: $theme2;
                         @include sm {
                             font-size: 14px;
                         }
