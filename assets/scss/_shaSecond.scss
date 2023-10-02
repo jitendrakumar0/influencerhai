@@ -326,6 +326,11 @@
                     & .archiesTextanc{
                         font-size: 14px;
                         transition: all .3s ease-in-out;
+                        border: 1px solid lightgray;
+                        padding: 5px 10px;
+                        border-radius: 500px;
+                        opacity: 0.7;
+                        font-weight: 600;
                         @include sm{
                             font-size: 14px;
                             }
@@ -342,8 +347,7 @@
                             font-size: 16px;
                             }
                         &:hover{
-                            color: $theme1 !important;
-                            background-color: lightgrey !important;
+                            background-color: rgba(211, 211, 211, 0.6) !important;
                         }
                     }
                 }
