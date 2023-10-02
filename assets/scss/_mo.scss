@@ -27,6 +27,9 @@
                     height: 14px;
                     max-width: 14px;
                     min-width: 14px;
+                    & img {
+                        object-fit: unset;
+                    }
                     @include sm {
                         height: 16px;
                         max-width: 16px;
@@ -59,6 +62,7 @@
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 transition: all 0.3s ease-in-out;
+                text-align: start;
                 @include sm {
                 }
                 @include md {
@@ -81,6 +85,7 @@
                 -webkit-box-orient: vertical;
                 line-height: 20px;
                 font-size: 13px;
+                text-align: start;
                 @include sm {
                     font-size: 14px;
                     line-height: 21px;
