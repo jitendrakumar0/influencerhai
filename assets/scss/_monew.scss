@@ -652,6 +652,13 @@
         & .blogimg {
             aspect-ratio: 6/3;
         }
+        & .blogheading {
+            font-size: 40px;
+            font-weight: 600;
+            color: $black;
+            line-height: 47px;
+            margin-top: 18px;
+        }
     }
 }
 // blog innere page end
