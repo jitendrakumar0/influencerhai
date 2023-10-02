@@ -102,3 +102,221 @@
         }
     }
 // Choose Section Ends
+
+// modal Start
+    .formStartModal{
+        & .formFloatModal{
+            &::placeholder{
+            }
+            & .formFloatinputmodal{
+                &:focus{
+                    border-color: $theme1 !important;
+                }
+            }
+            & .formFloatinputlabelmodal{
+                font-size: 16px !important;
+                &::after{
+                    // background: transparent !important;
+                }
+            }
+            & .formFloatinputtextareaModal{
+                height: 150px;
+            }
+        }
+    }
+// modal ends
+
+// page heading Start
+    .headingAboutSection{
+        height: 55vh;
+        background: url(../img/aboutback.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 45px;
+    }
+// page heading Ends
+
+// aboutImg Section Start
+    .aboutSection{
+        background: url(../img/aboutus02.jpg) no-repeat;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        & .aboutImg{
+            & .head{
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            & .subHead{
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 28px;
+                @include sm{
+                font-size: 25px;
+                line-height: 32px;
+                }
+                @include md{
+                font-size: 30px;
+                line-height: 40px;
+                }
+                @include lg{
+                font-size: 40px;
+                line-height: 50px;
+                }
+                @include xl{
+                font-size: 50px;
+                line-height: 55px;
+                }
+                @include xxl{
+                font-size: 50px;
+                line-height: 55px;
+                }
+            }
+            & .subHeadmain{
+                font-size: 18px;
+                font-weight: 600;
+                @include sm{
+                font-size: 22px;
+                }
+                @include md{
+                font-size: 24px;
+                }
+                @include lg{
+                font-size: 28px;
+                }
+                @include xl{
+                font-size: 35px;
+                }
+                @include xxl{
+                font-size: 35px;
+                }
+            }
+        }
+    }
+// aboutImg Section Ends
+
+// About text start
+    .aboutTextSection{
+        & .text{
+            font-weight: 600;
+            font-size: 17px;
+        }
+        & .head{
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 700;
+            @include sm{
+                font-size: 24px;
+                line-height: 30px;
+                }
+                @include md{
+                font-size: 26px;
+                line-height: 32px;
+                }
+                @include lg{
+                font-size: 30px;
+                line-height: 36px;
+                }
+                @include xl{
+                font-size: 36px;
+                line-height: 42px;
+                }
+                @include xxl{
+                font-size: 36px;
+                line-height: 42px;
+                }
+        }
+        & .subHead{
+            font-size: 17px;
+            font-weight: 600;
+            opacity: 0.8;
+        }
+        & .sidebar{
+            & .mainCard{
+                & .cardHeading{
+                    font-size: 25px;
+                    font-weight: 700;
+                }
+                & .CardBox{
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        & .cardLinkanc{
+                            color: $theme1 !important;
+                        }
+                        & .cardLinkancSecond{
+                            color: $theme3 !important;
+                        }
+                        & .CardImg{
+                            & img{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    & .CardImg{
+                        height: 60px;
+                        width: 90px;
+                        transition: all .3s ease-in-out;
+                        overflow: hidden;
+                            @include sm{
+                                height: 60px;
+                                width: 90px;
+                            }
+                            @include md{
+                                height: 60px;
+                                width: 90px;
+                            }
+                            @include lg{
+                                height: 60px;
+                                width: 90px;
+                            }
+                            @include xl{
+                                height: 70px;
+                                width: 100px;
+                            }
+                            @include xxl{
+                                height: 70px;
+                                width: 100px;
+                            }
+                        & img{
+                            overflow: hidden;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                    & .cardLink{
+                        & .date{
+                            height: 16px;
+                            width: 16px;
+                        }
+                        & .cardLinkanc{
+                            font-size: 16px;
+                            line-height: 21px;
+                            font-weight: 600;
+                            transition: all .3s ease-in-out;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        & .cardLinkancSecond{
+                            font-size: 16px;
+                            line-height: 22px;
+                            font-weight: 600;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                }
+                & .archiesText{
+                    & .archiesTextanc{
+                        transition: all .3s ease-in-out;
+                        &:hover{
+                            color: $theme1 !important;
+                            background-color: lightgrey !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+// About text Ends
