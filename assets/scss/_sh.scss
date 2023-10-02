@@ -1,6 +1,12 @@
 // hero SectionStart 
 
 .heroSection{
+
+  color: white;
+  position: relative;
+  align-items: center;
+  padding-top: 80px;
+  min-height: 100vh;
   @include sm{
     
   }
@@ -27,17 +33,13 @@
     top: 0;
     left: 0;
   }
-  color: white;
-  position: relative;
-  align-items: center;
-  padding-top: 80px;
-  min-height: 100vh;
+
   @include sm{
     color: white;
     position: relative;
     align-items: center;
   }
-  @include md{
+  @include xl{
   height: 100vh;
   }
   & .heroImage{
@@ -79,12 +81,12 @@
     @include sm{
     }
     @include md{
-      font-size: 35px;
+      font-size: 30px;
       line-height: 36px;
     }
     @include lg{
-      font-size: 39px;
-      line-height: 49px;
+      font-size: 35px;
+      line-height: 42px;
     }
     @include xl{
       font-size: 42px;
@@ -530,22 +532,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 80px;
-    min-height: 100vh;
+    min-height: 80vh;
+    @include xl{
+      min-height: 100vh;
+    }
     & .HeroHeading{
-      font-size: 27px;
+      font-size: 25px;
       color: $theme3;
       line-height: 32px;
       @include sm{
       }
       @include md{
-        font-size: 35px;
+        font-size: 30px;
         line-height: 36px;
       }
       @include lg{
-        font-size: 42px;
-        line-height: 52px;
+        font-size: 35px;
+        line-height: 42px;
       }
       @include xl{
+        font-size: 42px;
+        line-height: 52px;
       }
     }
     & .heroPera{
@@ -563,11 +570,18 @@
     & .heroImage{
       z-index: 6;
       position: relative;
-   
+      
       & img{
         width: 100%;
         height: 100%;
         object-fit: contain;
+        aspect-ratio: 1/.7;
+        @include lg{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          aspect-ratio: unset;
+        }
       }
     }
 }
@@ -583,7 +597,7 @@
         padding: 30px;
 
       }
-      @include md{
+      @include lg{
         padding: 40px;
 
       }
@@ -620,8 +634,11 @@
       & .headingCardInner{
           color: $white;
           font-size: 18px;
+          align-items: center;
           @include sm{
             font-size: 20px;
+            align-items: start;
+
           }
       }
       & .peraCard{
@@ -634,8 +651,11 @@
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
+          align-items: center;
+
           @include sm{
           font-size: 16px;
+          align-items: start;
 
           }
       }
@@ -645,11 +665,13 @@
       }
       & .devolopements-benefits-box-count {
           position: absolute;
-          left: -18px;
-          height: 50px;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -25px;
           background-color: $theme1;
           width: 50px;
-          border-radius: 50px;
+          height: 50px;
+          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -659,8 +681,12 @@
           transition: 0.5s;
           transition: all 0.3s ease-in-out;
           @include sm{
-          left: -25px;
+          left: 3px;
           font-size: 24px;
+         
+          height: 50px;
+          border-radius: 50px;
+          top: 20px;
 
           }
         }
@@ -707,36 +733,270 @@
 // services section start 
 
   .servicesSection{
-    background-image: url(../img/brand/Main-bg_serv01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    height: 100%;
+
     & .servicesCard{
-      padding: 30px;
-      background:lighten($theme3, 65) !important;
+
+      padding: 15px;
+      background:lighten($theme3, 65) ;
       border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      @include sm{
+        padding: 30px;
+        &:hover{
+          transform: translateY(-10px);
+          & .cardImg{
+            transform: rotate(0deg);
+          }
+          & .cardHeading{
+            color: $theme1;
+          }
+        }
+      }
+    
       & .cardImg{
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
-        padding: 10px;
+        padding: 7px;
         transform: rotate(-5deg);
         background-color: $white;
+        transition: all 0.3s ease-in-out;
+        @include sm{
+          width: 65px;
+          height: 65px;
+          padding: 10px;
+        }
         
       }
       & .cardHeading{
-        font-size: 24px;
+        font-size: 18px;
         color: $black;
         font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        @include sm{
+          font-size: 20px;
+  
+          }
+        @include md{
+          font-size: 22px;
+  
+          }
+          @include lg{
+            font-size: 24px;
+    
+            }
       }
       & .cardPera{
-        font-size: 16px;
+        font-size: 14px;
         color: $black;
         font-weight: 400;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include sm{
+        font-size: 16px;
+
+        }
       }
     }
   }
 
 // services section end 
+
+// videoSection 
+
+.videoSectionmember{
+  & .VideoCard{
+    border-radius: 10px;
+    width: 100% !important;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    // height: 350px;
+    @include sm{
+
+      &:hover{
+        .videoImg2{
+          & img{
+            transform:scale(1.1);
+          }
+        }
+      }
+    }
+    & .videoImg2{
+      height: 400px;
+      transition: all 0.3s ease-in-out;
+  
+
+     & img{
+      transition: all 0.3s ease-in-out;
+      border-radius: 10px;
+      object-fit: cover;
+     }
+    }
+    & .badgeInsta{
+      padding:8px 16px;
+      height: 30px;
+      background-color: $theme3;
+      font-size: 12px;
+      color: $white;
+      font-weight: 400;
+      width:fit-content;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      & .iconInsta{
+        width: 16px;
+        height: 16px;
+      }
+    }
+    & .profileCardinner{
+      // width:fit-content;
+      position: absolute;
+      bottom:8px;
+      left : 8px;
+      right:8px;
+      padding: 10px;
+      height: 55px;
+      background-color:rgba(255, 255, 255, 0.712);
+      @include sm{
+      height: 65px;
+
+      }
+      & .userIMgsmall{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        @include sm{
+          width: 50px;
+          height: 50px;
+        }
+
+      }
+      & .nameUser{
+        font-size: 14px;
+        color:$black;
+        font-weight: 600;
+      }
+      & .profileuser{
+        font-size: 12px;
+        color:$black;
+        font-weight:400;
+      }
+    }
+    & .playsvg{
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      right: 20%;
+      width: 60px !important;
+      height: 60px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      opacity: 1;
+
+      @include sm{
+      }
+      @include md{
+      }
+      @include lg{
+          opacity: 1;
+      }
+      @include xl{
+          
+      }
+      @include xxl{
+          
+      }
+      & img{
+          width: 15px !important;
+          height: 15px !important;
+      }
+    }
+    
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+@keyframes waves {
+  0% {
+      -webkit-transform: scale(0.2, 0.2);
+      transform: scale(0.2, 0.2);
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  50% {
+      opacity: 0.9;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  }
+  100% {
+      -webkit-transform: scale(0.9, 0.9);
+      transform: scale(0.9, 0.9);
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+}
+.waves {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  border-radius: 100%;
+  right: -45px !important;
+  bottom: -49px !important;
+  z-index: -1;
+  -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
+}
+.wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+
