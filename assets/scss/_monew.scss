@@ -973,7 +973,7 @@
             padding: 10px;
             &:hover{
                 & .cardLinkanc{
-                    color: $theme1 !important;
+                    color: lighten($theme2, 15) !important;
                 }
                 & .cardLinkancSecond{
                     color: $theme3 !important;
