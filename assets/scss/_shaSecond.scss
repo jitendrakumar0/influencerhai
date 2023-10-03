@@ -134,8 +134,10 @@
         background-position: center;
         background-size: cover;
         position: relative;
+        padding-top: 76px;
         @include sm{
             height: 300px;
+            padding-top: 90px;
             }
             @include md{
                 height: 400px;
@@ -248,7 +250,7 @@
             font-weight: 600;
             opacity: 0.8;
         }
-        & .sidebar{
+        & .sidebarMain{
             & .mainCard{
                 & .cardHeading{
                     font-size: 18px;
