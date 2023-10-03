@@ -1,356 +1,371 @@
 // hero SectionStart 
 
-// .heroSection{
-
-//   color: white;
-//   position: relative;
-//   align-items: center;
-//   padding-top: 80px;
-//   min-height: 100vh;
-//   @include sm{
-    
-//   }
-//   @include md{
-//     padding-top: 0;
-//   }
-//   @include lg{
-//   }
-//   @include xl{
+.heroSection{
+  color: white;
+  position: relative;
+  align-items: center;
+  padding-top: 70px;
+  min-height: 400px;
+  // padding-top: 80px;
+  // min-height: 100vh;
+  @include sm{
+    padding-bottom: 20px;
+  }
+  @include md{
+  }
+  @include lg{
+  }
+  @include xl{
+    padding-top: 0;
       
-//   }
-//   @include xxl{
+  }
+  @include xxl{
       
-//   }
-//   &::after{
-//     content: '';
-//     background-image: url(./../img/bg.jpg);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     width: 100%;
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//   }
+  }
+  &::after{
+    content: '';
+    background-image: url(./../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-//   @include sm{
-//     color: white;
-//     position: relative;
-//     align-items: center;
-//   }
-//   @include xl{
-//   height: 100vh;
-//   }
-//   & .heroImage{
-//     z-index: 6;
-//     position: relative;
-//     & img{
-//       width: 100%;
-//       height: 100%;
-//       object-fit: contain;
-//     }
-//   }
-//   & .heroTxtWrapper{
-//     z-index: 5;
-//     position: relative;
-//   }
-//   & .videoBg{
-//     & .videoInner{
-//       object-position: right;
-//       @include sm{
+  @include sm{
+    color: white;
+    position: relative;
+    align-items: center;
+  }
+  @include xl{
+  height: 100vh;
+  }
+  & .heroImage{
+    z-index: 6;
+    position: relative;
+    @include sm{
     
-//       }
-//       @include md{
-//       }
-//       @include lg{
-//       }
-//       @include xl{
-//         object-position: unset;
-          
-//       }
-//       @include xxl{
-          
-//       }
-//     }
-//   }
-//   & .HeroHeading{
-//     font-size: 27px;
-//     color: $theme3;
-//     line-height: 32px;
-//     @include sm{
-//     }
-//     @include md{
-//       font-size: 30px;
-//       line-height: 36px;
-//     }
-//     @include lg{
-//       font-size: 35px;
-//       line-height: 42px;
-//     }
-//     @include xl{
-//       font-size: 42px;
-//       line-height: 52px;
-//     }
-//   }
-//   & .heroPera{
-//     font-size: 16px;
-//     color: $theme2;
-//     // font-weight: 700;
-//     @include sm{
-//       font-size: 16px;
-//       line-height: normal;
-//     }
-//     @include lg{
-//       font-size: 20px;;
-//     }
-//   }
-
-//   & .searchBox{
-//     max-width: 557px;
-//     min-height: 62px;
-//     border-radius: 60px;
-//     position: relative;
-//     background-color:$white;
-//     display: flex;
-//     align-items: center;
-//     padding: 0px;
-//     border: 2px solid rgb(131, 113, 169);
-//     @include lg{
-//       max-width: 557px;
-//       min-height: 72px;
-//       border-radius: 60px;
-//       position: relative;
-//       background-color:$white;
-//       display: flex;
-//       align-items: center;
-//       padding: 15px;
-//       border: 4px solid $theme3;
-//     }
-
-//     & .Dropdown{
-//       & .dropbtn{
-//         font-size: 13px;
-//         color: $theme1;
-//         font-weight: 700;
-//         &::after{
-//           background-image: url(../img/downarrow.svg);
-//           background-repeat: no-repeat;
-//           background-size: cover;
-//           width: 15px;
-//           height: 15px;
-//           top: 100px;
-//           border: none !important;
-//         }
-//         @include sm{
-//           font-size: 16px;
-//           color: $theme1;
-//           font-weight: 700;
-//         }
-//         @include sm{
-//           font-size: 18px;
-//           color: $theme1;
-//           font-weight: 700;
-//         }
-//       }
-//       & .IconMedia{
-//         width: 18px;
-//         height: 18px;
-//         @include sm{
-//           width: 14px;
-//           height: 14px;
-//         }
-//       }
-//       & .DropMenu{
-//         background-color: $white;
-//         border-radius:10px ;
-//         border: none;
-//         max-width: 200px;
-//         & .dropdown-item{
-//           font-size: 14px;
-//           color: $theme2;
-//           @include sm{
-//             font-size: 16px;
-//             font-weight: 700;
-//             color: $theme2;
-//             transition: all 0.3s ease-in-out;
-//             & .IconMedia{
-//               filter: grayscale(1);
-//             }
-//             &:hover{
-//               color:$theme1;
-//               & .IconMedia{
-//                 filter: none;
-//               }
-//             }
-//           }
-//           @include md{
-//             font-size: 18px;
-//             font-weight: 700;
-//             color: $theme2;
-//             transition: all 0.3s ease-in-out;
-//             & .IconMedia{
-//               filter: grayscale(1);
-//             }
-//             &:hover{
-//               color:$theme1;
-//               & .IconMedia{
-//                 filter: none;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//     // & .searchInput{
-//     //   font-size: 16px;
-//     //   color: $theme2;
-//     //   font-weight: 700;
-//     //   &::placeholder{
-//     //     font-size: 16px;
-//     //     color: $theme2;
-//     //     font-weight: 700;
-//     //   }
-//     // }
-//     & .searchInput {
-//       font-size: 14px;
-//       font-weight: 700;
-//       color: $black;
-//       &::placeholder {
-//           font-size: 14px;
-//           font-weight: 700;
-//           color: $black;
-//       }
-//       @include sm{
-//         font-size: 18px;
-//         font-weight: 700;
-//         color: $black;
-//         &::placeholder {
-//             font-size: 18px;
-//             font-weight: 700;
-//             color: $black;
-//         }
-//       }
-//   }
-//   & .searchicon {
-//       height: 24px;
-//       width: 24px;
-//       // margin: 0 12px;
-//       margin-right: 10px;
-//   }
-//   & .searchInner {
-//       top: 100%;
-//       transform: translate(0, 7px);
-//       max-height: 30vh;
-//       height: 30vh;
-//       padding: 8px 10px;
-//       @include sm{
-//         top: 100%;
-//         transform: translate(0, 7px);
-//         max-height: 50vh;
-//         height: 50vh;
-//         padding: 20px 30px;
-//       }
-//       & .searchLi{
-//         padding: 10px 15px;
-
-//         @include sm{
-//           transition: all 0.3s ease;
-//           padding: 20px 30px;
-
-//         }
-  
-//         &:hover{
-//           background-color: rgba(255, 200, 200, 0.658);
-
-//         }
-//         & .innerDropdown{
-//           font-size: 13px;
-//           color: $theme2;
-//           font-weight: 700;
-//           opacity: 0.9;
-//           @include sm{
-//             font-size: 14px;
-//             color: $theme2;
-//             font-weight: 700;
-//             opacity: 0.9;
-//           }
-//           @include md{
-//             font-size: 18px;
-//             color: $theme2;
-//             font-weight: 700;
-//             opacity: 0.9;
-//           }
-//           & .arrowIcon{
-//             width: 14px;
-//             height: 14px;
-//             transform: rotate(-45deg);
-//             @include sm{
-//               width: 14px;
-//               height: 14px;
-//               transform: rotate(-45deg);
-//             }
-//             @include md{
-//               width: 18px;
-//               height: 18px;
-//               transform: rotate(-45deg);
-//             }
-//           }
-//           & .inndrSubheading{
-//             font-size: 10px;
-//             font-weight: 600;
-//             @include sm{
-//               font-size: 13px;
-//             font-weight: 600;
-//             }
-//           }
-//         }
-//       }
-//   }
-//   & .searchInnerData {
-//       padding: 7px 12px ;
-//       color: $black;
-//       font-size: 14px;
-//       font-weight: 500;
-//       transition: all 0.3s ease-in-out;
-    
-//       &:hover {
-//           background-color: lighten($black, 95);
+    }
+    @include md{
+    }
+    @include lg{
+      min-height: 400px;
+    }
+    @include xl{
         
-//       }
-//   }
-//   & .searchInput:focus ~ .searchInner { display: block !important }
-//   & .searchdrop {
-//       & .dropdownBtn {
-//           font-size: 14px;
-//           font-weight: 500;
-//           color: $black;
-//       }
-//       & .searchMenu {
-//           transform: translateY(7px);
-//           max-height: 50vh;
-//           min-width: auto;
-//       }
-//   }
+    }
+    @include xxl{
+        
+    }
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  & .heroTxtWrapper{
+    z-index: 5;
+    position: relative;
+  }
+  & .videoBg{
+    & .videoInner{
+      object-position: right;
+      @include sm{
+    
+      }
+      @include md{
+      }
+      @include lg{
+      }
+      @include xl{
+        object-position: unset;
+          
+      }
+      @include xxl{
+          
+      }
+    }
+  }
+  & .HeroHeading{
+    font-size: 27px;
+    color: $theme3;
+    line-height: 32px;
+    @include sm{
+    }
+    @include md{
+      font-size: 30px;
+      line-height: 36px;
+    }
+    @include lg{
+      font-size: 35px;
+      line-height: 42px;
+    }
+    @include xl{
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+  & .heroPera{
+    font-size: 16px;
+    color: $theme2;
+    // font-weight: 700;
+    @include sm{
+      font-size: 16px;
+      line-height: normal;
+    }
+    @include lg{
+      font-size: 20px;;
+    }
+  }
+
+  & .searchBox{
+    max-width: 557px;
+    min-height: 62px;
+    border-radius: 60px;
+    position: relative;
+    background-color:$white;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border: 2px solid rgb(131, 113, 169);
+    @include lg{
+      max-width: 557px;
+      min-height: 72px;
+      border-radius: 60px;
+      position: relative;
+      background-color:$white;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border: 4px solid $theme3;
+    }
+
+    & .Dropdown{
+      & .dropbtn{
+        font-size: 13px;
+        color: $theme1;
+        font-weight: 700;
+        &::after{
+          background-image: url(../img/downarrow.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 15px;
+          height: 15px;
+          top: 100px;
+          border: none !important;
+        }
+        @include sm{
+          font-size: 16px;
+          color: $theme1;
+          font-weight: 700;
+        }
+        @include sm{
+          font-size: 18px;
+          color: $theme1;
+          font-weight: 700;
+        }
+      }
+      & .IconMedia{
+        width: 18px;
+        height: 18px;
+        @include sm{
+          width: 14px;
+          height: 14px;
+        }
+      }
+      & .DropMenu{
+        background-color: $white;
+        border-radius:10px ;
+        border: none;
+        max-width: 200px;
+        & .dropdown-item{
+          font-size: 14px;
+          color: $theme2;
+          @include sm{
+            font-size: 16px;
+            font-weight: 700;
+            color: $theme2;
+            transition: all 0.3s ease-in-out;
+            & .IconMedia{
+              filter: grayscale(1);
+            }
+            &:hover{
+              color:$theme1;
+              & .IconMedia{
+                filter: none;
+              }
+            }
+          }
+          @include md{
+            font-size: 18px;
+            font-weight: 700;
+            color: $theme2;
+            transition: all 0.3s ease-in-out;
+            & .IconMedia{
+              filter: grayscale(1);
+            }
+            &:hover{
+              color:$theme1;
+              & .IconMedia{
+                filter: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    // & .searchInput{
+    //   font-size: 16px;
+    //   color: $theme2;
+    //   font-weight: 700;
+    //   &::placeholder{
+    //     font-size: 16px;
+    //     color: $theme2;
+    //     font-weight: 700;
+    //   }
+    // }
+    & .searchInput {
+      font-size: 14px;
+      font-weight: 700;
+      color: $black;
+      &::placeholder {
+          font-size: 14px;
+          font-weight: 700;
+          color: $black;
+      }
+      @include sm{
+        font-size: 18px;
+        font-weight: 700;
+        color: $black;
+        &::placeholder {
+            font-size: 18px;
+            font-weight: 700;
+            color: $black;
+        }
+      }
+  }
+  & .searchicon {
+      height: 24px;
+      width: 24px;
+      // margin: 0 12px;
+      margin-right: 10px;
+  }
+  & .searchInner {
+      top: 100%;
+      transform: translate(0, 7px);
+      max-height: 30vh;
+      height: 30vh;
+      padding: 8px 10px;
+      @include sm{
+        top: 100%;
+        transform: translate(0, 7px);
+        max-height: 50vh;
+        height: 50vh;
+        padding: 20px 30px;
+      }
+      & .searchLi{
+        padding: 10px 15px;
+
+        @include sm{
+          transition: all 0.3s ease;
+          padding: 20px 30px;
+
+        }
+  
+        &:hover{
+          background-color: rgba(255, 200, 200, 0.658);
+
+        }
+        & .innerDropdown{
+          font-size: 13px;
+          color: $theme2;
+          font-weight: 700;
+          opacity: 0.9;
+          @include sm{
+            font-size: 14px;
+            color: $theme2;
+            font-weight: 700;
+            opacity: 0.9;
+          }
+          @include md{
+            font-size: 18px;
+            color: $theme2;
+            font-weight: 700;
+            opacity: 0.9;
+          }
+          & .arrowIcon{
+            width: 14px;
+            height: 14px;
+            transform: rotate(-45deg);
+            @include sm{
+              width: 14px;
+              height: 14px;
+              transform: rotate(-45deg);
+            }
+            @include md{
+              width: 18px;
+              height: 18px;
+              transform: rotate(-45deg);
+            }
+          }
+          & .inndrSubheading{
+            font-size: 10px;
+            font-weight: 600;
+            @include sm{
+              font-size: 13px;
+            font-weight: 600;
+            }
+          }
+        }
+      }
+  }
+  & .searchInnerData {
+      padding: 7px 12px ;
+      color: $black;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+    
+      &:hover {
+          background-color: lighten($black, 95);
+        
+      }
+  }
+  & .searchInput:focus ~ .searchInner { display: block !important }
+  & .searchdrop {
+      & .dropdownBtn {
+          font-size: 14px;
+          font-weight: 500;
+          color: $black;
+      }
+      & .searchMenu {
+          transform: translateY(7px);
+          max-height: 50vh;
+          min-width: auto;
+      }
+  }
 
 
 
-//   }
-//   & .heroBrand{
-//     width: 100%;
-//     background-color: rgb(23, 12, 42);
-//     box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
-//     border-radius: 60px 60px 0px 0px;
-//     padding: var(--space-2xl);
-//     & .brandIcon{
-//       height: 30px;
-//       @include sm{
-//         height: 40px;
+  }
+  & .heroBrand{
+    width: 100%;
+    background-color: rgb(23, 12, 42);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 1px;
+    border-radius: 60px 60px 0px 0px;
+    padding: var(--space-2xl);
+    & .brandIcon{
+      height: 30px;
+      @include sm{
+        height: 40px;
 
-//       }
-//     }
-//   }
-// }
+      }
+    }
+  }
+}
 
 // hero section end 
 
