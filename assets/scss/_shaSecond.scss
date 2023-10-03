@@ -134,6 +134,21 @@
         background-position: center;
         background-size: cover;
         position: relative;
+        @include sm{
+            height: 300px;
+            }
+            @include md{
+                height: 300px;
+            }
+            @include lg{
+                height: 300px;
+            }
+            @include xl{
+                height: 400px;
+            }
+            @include xxl{
+                height: 400px;
+            }
         &::before{
             content: "";
             width: 100%;
@@ -146,8 +161,23 @@
         }
         & .aboutImg{
             position: relative;
-            height: 400px;
+            height: 300px;
             z-index: 3;
+            @include sm{
+            height: 300px;
+            }
+            @include md{
+                height: 300px;
+            }
+            @include lg{
+                height: 300px;
+            }
+            @include xl{
+                height: 400px;
+            }
+            @include xxl{
+                height: 400px;
+            }
             & .subHead{
                 font-size: 22px;
                 font-weight: 700;
