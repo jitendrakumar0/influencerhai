@@ -649,19 +649,19 @@
 .blogInnerpage {
     margin-top: 50px;
     & .blogcardmain {
-        padding: 10px;
-        padding-bottom: 40px;
+        padding: 15px;
+        // padding-bottom: 40px;
         @include sm {
             padding: 15px;
-            padding-bottom: 50px;
+            // padding-bottom: 50px;
         }
         @include md {
             padding: 20px;
-            padding-bottom: 55px;
+            // padding-bottom: 55px;
         }
         @include lg {
             padding: 25px;
-            padding-bottom: 65px;
+            // padding-bottom: 65px;
         }
         & .blogimg {
             aspect-ratio: 6/3;
@@ -908,32 +908,65 @@
             }
         }
     }
-    // & .sidebar {
-    //     top: 85px;
-    // }
     & .sidebar{
         top: 85px;
-        padding: 25px;
+        padding: 15px;
+        @include sm {
+            padding: 15px;
+        }
+        @include md {
+            padding: 20px;
+        }
+        @include lg {
+            padding: 25px;
+        }
         & .searchmain {
-            height: 40px;
+            height: 35px;
+            @include sm {
+                height: 40px;
+            }
             & .searchinput {
                 color: lighten($black, 40);
-                font-size: 14px;
+                font-size: 13px;
                 &::placeholder {
                     color: lighten($black, 40);
+                    font-size: 13px;
+                }
+                @include sm {
+                    font-size: 14px;
+                    &::placeholder {
+                        font-size: 14px;
+                    }
                 }
             }
             & .searchbtn {
                 background-color: $theme1;
                 border: 1px solid $theme1;
+                padding: 9px;
                 & img {
                     filter: brightness(100);
+                }
+                @include sm {
+                    padding: 11px;
                 }
             }
         }
         & .cardHeading{
-            font-size: 25px;
+            font-size: 18px;
             font-weight: 700;
+            color: $theme2;
+            @include sm {
+                font-size: 20px;
+            }
+            @include md {
+                font-size: 22px;
+            }
+            @include lg {
+                font-size: 24px;
+            }
+            @include xl {
+                font-size: 25px;
+            }
         }
         & .CardBox{
             transition: all .3s ease-in-out;
@@ -952,14 +985,14 @@
                 }
             }
             & .CardImg{
-                height: 70px;
-                width: 85px;
+                height: 60px;
+                width: 75px;
                 transition: all .3s ease-in-out;
                 overflow: hidden;
-                    // @include sm{
-                    //     height: 60px;
-                    //     width: 75px;
-                    // }
+                    @include sm{
+                        height: 70px;
+                        width: 85px;
+                    }
                     // @include md{
                     //     height: 60px;
                     //     width: 75px;
@@ -978,17 +1011,37 @@
             }
             & .cardLink{
                 & .date {
-                    font-size: 14px;
+                    font-size: 12px;
                     color: lighten($black, 30);
+                    margin-bottom: 6px;
+                    gap:6px;
                     & .dateicon {
-                        height: 15px;
-                        min-width: 15px;
-                        max-width: 15px;
+                        height: 12px;
+                        min-width: 12px;
+                        max-width: 12px;
+                    }
+                    @include sm {
+                        font-size: 13px;
+                        margin-bottom: 8px;
+                        gap: 8px;
+                        & .dateicon {
+                            height: 13px;
+                            min-width: 13px;
+                            max-width: 13px;
+                        }
+                    }
+                    @include md {
+                        font-size: 14px;
+                        & .dateicon {
+                            height: 15px;
+                            min-width: 15px;
+                            max-width: 15px;
+                        }
                     }
                 }
                 & .cardLinkanc{
-                    font-size: 15px;
-                    line-height: 20px;
+                    font-size: 13px;
+                    line-height: 18px;
                     font-weight: 600;
                     transition: all .3s ease-in-out;
                     color: $theme2;
@@ -997,6 +1050,14 @@
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    @include sm {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    // @include md {
+                    //     font-size: 15px;
+                    //     line-height: 20px;
+                    // }
                 }
                 // & .cardLinkancSecond{
                 //     font-size: 16px;
@@ -1004,15 +1065,6 @@
                 //     font-weight: 600;
                 //     transition: all .3s ease-in-out;
                 // }
-            }
-        }
-        & .archiesText{
-            & .archiesTextanc{
-                transition: all .3s ease-in-out;
-                &:hover{
-                    color: $theme1 !important;
-                    background-color: lightgrey !important;
-                }
             }
         }
     }
