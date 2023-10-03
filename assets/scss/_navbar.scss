@@ -1,6 +1,7 @@
-.navbar{
+.navLight{
+  &.navbar{
     // background: #170c2a;
-    background-color: transparent;
+    // background-color: transpa00rent;
     height: 70px;
     @include sm{
     height: 80px;
@@ -10,9 +11,22 @@
       background-color: $white;
       & .menuBtn{
         & img{
-          filter: invert(1) !important;
+          filter: invert(1);
+          // filter: brightness(5) !important;
         }
       }
+      & .navItem{
+        & .navLInk{
+          color: $black !important;
+          @include lg{
+            color: $black !important;
+          }
+        }
+      }
+      
+    & .menuBtnLight{
+      filter: $black !important;
+    }
     }
   &  .logonav{
     // width: 55px;
@@ -20,10 +34,13 @@
   }
   & .logoName{
     font-size: 20px;
-    color: $black;
+    color: $white;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    &.logoNameInner{
+      color: $black !important;
+    }
     &:hover{
         color: $theme1;
     }
@@ -36,10 +53,26 @@
 
     }
   }
+  
   & .menuBtn{
     width: 25px;
     height: 25px;
+    // filter: invert(1);
+    filter: brightness(5);
     background-image: none !important;
+    &.menuBtnInner{
+      width: 25px;
+      height: 25px;
+      // filter: invert(1);
+      background-image: none !important;
+      & img{
+        // color: $black;
+        // background-color: $black;
+      }
+    }
+    &.menuBtnLight{
+      filter: brightness(10);
+    }
     & img{
       object-fit: contain;
       // background-image: none;
@@ -56,7 +89,7 @@
   & .navbarNav{
     & .navItem{
         & .navLInk{
-            color: $black;
+            color: $black !important;
             font-size: 14px;
             @include sm{
                 font-size: 16px;
@@ -66,10 +99,112 @@
                     color: $theme1;
                 }
                 &.active{
-                    color: $theme1;
+                    color: $theme1 !important;
                 }
+            }
+            @include lg{
+              color: $white !important;
             }
         }
     }
+  }
+}
+}
+
+.navDark{
+  &.navbar{
+    // background: #170c2a;
+    // background-color: transpa00rent;
+    height: 70px;
+    @include sm{
+    height: 80px;
+
+    }
+    &.nav-active{
+      background-color: $white;
+      & .menuBtn{
+        & img{
+          // filter: invert(1) !important;
+        }
+      }
+      
+    & .menuBtnLight{
+      filter: invert(1) !important;
+    }
+    }
+  &  .logonav{
+    // width: 55px;
+    height: 55px;
+  }
+  & .logoName{
+    font-size: 20px;
+    color: $black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &.logoNameInner{
+      color: $black !important;
+    }
+    &:hover{
+        color: $theme1;
+    }
+    @include xl{
+      font-size: 25px;
+  
+      }
+    @include xl{
+    font-size: 28px;
+
+    }
+  }
+  & .menuBtn{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    background-image: none !important;
+    &.menuBtnLight{
+      filter: brightness(10);
+    }
+    & img{
+      object-fit: contain;
+      // background-image: none;
+      // filter: brightness(0);
+    }
+
+    @include md{
+      width: 35px;
+      height: 35px;
+    }
+
+  }
+
+  & .navbarNav{
+    & .navItem{
+        & .navLInk{
+            color: $black !important;
+            font-size: 14px;
+            @include sm{
+                font-size: 16px;
+                font-weight: 600;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: $theme1;
+                }
+                &.active{
+                    color: $theme1 !important;
+                }
+            }
+            @include lg{
+              color: $black !important;
+            }
+        }
+    }
+  }
+}
+}
+
+@media (min-width: 992px){
+  .navLight.navbar.nav-active .navItem .navLInk {
+      color: #000 !important;
   }
 }
