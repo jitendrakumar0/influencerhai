@@ -377,4 +377,10 @@
             }
         }
     }
+    .aboutHeroPadding{
+        top: 0;
+        @include md{
+            top: 80px;
+        }
+    }
 // About text Ends

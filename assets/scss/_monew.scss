@@ -1069,4 +1069,21 @@
         }
     }
 }
+.cardHeading{
+    font-size: 18px;
+    font-weight: 700;
+    color: $theme2;
+    @include sm {
+        font-size: 20px;
+    }
+    @include md {
+        font-size: 22px;
+    }
+    @include lg {
+        font-size: 24px;
+    }
+    @include xl {
+        font-size: 25px;
+    }
+}
 // blog innere page end
